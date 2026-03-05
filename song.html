@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korean Lyrics Study - Stray Kids</title>
+  <!-- Описание для Гугла -->
+  <meta name="description" content="Interactive web app to learn Korean vocabulary and grammar using Stray Kids song lyrics. Take quizzes, read explanations, and study K-pop vocabulary.">
+
+  <!-- Ключевые слова -->
+  <meta name="keywords" content="Stray Kids, learn Korean, K-pop lyrics, SKZ, Korean grammar, Korean vocabulary, interactive learning">
+
+  <!-- Теги для красивого отображения ссылок в соцсетях (Twitter, Telegram и тд) -->
+  <meta property="og:title" content="Learn Korean with Stray Kids Lyrics">
+  <meta property="og:description" content="Study Korean grammar and vocabulary interactively with SKZ songs!">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE MENU BUTTON (Visible only on mobile) -->
+<div id="mobile-menu-toggle">☰</div>
+
+<!-- MOBILE MENU CONTENT -->
+<div id="mobileMenu" class="mobile-menu-container">
+    <div class="mobile-menu-close" onclick="toggleMobileMenu()">×</div>
+    
+    <div class="mobile-menu-item" onclick="document.querySelector('.quiz-button').click(); toggleMobileMenu();">
+        Open Quiz
+    </div>
+    
+    <!-- Наши 3 новые вкладки грамматики -->
+    <div class="mobile-menu-item" onclick="openGrammarTab('aoRules'); toggleMobileMenu();">
+        Conjugation (아/어)
+    </div>
+    <div class="mobile-menu-item" onclick="openGrammarTab('levelPlain'); toggleMobileMenu();">Levels: Plain</div>
+    <div class="mobile-menu-item" onclick="openGrammarTab('levelPanmal'); toggleMobileMenu();">Levels: Panmal</div>
+    <div class="mobile-menu-item" onclick="openGrammarTab('levelUnofficial'); toggleMobileMenu();">Levels: Polite Unofficial</div>
+    <div class="mobile-menu-item" onclick="openGrammarTab('levelOfficial'); toggleMobileMenu();">Levels: Polite Official</div>
+    <div class="mobile-menu-item" onclick="openGrammarTab('nunGeot'); toggleMobileMenu();">
+        Modifiers (는 것)
+    </div>
+</div>
+
+<div id="main-container">
+
+  <!-- LEFT COLUMN -->
+  <div id="lyrics-column">
+
+    <div class="title-wrapper">
+      <a href="index.html" class="back-button">
+        <svg viewBox="0 0 24 24">
+          <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" fill="#fff"/>
+        </svg>
+      </a>
+      <h1 id="song-title">Loading...</h1>
+
+    </div>
+
+
+    <div class="header-row">
+      <img id="album-cover" class="album-cover" src="" alt="Album Cover">
+
+      <div class="header-info">
+        <div class="credits">
+          <p>
+            <strong>Artist:</strong> <span id="artist-name"></span><br>
+            <strong>Album:</strong> <span id="album-name"></span><br>
+            <strong>Label:</strong> JYP Entertainment<br>
+            <a id="song-link" href="#" target="_blank">
+              Watch Official MV / Audio on Youtube
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="disclaimer">
+      All rights belong to the respective owners. This content is for educational purposes only (Korean language study).
+      No copyright infringement intended.
+    </p>
+
+    <hr class="separator">
+
+    <div id="lyrics-container"></div>
+
+    <details id="english-section" class="english-accordion" style="display: none;">
+      <summary>English Verse (Click to read)</summary>
+      <div id="englishLyrics" class="accordion-content"></div>
+    </details>
+
+  </div>
+  <!-- END LEFT COLUMN -->
+
+
+  <!-- RIGHT COLUMN -->
+  <div id="sticker-board">
+
+    <div class="board-header">Work Board</div>
+
+    <img src="images/skzoo.png" class="board-image" alt="SKZOO Art">
+ <div class="quiz-button">
+       <span class="quiz-text">quiz</span>
+    </div>
+ 
+<!-- === DESKTOP GRAMMAR MENU (Grrr) === -->
+<div id="desktop-grammar-wrapper">
+  <div id="grrr-button">Grrr</div>
+  
+  <div id="grammar-tabs">
+  <div class="g-tab" data-target="aoRules">아/어</div>
+  
+  <!-- НОВОЕ: Выпадающее меню для Levels -->
+  <div class="dropdown-wrapper">
+    <div class="g-tab">Levels ▾</div>
+    <div class="dropdown-content">
+      <div class="g-sub-tab" data-target="levelPlain">Plain Form</div>
+      <div class="g-sub-tab" data-target="levelPanmal">Panmal</div>
+      <div class="g-sub-tab" data-target="levelUnofficial">Polite Unofficial</div>
+      <div class="g-sub-tab" data-target="levelOfficial">Polite Official</div>
+    </div>
+  </div>
+
+  <div class="g-tab" data-target="nunGeot">는 것</div>
+</div>
+
+  
+  <!-- END RIGHT COLUMN -->
+
+
+</div>
+<!-- END MAIN CONTAINER -->
+
+
+
+<!-- ОВЕРЛЕЙ КВИЗА (Изначально скрыт class="hidden") -->
+<div id="quiz-overlay" class="quiz-overlay hidden">
+    
+    <!-- Кнопка закрытия всего квиза -->
+    <button id="quiz-global-close" class="quiz-close">×</button>
+
+    <!-- 1. СТАРТОВОЕ ОКНО (НАСТРОЙКИ) -->
+    <div id="quiz-start-screen" class="quiz-game">
+        <div class="quiz-content">
+            <!-- Картинка квиза -->
+            <img src="images/quiz.png" alt="Quiz" class="quiz-image">
+            
+            <h2 class="quiz-title">Choose Mode</h2>
+            
+            <!-- Выбор режима -->
+            <div class="quiz-modes">
+                <button class="quiz-mode active" data-mode="words">Words only</button>
+                <button class="quiz-mode" data-mode="grammar">Grammar only</button>
+                <button class="quiz-mode" data-mode="mixed">Words & Grammar</button>
+            </div>
+
+            <button id="btn-start-quiz" class="quiz-start">START</button>
+        </div>
+    </div>
+
+    <!-- 2. ИГРОВОЕ ОКНО -->
+    <div id="quiz-game-screen" class="quiz-game hidden">
+        <!-- Поле с заданием -->
+        <div class="quiz-task-board">
+            <span id="quiz-question-text" class="quiz-task-text">Question here</span>
+        </div>
+
+        <!-- Контейнер для вариантов ответа (кнопки) -->
+        <div id="quiz-options-container" class="quiz-answers">
+            <!-- Сюда JS будет вставлять кнопки вариантов -->
+        </div>
+
+        <!-- Контейнер для ввода (для последних вопросов) -->
+        <div id="quiz-input-container" class="quiz-input-wrapper">
+            <input type="text" id="quiz-input-field" class="quiz-input" placeholder="Type answer..." autocomplete="off">
+            <button id="quiz-input-submit" class="quiz-input-submit">
+                ➜ <!-- Стрелочка -->
+            </button>
+        </div>
+
+       <button id="quiz-next-btn" class="quiz-next">➜</button>
+</div>
+    <!-- 3. ОКНО РЕЗУЛЬТАТОВ -->
+    <div id="quiz-result-screen" class="quiz-result-overlay hidden">
+        <button id="quiz-result-close" class="quiz-close">×</button>
+        
+        <div style="margin-top: 60px;">
+            <div id="quiz-final-score" class="quiz-score">5 / 8</div>
+            <!-- Сюда подставится рандомная картинка -->
+            <img id="quiz-result-img" src="" class="quiz-result-img">
+            <div id="quiz-result-quote" class="quiz-result-quote">Quote text</div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

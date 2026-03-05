@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Korean with Stray Kids Lyrics</title>
+  <!-- Описание для Гугла -->
+  <meta name="description" content="Interactive web app to learn Korean vocabulary and grammar using Stray Kids song lyrics. Take quizzes, read explanations, and study K-pop vocabulary.">
+
+  <!-- Ключевые слова -->
+  <meta name="keywords" content="Stray Kids, learn Korean, K-pop lyrics, SKZ, Korean grammar, Korean vocabulary, interactive learning">
+
+  <!-- Теги для красивого отображения ссылок в соцсетях (Twitter, Telegram и тд) -->
+  <meta property="og:title" content="Learn Korean with Stray Kids Lyrics">
+  <meta property="og:description" content="Study Korean grammar and vocabulary interactively with SKZ songs!">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="home-container">
+
+  <!-- ШАПКА С КАРТИНКАМИ -->
+  <div class="home-header-wrapper">
+    <!-- Левая картинка -->
+    <img src="images/startleft.png" alt="" class="start-img">
+    
+    <!-- Центр -->
+    <div class="title-container">
+      <h1 class="main-title">
+        Learn <span class="red-k">K</span>orean<br>
+        with Stray <span class="red-k">K</span>ids Lyrics
+      </h1>
+      
+      <div class="home-subtitle">
+        Fan project for educational purposes.<br>
+        Made by Stay.
+      </div>
+    
+      <div class="action-buttons-wrapper">
+        <button id="start-global-quiz" class="global-quiz-btn">ALL-IN QUIZ</button>
+        
+        <div class="search-wrapper">
+          <!-- Иконка лупы (SVG) -->
+          <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="none" stroke="#ff0000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          </svg>
+          <input type="text" id="song-search-input" class="song-search-input" placeholder="Search song...">
+        </div>
+      </div>
+      <!-- КОНЕЦ НОВОГО БЛОКА -->
+
+    </div>
+
+    <!-- Правая картинка -->
+    <img src="images/startright.png" alt="" class="start-img">
+  </div>
+
+  <hr class="home-separator">
+
+<!-- СЕТКА АЛЬБОМОВ -->
+  <div class="albums-grid">
+    
+    <div class="album-column">
+      <div class="album-title">Do it (2025)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=doit" class="song-link">Do it</a></li>
+      <li><a href="song.html?id=divine" class="song-link">Divine</a></li>
+      <li><a href="song.html?id=holiday" class="song-link">Holiday</a></li>
+      <li><a href="song.html?id=photobook" class="song-link">Photobook</a></li>
+      </ul>
+    </div>
+
+    <!-- 1. Альбом Mixtape: dominATE -->
+    <div class="album-column">
+      <div class="album-title">KARMA (2025)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=bleep" class="song-link">Bleep (삐처리)</a></li>
+        <li><a href="song.html?id=ceremony" class="song-link">Ceremony</a></li>
+        <li><a href="song.html?id=creed" class="song-link">Creed</a></li>
+        <li><a href="song.html?id=mess" class="song-link">Mess</a></li>
+        <li><a href="song.html?id=inmyhead" class="song-link">In My Head</a></li>
+  <li><a href="song.html?id=halftime" class="song-link">Half Time</a></li>
+        <li><a href="song.html?id=phoenix" class="song-link">Phoenix</a></li>
+  <li><a href="song.html?id=ghost" class="song-link">Ghost</a></li>
+  <li><a href="song.html?id=0801" class="song-link">0801</a></li>
+      </ul>
+    </div>
+    
+    <div class="album-column">
+      <div class="album-title">Mixtape: dominATE (2025)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=tires" class="song-link">Burning Tires (Changbin & I.N)</a></li>
+     <li><a href="song.html?id=truman" class="song-link">Truman (HAN & Felix)</a></li>
+        <li><a href="song.html?id=escape" class="song-link">ESCAPE (Bang Chan & Hyunjin)</a></li>
+      <li><a href="song.html?id=cinema" class="song-link">Cinema (Lee Know & Seungmin)</a></li>
+      </ul>
+    </div>
+
+<div class="album-column">
+      <div class="album-title">HOP (合) (2024)</div>
+      <ul class="song-list">
+         <li><a href="song.html?id=onwater" class="song-link">Walkin On Water</a></li>
+        <li><a href="song.html?id=bounce" class="song-link">Bounce Back</a></li>
+        <li><a href="song.html?id=u" class="song-link">U (feat. TABLO)</a></li>
+        <li><a href="song.html?id=hallucination" class="song-link">Hallucination (I.N)</a></li>
+        <li><a href="song.html?id=youth" class="song-link">Youth (Lee Know)</a></li>
+      <li><a href="song.html?id=sogood" class="song-link">So Good (Hyunjin)</a></li>
+      <li><a href="song.html?id=ultra" class="song-link">Ultra (Changbin)</a></li>
+      <li><a href="song.html?id=holdmy" class="song-link">Hold My Hand (HAN)</a></li>
+      <li><a href="song.html?id=asweare" class="song-link">As We Are (Seungmin)</a></li>
+      </ul>
+    </div>
+
+    <!-- 2. НОВЫЙ БЛОК: Альбом ATE -->
+    <div class="album-column">
+      <div class="album-title">ATE (2024)</div>
+      <ul class="song-list">
+         <li><a href="song.html?id=mount" class="song-link">Mountains</a></li>
+        <li><a href="song.html?id=chkchkboom" class="song-link">Chk Chk Boom</a></li>
+        <li><a href="song.html?id=jjam" class="song-link">JJAM</a></li>
+        <li><a href="song.html?id=ilike" class="song-link">I Like It</a></li>
+        <li><a href="song.html?id=twilight" class="song-link">Twilight</a></li>
+      <li><a href="song.html?id=straykids" class="song-link">Stray Kids</a></li>
+      </ul>
+    </div>
+
+     <div class="album-column">
+      <div class="album-title">ROCK-STAR (2023)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=megaverse" class="song-link">Megaverse</a></li>
+        <li><a href="song.html?id=lalalala" class="song-link">Lalalala (락)</a></li>
+        <li><a href="song.html?id=blind" class="song-link">Blind Spot</a></li>
+        <li><a href="song.html?id=comflex" class="song-link">Comflex</a></li>
+     <li><a href="song.html?id=coverme" class="song-link">Cover Me</a></li>
+     <li><a href="song.html?id=leave" class="song-link">Leave</a></li>
+      </ul>
+    </div>
+
+     <div class="album-column">
+      <div class="album-title">5-STAR (2023)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=fame" class="song-link">Hall Of Fame</a></li>
+        <li><a href="song.html?id=sclass" class="song-link">S-Class (특)</a></li>
+        <li><a href="song.html?id=item" class="song-link">Item</a></li>
+        <li><a href="song.html?id=topline" class="song-link">TOPLINE (feat. Tiger JK)</a></li>
+     <li><a href="song.html?id=dlc" class="song-link">DLC</a></li>
+     <li><a href="song.html?id=getlit" class="song-link">Get Lit (죽어보자)</a></li>
+      <li><a href="song.html?id=collision" class="song-link">Collision (충돌)</a></li>
+       <li><a href="song.html?id=fnf" class="song-link">FNF</a></li>
+      </ul>
+    </div>
+
+    <div class="album-column">
+      <div class="album-title">MAXIDENT (2022)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=case" class="song-link">Case 143</a></li>
+        <li><a href="song.html?id=chill" class="song-link">Chill</a></li>
+        <li><a href="song.html?id=tmi" class="song-link">Give Me Your TMI</a></li>
+        <li><a href="song.html?id=superboard" class="song-link">Super Board</a></li>
+     <li><a href="song.html?id=3racha" class="song-link">3 RACHA (Bang Chan, Changbin, HAN)</a></li>
+     <li><a href="song.html?id=taste" class="song-link">TASTE (Lee Know, Hyunjin, Felix)</a></li>
+      <li><a href="song.html?id=cantstop" class="song-link">Can't Stop (Seungmin, I.N)</a></li>
+      </ul>
+    </div>
+
+    <div class="album-column">
+      <div class="album-title">ODDINARY (2022)</div>
+      <ul class="song-list">
+        <li><a href="song.html?id=venom" class="song-link">Venom</a></li>
+        <li><a href="song.html?id=maniac" class="song-link">Maniac</a></li>
+        <li><a href="song.html?id=charmer" class="song-link">Charmer</a></li>
+        <li><a href="song.html?id=freeze" class="song-link">FREEZE</a></li>
+     <li><a href="song.html?id=lonelyst" class="song-link">Lonely St.</a></li>
+     <li><a href="song.html?id=waitingforus" class="song-link">Waiting For Us</a></li>
+      <li><a href="song.html?id=muddywater" class="song-link">Muddy Water</a></li>
+      </ul>
+    </div>
+
+ <div class="album-column">
+      <div class="album-title">SKZ-RECORD / SKZ-PLAYER</div>
+      <ul class="song-list">
+         <li><a href="song.html?id=steps" class="song-link">Still here (제자리걸음) (Seungmin)</a></li>
+        <li><a href="song.html?id=rainingstars" class="song-link">Raining Stars (유성우) (HAN)</a></li>
+        <li><a href="song.html?id=quillpen" class="song-link">Quill Pen (낙서장) (Hyunjin)</a></li>
+         <li><a href="song.html?id=human" class="song-link">Human (사람이니까) (HAN)</a></li>
+          <li><a href="song.html?id=maybe" class="song-link">Maybe (HAN)</a></li>
+        <li><a href="song.html?id=respirator" class="song-link">Respirator (산소호흡기) (HAN, Seungmin)</a></li>
+ <li><a href="song.html?id=12345" class="song-link">1, 2, 3, 4, 5 (HAN feat. 배이)</a></li>
+<li><a href="song.html?id=longfor" class="song-link">long for you (Hyunjin)</a></li>
+         <li><a href="song.html?id=13" class="song-link">13 (HAN)</a></li>
+         <li><a href="song.html?id=blackhole" class="song-link">Black Hole (Bang Chan & I.N)</a></li>
+         <li><a href="song.html?id=untitled" class="song-link">Untitled (미제) (I.N feat. Hyunjin)</a></li>
+         <li><a href="song.html?id=sobad" class="song-link">Want So Bad (Lee Know & HAN)</a></li>
+         <li><a href="song.html?id=miserable" class="song-link">Miserable (You&Me) (HAN)</a></li>
+         <li><a href="song.html?id=contradicting" class="song-link">Contradicting (Hyunjin)</a></li>
+         <li><a href="song.html?id=holdon" class="song-link">Hold On (Seungmin)</a></li>
+<li><a href="song.html?id=partysnotover" class="song-link">PARTY'S NOT OVER</a></li>
+         <li><a href="song.html?id=snain" class="song-link">Snain (비바람) (Changbin & Felix & Seungmin)</a></li>
+         <li><a href="song.html?id=volcano" class="song-link">Volcano (HAN)</a></li>
+         <li><a href="song.html?id=lovestay" class="song-link">#LoveSTAY</a></li>
+                  <li><a href="song.html?id=fam" class="song-link">FAM</a></li>
+
+        </ul>
+    </div>      
+
+  </div>
+
+<div id="quiz-overlay" class="quiz-overlay hidden">
+
+  <div class="quiz-right-panel">
+        <img src="images/quizallin.jpg" alt="Quiz Art">
+    </div>
+
+    <!-- Кнопка закрытия всего квиза -->
+    <button id="quiz-global-close" class="quiz-close">×</button>
+
+    <!-- 1. СТАРТОВОЕ ОКНО (НАСТРОЙКИ) -->
+    <div id="quiz-start-screen" class="quiz-game">
+        <div class="quiz-content">
+            <!-- Картинка квиза -->
+            <img src="images/quiz.png" alt="Quiz" class="quiz-image">
+            
+            <h2 class="quiz-title">Choose Mode</h2>
+            
+            <!-- Выбор режима -->
+            <div class="quiz-modes">
+                <button class="quiz-mode active" data-mode="words">Words only</button>
+                <button class="quiz-mode" data-mode="grammar">Grammar only</button>
+                <button class="quiz-mode" data-mode="mixed">Words & Grammar</button>
+            </div>
+
+            <button id="btn-start-quiz" class="quiz-start">START</button>
+        </div>
+    </div>
+
+    <!-- 2. ИГРОВОЕ ОКНО -->
+    <div id="quiz-game-screen" class="quiz-game hidden">
+        <!-- Поле с заданием -->
+        <div class="quiz-task-board">
+            <span id="quiz-question-text" class="quiz-task-text">Question here</span>
+        </div>
+
+        <!-- Контейнер для вариантов ответа (кнопки) -->
+        <div id="quiz-options-container" class="quiz-answers">
+            <!-- Сюда JS будет вставлять кнопки вариантов -->
+        </div>
+
+        <!-- Контейнер для ввода (для последних вопросов) -->
+        <div id="quiz-input-container" class="quiz-input-wrapper">
+            <input type="text" id="quiz-input-field" class="quiz-input" placeholder="Type answer..." autocomplete="off">
+            <button id="quiz-input-submit" class="quiz-input-submit">
+                ➜ <!-- Стрелочка -->
+            </button>
+        </div>
+
+       <button id="quiz-next-btn" class="quiz-next">➜</button>
+</div>
+    <!-- 3. ОКНО РЕЗУЛЬТАТОВ -->
+    <div id="quiz-result-screen" class="quiz-result-overlay hidden">
+        <button id="quiz-result-close" class="quiz-close">×</button>
+        
+        <div style="margin-top: 60px;">
+            <div id="quiz-final-score" class="quiz-score">5 / 8</div>
+            <!-- Сюда подставится рандомная картинка -->
+            <img id="quiz-result-img" src="" class="quiz-result-img">
+            <div id="quiz-result-quote" class="quiz-result-quote">Quote text</div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+
+  <!-- СОЦСЕТИ -->
+  <div class="social-footer">
+    
+<!-- TIKTOK -->
+<a href="https://www.tiktok.com/@wayindazen" target="_blank" class="social-icon tiktok">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <!-- Правильная "нота" ТикТока -->
+    <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a90.92 90.92 0 1 0 40.22 33.06V7.12h86.73a210.35 210.35 0 0 0 123.08 82z"/>
+  </svg>
+</a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/wayindazen/" target="_blank" class="social-icon insta">
+      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+
+    <!-- YOUTUBE -->
+    <a href="https://www.youtube.com/@wayindazen" target="_blank" class="social-icon youtube">
+      <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>

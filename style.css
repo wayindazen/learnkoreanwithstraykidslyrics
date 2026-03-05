@@ -1,0 +1,1276 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar { display: none; }
+
+/* === ЭТОТ КОД СКРЫВАЕТ МОБИЛЬНОЕ МЕНЮ НА КОМПЬЮТЕРЕ === */
+#mobile-menu-toggle,
+.mobile-menu-container {
+    display: none !important;
+}
+/* ====================================================== */
+
+#main-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#lyrics-column {
+  flex: 1.1;
+  padding: 40px 0 100px 0;
+  border-right: 1px solid #222;
+  position: relative; /* Добавил, чтобы оверлей позиционировался отсюда */
+}
+
+#song-title {
+  font-size: 36px;
+  margin: 0 0 20px 60px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-row {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.album-cover {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+.credits {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.credits p { margin: 0; }
+.credits strong { color: #fff; }
+.credits a {
+  color: #ff0000;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px dotted #ff0000;
+  transition: color 0.2s;
+}
+.credits a:hover { color: #fff; border-bottom-color: #fff; }
+
+.disclaimer {
+  margin-top: 0;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  opacity: 0.6;
+  font-style: italic;
+  max-width: 90%;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background: #333;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+}
+
+.line {
+  font-size: 26px;
+  margin-bottom: 6px;
+  margin-left: 60px;
+}
+.translation {
+  color: #ccc;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.segment { cursor: pointer; transition: opacity 0.2s; }
+.segment:hover { opacity: 0.8; }
+.lexicon {
+  border-bottom: 3px solid #90ee90;
+  box-shadow: 0 4px 10px -4px rgba(144, 238, 144, 0.3);
+}
+.grammar {
+  border-bottom: 3px solid #ffb7cf;
+  box-shadow: 0 4px 10px -4px rgba(255, 183, 207, 0.3);
+}
+.english-inline { color: #ff0000; font-size: 26px; }
+
+#sticker-board {
+  flex: 1;
+  background: #1a1a1a;
+  border-left: 2px solid #333;
+  position: relative;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.board-header {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sticker {
+  position: absolute;
+  width: 42%;
+  padding: 15px;
+  padding-top: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.6);
+  font-size: 16px;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
+  color: #111;
+  cursor: grab;
+}
+.sticker:active { cursor: grabbing; }
+.sticker.sticker-green { background: #90ee90; }
+.sticker.sticker-pink { background: #ffb7cf; }
+.sticker.sticker-split {
+  background: linear-gradient(to bottom right, #90ee90 50%, #ffb7cf 50%);
+}
+.sticker.sticker-split:hover { box-shadow: 0px 12px 25px rgba(0,0,0,0.7); }
+.sticker h3 { margin: 0 0 10px 0; font-size: 22px; font-weight: 800; }
+.sticker p { margin: 5px 0; font-size: 18px; line-height: 1.4; font-weight: 500; }
+
+.close-sticker {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  color: #000;
+}
+.close-sticker:hover { opacity: 1; }
+
+@keyframes popIn { from { transform: scale(0); } to { transform: scale(1); } }
+.interactive-word { border-bottom: 2px dashed #444; cursor: pointer; font-weight: bold; }
+.interactive-word:hover { background: rgba(0,0,0,0.1); }
+
+#context-bubble {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 15px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 2000;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+#context-bubble::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+}
+.ctx-header { font-size: 14px; color: #666; text-transform: uppercase; margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.ctx-item { margin-bottom: 12px; cursor: pointer; padding: 5px; border-radius: 4px; transition: background 0.1s; }
+.ctx-item:hover { background: #f0f0f0; }
+.ctx-song-title { font-weight: bold; font-size: 12px; color: #E91E63; margin-bottom: 2px; }
+.ctx-line-text { font-size: 14px; line-height: 1.3; }
+.highlight-match { background: transparent; color: #000; font-weight: bold; border-bottom: 2px solid #E91E63; }
+
+.board-image {
+  display: block;
+  width: 90%;
+  margin: 80px auto 20px auto;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.close-ctx {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+  line-height: 1;
+  z-index: 10;
+}
+.close-ctx:hover { color: #000; }
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+.main-title {
+  font-family: 'Rock Salt', cursive;
+  font-size: 50px;
+  line-height: 1.4;
+  margin-bottom: 60px;
+  color: #fff;
+  transform: rotate(-2deg);
+}
+.red-k { color: #ff0000; font-size: 1.2em; }
+.album-section {
+  margin-bottom: 50px;
+  border-top: 1px solid #333;
+  padding-top: 30px;
+}
+.album-title {
+  font-size: 24px;
+  color: #aaa;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.song-list { list-style: none; padding: 0; margin: 0; }
+.song-list li { margin-bottom: 15px; }
+.song-link {
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.song-link:hover {
+  color: #ff0000;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #333;
+  transform: scale(1.05);
+}
+.home-footer { margin-top: 100px; color: #555; font-size: 12px; }
+
+/* HOME PAGE EXTRA STYLES */
+.home-container { max-width: 100%; margin: 0; padding: 0 20px 50px 20px; text-align: center; }
+.home-header-wrapper { display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 20px; padding-top: 10px; width: 100%; }
+.start-img { height: 220px; width: auto; object-fit: contain; }
+@media (max-width: 1000px) { .start-img { height: 150px; } }
+.title-container { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; }
+.home-subtitle { color: #888; font-size: 14px; font-style: italic; margin-top: -20px; margin-bottom: 30px; }
+.home-separator { border: 0; height: 1px; background: #333; margin-bottom: 40px; width: 100%; }
+.albums-grid {
+  column-count: 2;
+  column-gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.album-column { display: flex; flex-direction: column; break-inside: avoid;
+  margin-bottom: 40px;}
+.social-footer { margin-top: 80px; display: flex; justify-content: center; gap: 30px; padding-bottom: 40px; }
+.social-icon svg { width: 30px; height: 30px; fill: #555; transition: all 0.3s; }
+.social-icon:hover svg { fill: #fff; transform: scale(1.2); }
+.social-icon.tiktok:hover svg { fill: #ff0050; }
+.social-icon.youtube:hover svg { fill: #ff0000; }
+.social-icon.insta:hover svg { fill: #E1306C; }
+
+.title-wrapper { display: flex; align-items: center; gap: 20px; margin: 0 0 10px 60px; }
+#song-title { margin: 0; line-height: 1.1; }
+.back-button {
+  display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1); transition: all 0.2s; text-decoration: none;
+}
+.back-button svg { width: 24px; height: 24px; fill: #fff; }
+.back-button:hover { background: #ff0000; transform: scale(1.1); }
+
+details.english-accordion { margin-bottom: 30px; border-left: 2px solid #ff0000; padding-left: 15px; }
+details.english-accordion summary { color: #ff0000; font-size: 20px; font-weight: bold; cursor: pointer; list-style: none; opacity: 0.8; transition: opacity 0.2s; }
+details.english-accordion summary:hover { opacity: 1; }
+details.english-accordion summary::after { content: " +"; font-size: 24px; }
+details.english-accordion[open] summary::after { content: " −"; }
+details.english-accordion .accordion-content { margin-top: 15px; color: #ff0000; font-size: 20px; line-height: 1.6; white-space: pre-wrap; font-family: Arial, sans-serif; }
+
+/* === КНОПКА ГЛОБАЛЬНОГО КВИЗА НА ГЛАВНОЙ === */
+.global-quiz-btn {
+  /* Базовые сбросы для тега button */
+  border: none;
+  background: transparent;
+  font-family: inherit; /* Чтобы шрифт наследовался */
+  
+  /* Стили как у .song-link */
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  
+  /* Оформление */
+  padding: 10px 40px;     /* Чуть шире, чем у песен */
+  border: 2px solid #ff0000; /* Красная рамка сразу, чтобы выделялась */
+  border-radius: 50px;    /* Делаем её овальной (pill shape) */
+  transition: all 0.3s ease;
+  
+  /* Позиционирование */
+  margin-top: 10px;       /* Отступ от подзаголовка */
+  /* margin-bottom уже регулируется отступом subtitle, который ты менял */
+}
+
+/* Эффект при наведении (как у песен, но чуть ярче) */
+.global-quiz-btn:hover {
+  background: #ff0000;    /* Заливаем красным */
+  color: #fff;            /* Текст белый */
+  transform: scale(1.05); /* Легкое увеличение */
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4); /* Добавляем красное свечение */
+}
+
+/* Эффект нажатия */
+.global-quiz-btn:active {
+  transform: scale(0.95);
+}
+
+/* === ПАНЕЛЬ КНОПОК (КВИЗ + ПОИСК) === */
+.action-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* === КНОПКА ГЛОБАЛЬНОГО КВИЗА НА ГЛАВНОЙ === */
+.global-quiz-btn {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 24px; /* Чуть уменьшил шрифт, чтобы влезло в фиксированную ширину */
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  
+  /* ЖЕСТКИЕ РАЗМЕРЫ */
+  width: 260px;
+  height: 56px;
+  box-sizing: border-box;
+  
+  /* Выравнивание текста ровно по центру */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; 
+  margin: 0;
+  
+  border: 2px solid #ff0000;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.global-quiz-btn:hover {
+  background: #ff0000;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.global-quiz-btn:active {
+  transform: scale(0.95);
+}
+
+/* === СТИЛИ ПОИСКА === */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* ТАКИЕ ЖЕ ЖЕСТКИЕ РАЗМЕРЫ КАК У КНОПКИ */
+  width: 260px;
+  height: 56px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 20px; /* Отступ иконки от левого края */
+  top: 50%;
+  transform: translateY(-50%); /* Строго по центру по вертикали */
+  pointer-events: none;
+}
+
+.song-search-input {
+  background: transparent;
+  border: 2px solid #ff0000;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  
+  /* ЗАПОЛНЯЕТ ВЕСЬ WRAPPER (260x56) */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+  padding: 0 20px 0 50px; /* Отступы для текста внутри, чтобы не наезжал на лупу */
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.song-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.song-search-input:focus {
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  background: rgba(255, 0, 0, 0.05);
+}
+
+/* Эффект подсветки найденных песен */
+.song-link.search-highlight {
+  color: #ff0000 !important;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+/* ПРАВАЯ ПАНЕЛЬ С КАРТИНКОЙ */
+.quiz-right-panel {
+    position: fixed;       /* Фиксируем относительно окна браузера */
+    top: 0;
+    right: 0;
+    width: 48%;            /* Занимаем оставшиеся 48% экрана (т.к. квиз 52%) */
+    height: 100%;          /* На всю высоту */
+    background: #000;      /* Черный фон */
+    display: flex;         /* Включаем выравнивание */
+    align-items: center;   /* Центр по вертикали */
+    justify-content: center; /* Центр по горизонтали */
+    z-index: 1;            /* Уровень фона */
+    border-left: 1px solid #333; /* Тонкая линия разделитель (по желанию) */
+}
+
+/* Настройки самой картинки */
+.quiz-right-panel img {
+    max-width: 90%;        /* Не больше ширины блока */
+    max-height: 90%;       /* Не больше высоты блока */
+    object-fit: contain;   /* Сохраняем пропорции, чтобы не растягивалась */
+    box-shadow: 0 0 30px rgba(0,0,0,0.8); /* Красивая тень вокруг картинки */
+}
+
+/* === КНОПКА КВИЗА (Поправленная, чтобы быть на доске) === */
+.quiz-button {
+  position: absolute;
+  top: 30px;
+  left: 65px; /* Слева сверху на доске */
+  
+  width: 56px; height: 56px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; user-select: none; transition: background 0.2s ease;
+  z-index: 100;
+}
+.quiz-text { color: #ffffff; font-weight: 600; font-size: 16px; }
+.quiz-button:hover { background: #ff2a2a; }
+
+
+/* ====================================================== */
+/* === НОВЫЕ СТИЛИ ДЛЯ КВИЗА (ДОБАВЛЕНЫ ВНИЗУ)        === */
+/* ====================================================== */
+.hidden { display: none !important; }
+
+/* Оверлей на половину экрана */
+.quiz-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 52%; /* 50% экрана */
+  height: 100%;
+  background: #000;
+  z-index: 999;
+  display: flex; flex-direction: column;
+}
+
+/* Экраны квиза */
+.quiz-game, .quiz-result-overlay {
+  position: relative; width: 100%; height: 100%; padding: 40px; box-sizing: border-box;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+/* Кнопка закрытия */
+.quiz-close {
+  position: absolute; top: 20px; right: 20px; font-size: 28px; background: none; border: none;
+  color: #fff; cursor: pointer; z-index: 10000;
+}
+.quiz-close:hover { color: #ff0000; }
+
+/* Стартовое окно */
+.quiz-content { text-align: center; }
+.quiz-image { width: 200px; margin-bottom: 30px; }
+.quiz-title {
+  display: none;
+}
+.quiz-modes {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-bottom: 2cm;
+  margin-left: 60px;   /* ← сдвиг вправо */
+}
+.quiz-mode {
+  position: relative;
+  background: none;
+  border: none;
+  color: #777;
+  font-family: 'Rock Salt', cursive;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 10px; /* добавляет пространство по бокам для линии */
+}
+.quiz-mode::after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  right: -7px;   /* линия выходит за текст */
+  top: 50%;
+  height: 0.5px;
+  background: #777;
+  transform: translateY(-50%);
+}
+.quiz-mode.active { color: #ff0000; text-decoration: none; }
+.quiz-mode.active::after {
+  display: none;
+}
+.quiz-start {
+  width: 64px; height: 64px; border-radius: 50%; background: rgba(255,255,255,0.08);
+  border: none; color: #fff; font-weight: 600; cursor: pointer;
+}
+.quiz-start:hover { background: #ff0000; }
+
+/* Игровое поле */
+.quiz-task-board {
+  width: 90%; 
+  height: 160px; /* Фиксированная высота */
+  background: #1a1a1a; 
+  margin: 0 auto 40px auto;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 8px;
+  padding: 10px;
+  overflow: hidden; /* Если текст гигантский, он не сломает верстку */
+}
+.quiz-task-text { color: #fff; font-size: 26px; font-weight: 600; text-align: center; }
+
+.quiz-answers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; width: 100%; }
+.quiz-answer {
+  background: #2a2a2a; color: #fff; border: 2px solid transparent; min-height: 100px; padding: 10px;
+  font-size: 20px; display: flex; align-items: center; justify-content: center; text-align: center;
+  cursor: pointer; border-radius: 6px;
+}
+.quiz-answer:hover { background: #333; }
+
+/* Поле ввода */
+.quiz-input-wrapper { display: none; gap: 10px; justify-content: center; margin-top: 20px; }
+.quiz-input { padding: 8px 12px; font-size: 1rem; border: 2px solid #555; background: #222; color: white; width: 200px; text-align: center; border-radius: 6px; }
+.quiz-input.correct { border-color: #00ff00 !important; color: #00ff00; }
+.quiz-input.wrong { border-color: #ff0000 !important; color: #ff0000; }
+.quiz-input-submit { background: #555; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; }
+.quiz-input-submit:hover { background: #ff0000; }
+
+/* Кнопка Далее */
+.quiz-next {
+  position: absolute; right: 20px; top: 30%; transform: translateY(-50%);
+  width: 64px; height: 64px; border-radius: 50%; background: #3a3a3a; border: none; color: #fff; font-size: 28px; cursor: pointer; z-index: 400;
+}
+.quiz-next:hover { background: #ff0000; }
+
+/* Результаты */
+.quiz-score { font-size: 2rem; margin-bottom: 20px; font-weight: bold; }
+.quiz-result-img { max-width: 400px; margin: 0 auto 20px; display: block; }
+.quiz-result-quote { font-size: 1.2rem; color: #ccc; }
+
+.quiz-result-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 👈 вместо центра */
+  padding-top: 60px;           /* 👈 насколько вверх */
+  text-align: center;
+  flex-direction: column;
+}
+
+.quiz-score {
+  color: white;
+}
+
+.quiz-result-quote {
+  white-space: pre-line;
+}
+/*grammar conjugation*/
+
+/* --- Красный жирный текст --- */
+.red-bold {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/* --- Ссылки на исключения --- */
+.rule-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rule-link:hover {
+    color: #ff2a2a;
+}
+
+/* --- Две колонки --- */
+.two-column {
+    display: flex;
+    gap: 40px; /* расстояние между колонками */
+    margin-bottom: 12px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* --- Рамочка для текста --- */
+.boxed {
+    border: 1px solid #ffffff;
+    padding: 6px 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+/* --- Линия-разделитель почти по всей доске --- */
+.divider {
+    border: 0;
+    border-top: 1px solid #ffffff;
+    margin: 12px 0;
+}
+
+/* --- Заголовки подзаголовки --- */
+h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 24px 0 12px;
+}
+
+h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 18px 0 10px;
+}
+
+/* === DESKTOP GRAMMAR TOGGLE (Grrr) === */
+#desktop-grammar-wrapper {
+  position: absolute;
+  top: 30px;
+  left: 167px; /* Стоит там же, где раньше была кнопка 아/어 */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 300;
+}
+
+/* Кнопка Grrr */
+#grrr-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+/* Выезжающие кнопки (Tabs) */
+#grammar-tabs {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: all 0.4s ease; /* Плавный выезд */
+}
+
+/* Эффект при наведении на весь блок */
+#desktop-grammar-wrapper:hover #grrr-button {
+  background: #ff2a2a; /* Краснеет при наведении */
+}
+
+#desktop-grammar-wrapper:hover #grammar-tabs {
+  opacity: 1;
+  max-width: 400px; 
+  overflow: visible; 
+}
+
+/* === ВЫПАДАЮЩЕЕ МЕНЮ (Levels) === */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 15px; /* Отступ вниз от кнопки Levels */
+  display: none;
+  flex-direction: row;
+  gap: 8px;
+  z-index: 300;
+  width: max-content;
+}
+
+/* Показываем меню при наведении */
+.dropdown-wrapper:hover .dropdown-content {
+  display: flex;
+}
+
+/* Кнопки внутри выпадающего меню */
+.g-sub-tab {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #222; /* Темно-серый фон */
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+.g-sub-tab:hover {
+  background: #ff2a2a;
+  border-color: #ff2a2a;
+  transform: scale(1.05);
+}
+
+/* Сами маленькие кнопочки */
+.g-tab {
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease, transform 0.1s;
+}
+
+.g-tab:hover {
+  background: #ff2a2a;
+  transform: scale(1.05);
+}
+
+/* Кнопка закрытия портянки */
+.close-portion {
+  text-align: right;
+  color: #ff2a2a;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* --- Портянка на доске --- */
+#grammar-portion {
+  position: relative; /* ВАЖНО: Делаем частью потока, убираем absolute */
+  margin: 110px 10px 50px 10px; /* Отступы: сверху (под кнопки), по бокам, снизу */
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  z-index: 200;
+  display: none;
+  font-size: 14px;
+  line-height: 2;
+  border-radius: 8px;
+}
+
+/* --- Гиперссылки в портянке --- */
+#grammar-portion a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+#grammar-portion a:hover {
+  color: #ff2a2a;
+}
+
+/* --- Модалки --- */
+.grammar-modal {
+  position: absolute; /* относительно доски */
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 70%;
+  overflow-y: auto;
+  z-index: 500;
+  display: none;
+  border-radius: 8px;
+}
+#grammar-portion .red-bold {
+    margin: 20px 0 0px;   /* сверху 12px, снизу 6px (подгоняешь) */
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.grammar-modal h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.grammar-modal ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.grammar-modal li {
+  margin-bottom: 4px;
+}
+
+.grammar-modal .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.grammar-modal .close-modal:hover {
+  color: #ff2a2a;
+}
+
+/* === ТАБЛИЦЫ ГРАММАТИКИ (는 것) === */
+.grammar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.grammar-table th, 
+.grammar-table td {
+  border: 1px solid #fff;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle; /* Выравниваем по центру по вертикали */
+  position: relative; /* ВАЖНО для позиционирования значков на границе */
+}
+
+.grammar-table th {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+}
+
+/* Контейнер для скролла на мобилках */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto; /* Позволяет таблице скроллиться вправо-влево */
+  margin-bottom: 20px;
+}
+
+/* === ЗНАЧКИ VS === */
+.vs-badge {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Специальный класс для значков, которые сидят НА ГРАНИЦЕ таблицы */
+.vs-on-border {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Сдвигает значок ровно на середину линии */
+  z-index: 2;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5); /* Легкая тень, чтобы выделялось */
+}
+
+/* Отступ для текста в ячейке, чтобы значок его не перекрывал */
+.pad-left-for-badge {
+  padding-left: 25px !important;
+}
+
+.vs-green { background-color: #90ee90; }
+.vs-pink  { background-color: #ffb7cf; }
+.vs-red   { background-color: #ff0000; }
+
+.vs-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* === DISABLE TEXT SELECTION FOR LYRICS (ANTI-COPY BASIC) === */
+#lyrics-container,
+#lyrics-container * {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Но клики должны работать */
+.segment,
+.interactive-word {
+  user-select: none;
+  cursor: pointer;
+}
+
+
+/* 📱 MOBILE (SMARTPHONE ONLY) */
+@media (max-width: 768px) {
+
+  /* =========================
+     HOME PAGE
+  ========================== */
+  .albums-grid {
+    column-count: 1;
+  }
+
+  .home-header-wrapper {
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px 0;
+    padding-top: 0;
+  }
+
+  .start-img {
+    height: 80px;
+  }
+
+  .main-title {
+    font-size: 32px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+
+  .home-subtitle {
+    font-size: 13px;
+    margin: 5px 0;
+  }
+
+/* ========================================= */
+/* === MOBILE VERSION (SMARTPHONE ONLY) === */
+/* ========================================= */
+
+  /* 1. КОНТЕЙНЕР */
+  #main-container {
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* 2. ЛЕВАЯ КОЛОНКА (Сброс отступов) */
+  #lyrics-column {
+    width: 100%;
+    border-right: none;
+    padding: 20px; /* Общий отступ от краев экрана */
+    z-index: 1;
+    position: relative;
+    box-sizing: border-box; /* Важно, чтобы padding не расширял экран */
+  }
+
+  /* !!! ГЛАВНОЕ ИСПРАВЛЕНИЕ ОТСТУПА !!! */
+  /* Сбрасываем десктопные 60px в ноль */
+  #song-title, 
+  .header-row, 
+  .disclaimer, 
+  .separator, 
+  .line, 
+  .translation, 
+  .title-wrapper,
+  .quiz-modes {
+    margin-left: 0 !important; 
+    margin-right: 0 !important;
+  }
+
+  /* Настраиваем заголовок */
+  #song-title {
+    font-size: 24px; /* Чуть меньше */
+    white-space: normal; /* Разрешаем перенос строк */
+    padding-right: 50px; /* Место справа, чтобы не наезжать на кнопку меню */
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+  }
+.header-row {
+  font-size: 12px;       /* уменьшенный шрифт для артиста, альбома и лейбла */
+  line-height: 1.2;      /* компактнее по вертикали */
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.credits {
+  font-size: 12px;       /* уменьшенный шрифт */
+  line-height: 1.2;      /* уменьшает вертикальные промежутки между строк */
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+  .disclaimer {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+  font-size: 8px; /* если нужно ещё компактнее */
+}
+
+.separator {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.title-wrapper {
+  margin-top: 0px !important;
+  margin-bottom: 5px !important;
+}
+  /* Обложка альбома чуть меньше */
+  .album-cover {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Ссылки и текст */
+  .line { font-size: 24px; }
+  .translation { font-size: 14px; }
+  .english-inline { font-size: 18px; }
+
+
+  /* 3. ПРАВАЯ КОЛОНКА (ПРОЗРАЧНАЯ) */
+  #sticker-board {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    z-index: 10;
+    pointer-events: none; /* Клики сквозь доску */
+  }
+
+  /* Скрываем лишнее с доски */
+  .board-header, .board-image, .quiz-button, #grammar-button {
+    display: none !important; 
+  }
+
+  /* 4. СТИКЕРЫ */
+  .sticker {
+    pointer-events: auto;
+    width: 80% !important;
+    left: 10% !important;
+    z-index: 100;
+  }
+
+/* 5. МОДАЛКИ (ПРАВИЛА И ИСКЛЮЧЕНИЯ) */
+  #grammar-portion {
+    position: fixed;       
+    top: 80px;             /* Начинаем ровно под кнопкой-гамбургером */
+    left: 0; 
+    width: 100%;           
+    bottom: 0;             /* Прижимаем к самому низу экрана */
+    
+    margin: 0 !important;  /* ВАЖНО: убиваем десктопные дыры сверху и снизу! */
+    
+    overflow-y: auto;      
+    pointer-events: auto;  
+    z-index: 200;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.8);
+    border-top: 2px solid #444;
+    border-radius: 12px 12px 0 0; /* Скругляем только верхние углы, низ будет ровным */
+    background: #1a1a1a;
+    padding: 15px 15px 40px 15px; /* Даем чуть больше места снизу для комфортного скролла пальцем */
+    box-sizing: border-box;
+  }
+
+  /* ВОТ ЭТО ЧИНИТ КРЕСТИКИ НА МАЛЕНЬКИХ МОДАЛКАХ */
+  .grammar-modal {
+    pointer-events: auto !important; /* РАЗРЕШАЕМ КЛИКАТЬ */
+    z-index: 5000 !important; /* ВЫТАСКИВАЕМ НА САМЫЙ ВЕРХ */
+    position: fixed !important; /* Фиксируем, чтобы не улетало */
+    top: 50% !important;        /* Центруем по вертикали */
+    left: 50% !important;       /* Центруем по горизонтали */
+    transform: translate(-50%, -50%) !important; /* Ровно по центру */
+    width: 80% !important;
+    max-width: 300px;
+  }
+  
+  /* Делаем кнопку закрытия в модалке крупнее, чтобы пальцем попасть */
+  .grammar-modal .close-modal {
+    pointer-events: auto !important;
+    font-size: 30px !important;
+    padding: 10px !important;
+    top: 5px !important;
+    right: 5px !important;
+  }
+
+.grammar-table { font-size: 12px; /* Уменьшаем шрифт */ } 
+.grammar-table th, .grammar-table td { padding: 6px; /* Уменьшаем отступы */ } 
+.pad-left-for-badge { padding-left: 18px !important; /* Уменьшаем отступ под значок */ } 
+.vs-badge { font-size: 10px; padding: 1px 4px; }
+
+  /* 6. КВИЗ */
+  .quiz-overlay {
+    width: 100%;
+    z-index: 4000; /* Самый верх */
+  }
+  .quiz-task-board {
+    width: 95%;         /* чуть шире экрана, но с отступами */
+    height: 120px;      /* меньше, чтобы не занимало слишком много места */
+    padding: 0px;       /* меньше паддинга */
+  }
+
+  .quiz-task-text {
+    font-size: 18px;    /* уменьшаем шрифт для мобильного */
+  }
+  .quiz-answers {
+    display: grid;
+    grid-template-columns: repeat(2, 160px); /* фиксированная ширина колонок */
+    justify-content: center; /* центрируем сетку на экране */
+    gap: 10px;               /* отступ между ячейками */
+  }
+
+  .quiz-answer {
+    width: 160px;       /* фиксированная ширина */
+    height: 120px;       /* фиксированная высота */
+    font-size: 16px;    /* адаптация текста */
+    padding: 8px;       
+    box-sizing: border-box; /* чтобы padding не увеличивал размеры */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+/* Скрываем правую картинку на телефоне */
+  .quiz-right-panel {
+    display: none !important;
+  }
+  /* 7. КНОПКА МЕНЮ (ГАМБУРГЕР) */
+  #mobile-menu-toggle {
+    display: block !important;
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    font-size: 28px;
+    color: #fff;
+    z-index: 3000;
+    background: rgba(0,0,0,0.6); /* Полупрозрачный фон */
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* МЕНЮ */
+  .mobile-menu-container {
+    display: none;
+    position: fixed;
+    top: 0; right: 0;
+    width: 260px;
+    height: 100vh;
+    background: #111;
+    border-left: 1px solid #333;
+    z-index: 3001;
+    padding-top: 60px;
+    box-shadow: -10px 0 20px rgba(0,0,0,0.8);
+  }
+  .mobile-menu-container.active {
+    display: block !important;
+}
+  
+  .mobile-menu-item {
+    padding: 20px;
+    border-bottom: 1px solid #222;
+    font-size: 18px;
+  }
+  .mobile-menu-close {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 36px;
+    padding: 10px;
+  }
+  
+  /* Крестик внутри правил грамматики (появится через JS) */
+  .mobile-grammar-close {
+    display: block;
+    text-align: right;
+    font-size: 24px;
+    color: #ff0000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  #desktop-grammar-wrapper {
+    display: none !important; 
+  }
+  #lyrics-container {
+    user-select: none;
+    -webkit-user-select: none; /* для Safari/iOS */
+}
+/* 6. КВИЗ (ИСПРАВЛЕННЫЙ) */
+  .quiz-overlay {
+    width: 100% !important;
+    z-index: 99999 !important; /* Ставим выше вообще всего на свете (меню, модалки и т.д.) */
+    pointer-events: auto !important; /* ВАЖНО: принудительно возвращаем кликабельность! */
+  }
+
+  /* Это заставит кнопку гамбургера РЕАЛЬНО скрываться при открытом квизе */
+  #mobile-menu-toggle.hidden {
+    display: none !important;
+  }
+}  
