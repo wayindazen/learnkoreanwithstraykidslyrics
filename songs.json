@@ -45801,6 +45801,462 @@
     ]
   }
 ]
-}
+},
+    {
+    "id": "littlethings",
+    "title": "The Little Things (행복 뭐 별거 없네요) (I.N)",
+    "artist": "Stray Kids",
+    "album": "SKZ-RECORD / SKZ-PLAYER",
+    "cover": "images/replay.jpg",
+    "youtube": "https://youtu.be/bSZL3ZZC8EE?si=-ULqIWMgCQ_wfW_R",
+    "english_full": "",
+    "lines": [
+  {
+    "type": "korean",
+    "translation": "When I open the curtains, I see you",
+    "segments": [
+      { "text": "커튼", "type": "lexicon", "id": "n_curtain" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "열어", "type": "lexicon", "id": "v_yeolda" },
+      { "text": " ", "type": "text" },
+      { "text": "보", "type": "grammar", "id": "g_ah_eoboda" },
+      { "text": "면", "type": "grammar", "id": "g_eumyeon" },
+      { "text": " ", "type": "text" },
+      { "text": "그대", "type": "lexicon", "id": "n_geudae" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Dancing in the sunlight",
+    "segments": [
+      { "text": "햇빛", "type": "lexicon", "id": "v_sunlight" },
+      { "text": " ", "type": "text" },
+      { "text": "아래", "type": "lexicon", "id": "n_arae" },
+      { "text": "서", "type": "grammar", "id": "side_from" },
+      { "text": " ", "type": "text" },
+      { "text": "춤", "type": "lexicon", "id": "n_dance" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "추", "type": "lexicon", "id": "v_dance_move" },
+      { "text": "면서", "type": "grammar", "id": "g_while" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You notice me, and with your little hands,",
+    "segments": [
+      { "text": "날", "type": "lexicon", "id": "v_me_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "발견하", "type": "lexicon", "id": "v_balgyeonhada" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": " ", "type": "text" },
+      { "text": "작", "type": "lexicon", "id": "adj_jakta" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": "으로", "type": "grammar", "id": "g_direction_to" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You say good morning to me",
+    "segments": [
+      { "text": "아침", "type": "lexicon", "id": "achim" },
+      { "text": " ", "type": "text" },
+      { "text": "인사", "type": "lexicon", "id": "n_insa" },
+      { "text": "를", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "해", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "주", "type": "grammar", "id": "g_ah_eoju" },
+      { "text": "는군요", "type": "grammar", "id": "g_guna_gun" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You've placed constellations right into my heart",
+    "segments": [
+      { "text": "그", "type": "lexicon", "id": "n_geudae" },
+      { "text": "댄", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "맘", "type": "lexicon", "id": "n_heart_short" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "별자리", "type": "lexicon", "id": "n_byeoljari" },
+      { "text": "를", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "옮", "type": "lexicon", "id": "v_omgida" },
+      { "text": "겨", "type": "grammar", "id": "g_a_eo_nota" },
+      { "text": "놨", "type": "grammar", "id": "g_past_tense" },
+      { "text": "죠", "type": "grammar", "id": "g_ji_confirm" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "It leaves a tender ache in my chest, suddenly I'm looking forward to our ordinary tomorrows",
+    "segments": [
+      { "text": "시큰하", "type": "lexicon", "id": "adj_sikeunhada" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "아려", "type": "lexicon", "id": "arida" },
+      { "text": " ", "type": "text" },
+      { "text": "와요", "type": "grammar", "id": "g_fin_progress" },
+      { "text": ", ", "type": "text" },
+      { "text": "별거", "type": "lexicon", "id": "n_byeolgeot" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "내일", "type": "lexicon", "id": "n_tomorrow" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "기대돼요", "type": "lexicon", "id": "v_gidaedoeda" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Let's walk hand in hand, giving names to the leaning clouds",
+    "segments": [
+      { "text": "걷", "type": "lexicon", "id": "v_walk_irregular" },
+      { "text": "자", "type": "grammar", "id": "g_lets" },
+      { "text": " ", "type": "text" },
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": " ", "type": "text" },
+      { "text": "잡", "type": "lexicon", "id": "v_japda" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": ", ", "type": "text" },
+      { "text": "기", "type": "lexicon", "id": "v_giulda" },
+      { "text": "운", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "구름", "type": "lexicon", "id": "n_gureum" },
+      { "text": " ", "type": "text" },
+      { "text": "모양", "type": "lexicon", "id": "n_moyang" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "이름", "type": "lexicon", "id": "v_name" },
+      { "text": " ", "type": "text" },
+      { "text": "짓", "type": "lexicon", "id": "v_jitda" },
+      { "text": "고", "type": "grammar", "id": "g_and" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Through the unusually thick fog, holding onto each other so we don't lose our way",
+    "segments": [
+      { "text": "유별나", "type": "lexicon", "id": "adj_yubyeolnada" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "안개", "type": "lexicon", "id": "angae" },
+      { "text": " ", "type": "text" },
+      { "text": "속", "type": "lexicon", "id": "v_inside" },
+      { "text": ", ", "type": "text" },
+      { "text": "길", "type": "lexicon", "id": "v_road" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "잃", "type": "lexicon", "id": "v_ilda" },
+      { "text": "지 않", "type": "grammar", "id": "g_negation" },
+      { "text": "게", "type": "grammar", "id": "g_so_that" },
+      { "text": " ", "type": "text" },
+      { "text": "서", "type": "lexicon", "id": "adv_seoro" },
+      { "text": "롤", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "붙들", "type": "lexicon", "id": "v_butdeulda" },
+      { "text": "고", "type": "grammar", "id": "g_and" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Let’s walk walk walk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "With aimless talk talk talk",
+    "segments": [
+      { "text": "뜻", "type": "lexicon", "id": "n_tteut" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " talk talk talk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Let’s walk walk walk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "With aimless talk talk talk",
+    "segments": [
+      { "text": "뜻", "type": "lexicon", "id": "n_tteut" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " talk talk talk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Until tomorrow comes, don't worry about a thing",
+    "segments": [
+      { "text": "내일", "type": "lexicon", "id": "n_tomorrow" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "올", "type": "lexicon", "id": "v_come" },
+      { "text": " ", "type": "text" },
+      { "text": "때", "type": "grammar", "id": "g_when_time" },
+      { "text": "까지", "type": "grammar", "id": "g_until" },
+      { "text": ", ", "type": "text" },
+      { "text": "신경", "type": "lexicon", "id": "singyeong" },
+      { "text": "은", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "쓰", "type": "lexicon", "id": "v_sseuda" },
+      { "text": "지 마요", "type": "grammar", "id": "g_negative_command" },
+      { "text": " ", "type": "text" },
+      { "text": "위", "type": "lexicon", "id": "v_top_above" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "박", "type": "lexicon", "id": "v_be_stuck" },
+      { "text": "힌", "type": "grammar", "id": "g_un_modifier" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "The starry decorations filling the night sky above, I'll leave them on all night just for you",
+    "segments": [
+      { "text": "밤하늘", "type": "lexicon", "id": "n_bamhaneul" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "빼곡", "type": "lexicon", "id": "adj_bbaegokhada" },
+      { "text": "한", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" },
+      { "text": "의", "type": "grammar", "id": "g_possessive" },
+      { "text": " ", "type": "text" },
+      { "text": "장식", "type": "lexicon", "id": "n_jangsik" },
+      { "text": ", ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "n_geudae" },
+      { "text": "댈", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "위해", "type": "grammar", "id": "g_wihada" },
+      { "text": " ", "type": "text" },
+      { "text": "밤새", "type": "lexicon", "id": "adv_bamsae" },
+      { "text": " ", "type": "text" },
+      { "text": "켜", "type": "lexicon", "id": "kyeoda" },
+      { "text": "놓", "type": "grammar", "id": "g_a_eo_nota" },
+      { "text": "을 테니", "type": "grammar", "id": "g_eul_tenikka" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I don't know why, but my heart feels so strange",
+    "segments": [
+      { "text": "어찌", "type": "lexicon", "id": "adv_eojji" },
+      { "text": " ", "type": "text" },
+      { "text": "그런", "type": "lexicon", "id": "adj_like_that_near" },
+      { "text": "지", "type": "grammar", "id": "g_eulji" },
+      { "text": " ", "type": "text" },
+      { "text": "마음", "type": "lexicon", "id": "n_heart_short" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "이상해요", "type": "lexicon", "id": "adj_isanghada" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Come lay your head on my arm, and let's lock eyes all through the night",
+    "segments": [
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "팔", "type": "lexicon", "id": "n_pal_arm" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "기대", "type": "lexicon", "id": "gidaeda" },
+      { "text": " ", "type": "text" },
+      { "text": "누워요", "type": "lexicon", "id": "v_nupda" },
+      { "text": ", ", "type": "text" },
+      { "text": "밤새", "type": "lexicon", "id": "adv_bamsae" },
+      { "text": " ", "type": "text" },
+      { "text": "두", "type": "lexicon", "id": "num_du" },
+      { "text": " ", "type": "text" },
+      { "text": "눈", "type": "lexicon", "id": "v_eye" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "마주쳐", "type": "lexicon", "id": "v_majuchida" },
+      { "text": "줘요", "type": "grammar", "id": "g_ah_eoju" }
+    ]
+  },
+   {
+    "type": "korean",
+    "translation": "Let's walk hand in hand, giving names to the leaning clouds",
+    "segments": [
+      { "text": "걷", "type": "lexicon", "id": "v_walk_irregular" },
+      { "text": "자", "type": "grammar", "id": "g_lets" },
+      { "text": " ", "type": "text" },
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": " ", "type": "text" },
+      { "text": "잡", "type": "lexicon", "id": "v_japda" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": ", ", "type": "text" },
+      { "text": "기", "type": "lexicon", "id": "v_giulda" },
+      { "text": "운", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "구름", "type": "lexicon", "id": "n_gureum" },
+      { "text": " ", "type": "text" },
+      { "text": "모양", "type": "lexicon", "id": "n_moyang" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "이름", "type": "lexicon", "id": "v_name" },
+      { "text": " ", "type": "text" },
+      { "text": "짓", "type": "lexicon", "id": "v_jitda" },
+      { "text": "고", "type": "grammar", "id": "g_and" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Through the unusually thick fog, holding onto each other so we don't lose our way",
+    "segments": [
+      { "text": "유별나", "type": "lexicon", "id": "adj_yubyeolnada" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "안개", "type": "lexicon", "id": "angae" },
+      { "text": " ", "type": "text" },
+      { "text": "속", "type": "lexicon", "id": "v_inside" },
+      { "text": ", ", "type": "text" },
+      { "text": "길", "type": "lexicon", "id": "v_road" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "잃", "type": "lexicon", "id": "v_ilda" },
+      { "text": "지 않", "type": "grammar", "id": "g_negation" },
+      { "text": "게", "type": "grammar", "id": "g_so_that" },
+      { "text": " ", "type": "text" },
+      { "text": "서", "type": "lexicon", "id": "adv_seoro" },
+      { "text": "롤", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "붙들", "type": "lexicon", "id": "v_butdeulda" },
+      { "text": "고", "type": "grammar", "id": "g_and" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Let’s walk walk walk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "With aimless talk talk talk",
+    "segments": [
+      { "text": "뜻", "type": "lexicon", "id": "n_tteut" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " talk talk talk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Let’s walk walk walk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "With aimless talk talk talk",
+    "segments": [
+      { "text": "뜻", "type": "lexicon", "id": "n_tteut" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " talk talk talk", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I know we'll last forever, exactly as we are right now",
+    "segments": [
+      { "text": "우린", "type": "lexicon", "id": "cont_we_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "분명", "type": "lexicon", "id": "adv_clear" },
+      { "text": " ", "type": "text" },
+      { "text": "영원", "type": "lexicon", "id": "v_yeongwonhada" },
+      { "text": "할", "type": "grammar", "id": "g_ul_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "거", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "야", "type": "grammar", "id": "v_to_be" },
+      { "text": ", ", "type": "text" },
+      { "text": "딱", "type": "lexicon", "id": "ttak" },
+      { "text": " ", "type": "text" },
+      { "text": "이", "type": "lexicon", "id": "v_this" },
+      { "text": " ", "type": "text" },
+      { "text": "상태", "type": "lexicon", "id": "n_state" },
+      { "text": "로", "type": "grammar", "id": "g_direction_to" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "On the day I look back at the end of my life, I'll leave this world holding onto the memories made with you",
+    "segments": [
+      { "text": "일생", "type": "lexicon", "id": "n_ilsaeng" },
+      { "text": " ", "type": "text" },
+      { "text": "끝", "type": "lexicon", "id": "v_end" },
+      { "text": " ", "type": "text" },
+      { "text": "기억", "type": "lexicon", "id": "n_gieok" },
+      { "text": "될", "type": "grammar", "id": "cont_twel" },
+      { "text": " ", "type": "text" },
+      { "text": "날", "type": "lexicon", "id": "v_day" },
+      { "text": ", ", "type": "text" },
+      { "text": "당신", "type": "lexicon", "id": "pron_dangsin" },
+      { "text": "과", "type": "grammar", "id": "g_and_with" },
+      { "text": " ", "type": "text" },
+      { "text": "함께", "type": "lexicon", "id": "v_together" },
+      { "text": " ", "type": "text" },
+      { "text": "있", "type": "lexicon", "id": "v_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "추억", "type": "lexicon", "id": "n_chueok" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "가지", "type": "lexicon", "id": "v_gajida" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": " ", "type": "text" },
+      { "text": "떠", "type": "lexicon", "id": "v_tteonada" },
+      { "text": "날", "type": "grammar", "id": "g_ul_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "거", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "야", "type": "grammar", "id": "v_to_be" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Turns out, happiness is nothing complicated after all",
+    "segments": [
+      { "text": "행복", "type": "lexicon", "id": "n_haengbok" },
+      { "text": " ", "type": "text" },
+      { "text": "뭐", "type": "lexicon", "id": "v_what" },
+      { "text": " ", "type": "text" },
+      { "text": "별거", "type": "lexicon", "id": "n_byeolgeot" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "네요", "type": "grammar", "id": "g_surprise" }
+    ]
+  }
+]}
   ]
+
 
