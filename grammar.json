@@ -9397,9 +9397,85 @@
     "word": "페브리즈",
     "type": "lexicon",
     "meanings": ["Febreze"]
+  },
+   "n_curtain": {
+    "word": "커튼",
+    "category": "lexicon",
+    "meanings": ["curtain"]
+  },
+  "v_balgyeonhada": {
+    "word": "발견하다",
+    "category": "lexicon",
+    "meanings": ["to discover", "to find"]
+  },
+  "v_omgida": {
+    "word": "옮기다",
+    "category": "lexicon",
+    "meanings": ["to move", "to shift (something)"]
+  },
+  "adj_sikeunhada": {
+    "word": "시큰하다",
+    "category": "lexicon",
+    "meanings": ["to ache", "to tingle (often from emotion or cold)"]
+  },
+  "v_gidaedoeda": {
+    "word": "기대되다",
+    "category": "lexicon",
+    "meanings": ["to look forward to", "to be expected"]
+  },
+  "v_giulda": {
+    "word": "기울다",
+    "category": "lexicon",
+    "meanings": ["to lean", "to tilt", "to decline"]
+  },
+"n_moyang": {
+    "word": "모양",
+    "category": "lexicon",
+    "meanings": ["shape", "form", "appearance"]
+  },
+  "adj_yubyeolnada": {
+    "word": "유별나다",
+    "category": "lexicon",
+    "meanings": ["to be unusual", "to be extraordinary", "to be peculiar"]
+  },
+"v_butdeulda": {
+    "word": "붙들다",
+    "category": "lexicon",
+    "meanings": ["to hold onto", "to grasp", "to cling to"]
+  },
+  "n_tteut": {
+    "word": "뜻",
+    "category": "lexicon",
+    "meanings": ["meaning", "intention", "will"]
+  },
+  "n_jangsik": {
+    "word": "장식",
+    "category": "lexicon",
+    "meanings": ["decoration", "ornament"]
+  },
+  "adv_eojji": {
+    "word": "어찌",
+    "category": "lexicon",
+    "meanings": ["how", "why", "in what way"]
+  },
+  "v_nupda": {
+    "word": "눕다",
+    "category": "lexicon",
+    "meanings": ["to lie down"]
+  },
+  "n_ilsaeng": {
+    "word": "일생",
+    "category": "lexicon",
+    "meanings": ["lifetime", "one's whole life"]
+  },
+  "pron_dangsin": {
+    "word": "당신",
+    "category": "lexicon",
+    "meanings": ["you (formal/respectful, or affectionate between partners)"]
   }
 
 }
+
 
 
 
