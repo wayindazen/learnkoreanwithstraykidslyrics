@@ -10052,7 +10052,7 @@
   },
   {
     "type": "korean",
-    "translation": "All you need is guts and reckless courage",
+    "translation": "All you need is ambition and reckless courage",
     "segments": [
       { "text": "필요", "type": "lexicon", "id": "n_need" },
       { "text": "한", "type": "grammar", "id": "g_un_modifier" },
@@ -20789,7 +20789,7 @@
   },
   {
     "type": "korean",
-    "translation": "I replace cash with guts and boldness",
+    "translation": "I replace cash with guts and ambition",
     "segments": [
       { "text": "패기", "type": "lexicon", "id": "n_paegi" },
       { "text": "와", "type": "grammar", "id": "g_and_with" },
@@ -38000,7 +38000,7 @@
   },
   {
     "type": "korean",
-    "translation": "The spirit and bravado still remain in our blood",
+    "translation": "The ambition and bravado still remain in our blood",
     "segments": [
       { "text": "여전히", "type": "lexicon", "id": "v_still" },
       { "text": " ", "type": "text" },
