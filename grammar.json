@@ -9472,6 +9472,45 @@
     "word": "당신",
     "category": "lexicon",
     "meanings": ["you (formal/respectful, or affectionate between partners)"]
+  },
+  "n_maenjeongsin": {
+    "word": "맨정신",
+    "category": "lexicon",
+    "meanings": ["sober mind", "sanity", "clear head"]
+  },
+"v_mihwadoeda": {
+    "word": "미화되다",
+    "category": "lexicon",
+    "meanings": ["to be glorified", "to be beautified", "to be romanticized"]
+  },
+  "det_cheot": {
+    "word": "첫",
+    "category": "lexicon",
+    "meanings": ["first"]
+  },
+  "n_danchu": {
+    "word": "단추",
+    "category": "lexicon",
+    "meanings": ["button"]
+  },
+ "n_cheom": {
+    "word": "첨",
+    "type": "lexicon",
+    "contains": ["cheoeum"],
+    "meanings": [
+      "first, beginning",
+      "colloquial short form of <span class='interactive-word' onclick='createSticker(\"cheoeum\", \"lexicon\", event); event.stopPropagation();'>처음</span>"
+    ]
+  },
+  "g_gin_hada": {
+    "word": "-기는/긴 (하다)",
+    "category": "grammar",
+    "meanings": ["it is true that... (but)", "to indeed do/be (emphasis on the verb)"]
+  },
+  "ad_geurido": {
+    "word": "그리도",
+     "category": "lexicon",
+    "meanings": ["so much", "to that extent"]
   }
 
 }
