@@ -46256,7 +46256,376 @@
       { "text": "네요", "type": "grammar", "id": "g_surprise" }
     ]
   }
-]}
+]},
+        {
+    "id": "lover",
+    "title": "Lover (Hyunjin)",
+    "artist": "Stray Kids",
+    "album": "SKZ-RECORD / SKZ-PLAYER",
+    "cover": "images/replay.jpg",
+    "youtube": "https://youtu.be/l8sSQAa1kNM?si=y56o1KNihq6rpG8y",
+    "english_full": "",
+    "lines": [
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Yeah yeah yeah yeah", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "I’m running in the rain yeah", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Hoping my broken heart gets washed away",
+    "segments": [
+      { "text": "망가", "type": "lexicon", "id": "v_break_down" },
+      { "text": "진", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "맘", "type": "lexicon", "id": "n_heart_short" },
+      { "text": " ", "type": "text" },
+      { "text": "씻겨", "type": "lexicon", "id": "v_ssitgida" },
+      { "text": " ", "type": "text" },
+      { "text": "내리", "type": "lexicon", "id": "v_fall" },
+      { "text": "길", "type": "grammar", "id": "comb_gil_object" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You did love me once, didn't you? Right, right?",
+    "segments": [
+      { "text": "한", "type": "lexicon", "id": "num_hana" },
+      { "text": " ", "type": "text" },
+      { "text": "때", "type": "lexicon", "id": "n_ttae" },
+      { "text": " ", "type": "text" },
+      { "text": "사랑하", "type": "lexicon", "id": "v_saranghada" },
+      { "text": "긴", "type": "grammar", "id": "g_gin_hada" },
+      { "text": " ", "type": "text" },
+      { "text": "했", "type": "lexicon", "id": "cont_haet" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "거", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" },
+      { "text": "? Right, right?", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Lover lover lover is hurt ’cause she went away\nLoved her loved her loved her so much until that rainy day\nLover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say"
+  },
+  {
+    "type": "korean",
+    "translation": "Oh, staying sober is too much to bear",
+    "segments": [
+      { "text": "오", "type": "text" },
+      { "text": " ", "type": "text" },
+      { "text": "맨정신", "type": "lexicon", "id": "n_maenjeongsin" },
+      { "text": "은", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "벅차", "type": "lexicon", "id": "beokchada" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "I don’t want to drink no more no more no more\nWhy’re you acting like it’s me\nIt’s all my fault, you mean?"
+  },
+  {
+    "type": "korean",
+    "translation": "Then again, I guess that's just the kind of person you've always been",
+    "segments": [
+      { "text": "하", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "긴", "type": "grammar", "id": "g_gin_hada" },
+      { "text": " ", "type": "text" },
+      { "text": "원래", "type": "lexicon", "id": "adv_wonrae" },
+      { "text": " ", "type": "text" },
+      { "text": "넌", "type": "lexicon", "id": "comb_you_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "adj_like_that_near" },
+      { "text": "런", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "애", "type": "lexicon", "id": "n_child" },
+      { "text": "였", "type": "grammar", "id": "v_to_be" },
+      { "text": "을", "type": "grammar", "id": "g_past_tense" },
+      { "text": " ", "type": "text" },
+      { "text": "테니", "type": "grammar", "id": "g_eul_tenikka" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Why why is it not me", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "In your eyes, I'm searching for the reason, ooh ooh ooh ooh",
+    "segments": [
+      { "text": "In your eyes ", "type": "english" },
+      { "text": "이유", "type": "lexicon", "id": "v_reason" },
+      { "text": "를", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "찾", "type": "lexicon", "id": "v_find" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" },
+      { "text": " ooh ooh ooh ooh", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "Yeah yeah yeah yeah", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "I’m running in the rain yeah", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Hoping my broken heart gets washed away",
+    "segments": [
+      { "text": "망가", "type": "lexicon", "id": "v_break_down" },
+      { "text": "진", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "맘", "type": "lexicon", "id": "n_heart_short" },
+      { "text": " ", "type": "text" },
+      { "text": "씻겨", "type": "lexicon", "id": "v_ssitgida" },
+      { "text": " ", "type": "text" },
+      { "text": "내리", "type": "lexicon", "id": "v_fall" },
+      { "text": "길", "type": "grammar", "id": "comb_gil_object" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You did love me once, didn't you? Right, right?",
+    "segments": [
+      { "text": "한", "type": "lexicon", "id": "num_hana" },
+      { "text": " ", "type": "text" },
+      { "text": "때", "type": "lexicon", "id": "n_ttae" },
+      { "text": " ", "type": "text" },
+      { "text": "사랑하", "type": "lexicon", "id": "v_saranghada" },
+      { "text": "긴", "type": "grammar", "id": "g_gin_hada" },
+      { "text": " ", "type": "text" },
+      { "text": "했", "type": "lexicon", "id": "cont_haet" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "거", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" },
+      { "text": "? Right, right?", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Lover lover lover is hurt ’cause she went away\nLoved her loved her loved her so much until that rainy day\nLover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say\nLover lover lover needs a hug cause she‘s gone away"
+  },
+  {
+    "type": "korean",
+    "translation": "Loved her loved her loved her so much, in these romanticized memories",
+    "segments": [
+      { "text": "Loved her loved her loved her so much ", "type": "english" },
+      { "text": "미화", "type": "lexicon", "id": "v_mihwadoeda" },
+      { "text": "된", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "기억", "type": "lexicon", "id": "n_gieok" },
+      { "text": "엔", "type": "grammar", "id": "g_en_complex" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Loved her loved her loved her so much, in these romanticized memories\nLover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say"
+  },
+  {
+    "type": "korean",
+    "translation": "Is it okay if I let you go now?",
+    "segments": [
+      { "text": "이젠", "type": "lexicon", "id": "comb_now_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "널", "type": "lexicon", "id": "v_you_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "놓", "type": "lexicon", "id": "v_nota" },
+      { "text": "아도", "type": "grammar", "id": "g_ah_eodo" },
+      { "text": " ", "type": "text" },
+      { "text": "돼", "type": "lexicon", "id": "v_become" },
+      { "text": "?", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Honestly, we both know we were off from the very start",
+    "segments": [
+      { "text": "우린", "type": "lexicon", "id": "cont_we_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "알", "type": "lexicon", "id": "v_know" },
+      { "text": "잖아", "type": "grammar", "id": "g_janha" },
+      { "text": " ", "type": "text" },
+      { "text": "솔직히", "type": "lexicon", "id": "v_honestly" },
+      { "text": " ", "type": "text" },
+      { "text": "첫", "type": "lexicon", "id": "det_cheot" },
+      { "text": " ", "type": "text" },
+      { "text": "단추", "type": "lexicon", "id": "n_danchu" },
+      { "text": "가", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "어긋", "type": "lexicon", "id": "v_eogeutnada" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Those first fluttering feelings, the promises we made",
+    "segments": [
+      { "text": "첨", "type": "lexicon", "id": "n_cheom" },
+      { "text": "의", "type": "grammar", "id": "g_possessive" },
+      { "text": " ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "v_that_near" },
+      { "text": " ", "type": "text" },
+      { "text": "설렘", "type": "lexicon", "id": "n_seollem" },
+      { "text": ", ", "type": "text" },
+      { "text": "약속", "type": "lexicon", "id": "v_promise" },
+      { "text": "했", "type": "grammar", "id": "g_past_tense" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "것", "type": "lexicon", "id": "v_thing_geot" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Memories that no one can ever bring back",
+    "segments": [
+      { "text": "누구도", "type": "lexicon", "id": "adv_nugudo" },
+      { "text": " ", "type": "text" },
+      { "text": "되돌리", "type": "lexicon", "id": "doedollida" },
+      { "text": "지 못하", "type": "grammar", "id": "g_cannot" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "기억", "type": "lexicon", "id": "n_gieok" },
+      { "text": "들", "type": "grammar", "id": "g_plural" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Tell me why, what was weighing on your mind so much?",
+    "segments": [
+      { "text": "Tell me why ", "type": "english" },
+      { "text": "어", "type": "lexicon", "id": "adj_how" },
+      { "text": "떤", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "게", "type": "grammar", "id": "g_ge_complex" },
+      { "text": " ", "type": "text" },
+      { "text": "그리도", "type": "lexicon", "id": "ad_geurido" },
+      { "text": " ", "type": "text" },
+      { "text": "맘", "type": "lexicon", "id": "n_heart_short" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "걸려", "type": "lexicon", "id": "v_get_caught" },
+      { "text": "서", "type": "grammar", "id": "g_so_reason" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Tell me how, how exactly was I supposed to act?",
+    "segments": [
+      { "text": "Tell me how ", "type": "english" },
+     { "text": "어", "type": "lexicon", "id": "adj_how" },
+      { "text": "떤", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "식", "type": "lexicon", "id": "n_sik" },
+      { "text": "으로", "type": "grammar", "id": "g_direction_to" },
+      { "text": " ", "type": "text" },
+      { "text": "했", "type": "lexicon", "id": "cont_haet" },
+      { "text": "어야", "type": "grammar", "id": "a_eoya" },
+      { "text": "만", "type": "grammar", "id": "g_only" },
+      { "text": " ", "type": "text" },
+      { "text": "했", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "어", "type": "grammar", "id": "g_past_tense" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Tell me why, how could you change so easily?",
+    "segments": [
+      { "text": "Tell me why ", "type": "english" },
+      { "text": "어떻", "type": "lexicon", "id": "adj_how" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "그리", "type": "lexicon", "id": "adv_so" },
+      { "text": " ", "type": "text" },
+      { "text": "쉽", "type": "lexicon", "id": "adj_swipda" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "변해", "type": "lexicon", "id": "v_byeonhada" },
+      { "text": "서", "type": "grammar", "id": "g_so_reason" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Tell me how to get out of this\nNow I’m done with you\nYeah yeah yeah yeah\nI’m running in the rain yeah"
+  },
+  {
+    "type": "korean",
+    "translation": "Hoping my broken heart gets washed away",
+    "segments": [
+      { "text": "망가", "type": "lexicon", "id": "v_break_down" },
+      { "text": "진", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "맘", "type": "lexicon", "id": "n_heart_short" },
+      { "text": " ", "type": "text" },
+      { "text": "씻겨", "type": "lexicon", "id": "v_ssitgida" },
+      { "text": " ", "type": "text" },
+      { "text": "내리", "type": "lexicon", "id": "v_fall" },
+      { "text": "길", "type": "grammar", "id": "comb_gil_object" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "You did love me once, didn't you? Right, right?",
+    "segments": [
+      { "text": "한", "type": "lexicon", "id": "num_hana" },
+      { "text": " ", "type": "text" },
+      { "text": "때", "type": "lexicon", "id": "n_ttae" },
+      { "text": " ", "type": "text" },
+      { "text": "사랑하", "type": "lexicon", "id": "v_saranghada" },
+      { "text": "긴", "type": "grammar", "id": "g_gin_hada" },
+      { "text": " ", "type": "text" },
+      { "text": "했", "type": "lexicon", "id": "cont_haet" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "거", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" },
+      { "text": "? Right, right?", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Lover lover lover is hurt ’cause she went away\nLoved her loved her loved her so much until that rainy day\nLover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say\nLover lover lover needs a hug cause she‘s gone away"
+  },
+  {
+    "type": "korean",
+    "translation": "Loved her loved her loved her so much, in these romanticized memories",
+    "segments": [
+      { "text": "Loved her loved her loved her so much ", "type": "english" },
+      { "text": "미화", "type": "lexicon", "id": "v_mihwadoeda" },
+      { "text": "된", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "기억", "type": "lexicon", "id": "n_gieok" },
+      { "text": "엔", "type": "grammar", "id": "g_en_complex" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Lover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say"
+  }
+]
+}
   ]
 
 
