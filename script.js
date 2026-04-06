@@ -10,40 +10,65 @@ let debugAnswerCount = 0;
 let debugNextCount = 0;
 let questionAnswered = false;
 
+// Определяем файл грамматики в зависимости от выбора
+let currentLang = localStorage.getItem('selectedLang') || 'en';
+
+function getGrammarFile() {
+    return currentLang === 'ru' ? "grammarruss.json" : "grammar.json";
+}
 
 // === 1. ИНИЦИАЛИЗАЦИЯ ===
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
     currentSongId = params.get("id");
+    
     if (!currentSongId) {
         console.warn("No song ID found in URL.");
     }
-    loadData();
-    initQuizEvents(); 
-    initSearch();
-    
-    // 1. Находим элементы
-    const mobileBtn = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobileMenu'); // Проверь ID в HTML!
-    const mobileClose = document.querySelector('.mobile-menu-close');
-    
-    // 2. Если кнопка и меню существуют — вешаем событие "КЛИК"
-    if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', function(e) {
-            e.stopPropagation(); // Чтобы клик не ушел дальше
-            mobileMenu.classList.toggle('active');
-            console.log("Toggle clicked!"); // Для проверки в консоли
+
+    // --- ЛОГИКА ПЕРЕКЛЮЧАТЕЛЯ ЯЗЫКОВ (Безопасная) ---
+    const langCheckbox = document.getElementById('language-checkbox');
+    if (langCheckbox) {
+        // Устанавливаем положение тумблера из памяти
+        langCheckbox.checked = (currentLang === 'ru');
+        
+        langCheckbox.addEventListener('change', function() {
+            currentLang = this.checked ? 'ru' : 'en';
+            localStorage.setItem('selectedLang', currentLang);
+            
+            // 1. Перезагружаем JSON (стикеры и квиз подхватят новый файл)
+            loadData(); 
+            // 2. Переводим тексты на кнопках и в поиске
+            updateInterfaceTexts();
         });
     }
 
-    // 3. Если есть крестик закрытия — вешаем закрытие
+    // Загружаем данные и обновляем тексты интерфейса при старте
+    loadData();
+    updateInterfaceTexts(); 
+    
+    initQuizEvents(); 
+    initSearch();
+    
+    // --- ТВОЯ ОРИГИНАЛЬНАЯ ЛОГИКА МОБИЛЬНОГО МЕНЮ (Сохранена полностью) ---
+    const mobileBtn = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobileMenu'); 
+    const mobileClose = document.querySelector('.mobile-menu-close');
+    
+    if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); 
+            mobileMenu.classList.toggle('active');
+            console.log("Toggle clicked!"); 
+        });
+    }
+
     if (mobileClose && mobileMenu) {
         mobileClose.addEventListener('click', function() {
             mobileMenu.classList.remove('active');
         });
     }
 
-    // 4. Закрываем меню, если кликнули на пункт меню (Quiz или Grammar)
     const menuItems = document.querySelectorAll('.mobile-menu-item');
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
@@ -52,18 +77,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-  function toggleMobileMenu() {
-  const menu = document.getElementById("mobileMenu");
-  if (!menu) return; // безопасно выходим, если элемента нет
-  menu.classList.toggle("active");
+// Твоя оригинальная функция (Сохранена)
+function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    if (!menu) return; 
+    menu.classList.toggle("active");
+}
+
+// === НОВАЯ ФУНКЦИЯ ПЕРЕВОДА ИНТЕРФЕЙСА ===
+function updateInterfaceTexts() {
+    const searchInput = document.getElementById('song-search-input');
+    const quizStartBtn = document.getElementById('btn-start-quiz');
+    const quizModes = document.querySelectorAll('.quiz-mode');
+
+    // ALL-IN QUIZ оставляем как есть по твоей просьбе.
+
+    if (currentLang === 'ru') {
+        if(searchInput) searchInput.placeholder = "Поиск песни...";
+        if(quizStartBtn) quizStartBtn.textContent = "СТАРТ";
+        
+        // Перевод режимов внутри квиза
+        if(quizModes.length >= 3) {
+            quizModes[0].textContent = "Только лексика";
+            quizModes[1].textContent = "Только грамматика";
+            quizModes[2].textContent = "Микс";
+        }
+    } else {
+        if(searchInput) searchInput.placeholder = "Search song...";
+        if(quizStartBtn) quizStartBtn.textContent = "START";
+        
+        if(quizModes.length >= 3) {
+            quizModes[0].textContent = "Words only";
+            quizModes[1].textContent = "Grammar only";
+            quizModes[2].textContent = "Words & Grammar";
+        }
+    }
 }
 // === 2. ЗАГРУЗКА ДАННЫХ ===
 async function loadData() {
-    try {
-        // Timestamp чтобы избежать кеширования
-        allSongsData = await fetch("songs.json?" + Date.now()).then(r => r.json());
-        grammarData = await fetch("grammar.json?" + Date.now()).then(r => r.json());
+ try {
+        const grammarFileName = getGrammarFile(); // Динамическое имя файла
         
+        allSongsData = await fetch("songs.json?" + Date.now()).then(r => r.json());
+        grammarData = await fetch(grammarFileName + "?" + Date.now()).then(r => r.json());
+        
+        // Обновляем классы на body для стилей
+        document.body.classList.remove('lang-en', 'lang-ru');
+        document.body.classList.add('lang-' + currentLang);
+
         let currentSong = currentSongId
             ? allSongsData.find(s => s.id === currentSongId)
             : allSongsData[0];
@@ -718,7 +779,7 @@ function showResults() {
 
 /*conjugation*/
 // ======== Портянка ========
-const rulesContent = `
+const rulesContentEN = `
 <h2 style="text-decoration: underline;">General rule:</h2>
 
 <div class="boxed">
@@ -808,7 +869,7 @@ const rulesContent = `
 `;
 
 // ======== Объект с модалками ========
-const irregularExceptions = {
+const irregularExceptionsEN = {
   s: {
     title: "-ㅅ Exceptions",
     words: [
@@ -875,8 +936,8 @@ const irregularExceptions = {
 };
 
 // ======== ХРАНИЛИЩЕ ТЕКСТОВ ГРАММАТИКИ ========
-const grammarTabsContent = {
-  aoRules: rulesContent, 
+const grammarTabsContentEN = {
+  aoRules: rulesContentEN, 
 levelPlain: `
     <h2 style="text-decoration: underline; margin-bottom: 15px;">PLAIN FORM</h2>
     <table class="grammar-table">
@@ -1163,18 +1224,403 @@ levelPlain: `
 `
 };
 
+/* === ГРАММАТИКА: РУССКАЯ ВЕРСИЯ === */
+const rulesContentRU = `
+<h2 style="text-decoration: underline;">Общее правило:</h2>
+
+<div class="boxed">
+  Если последний слог основы содержит одну из этих 2 гласных: ㅗ, ㅏ &rarr; добавляем + 아<br>
+  Во всех остальных случаях &rarr; добавляем + 어
+</div>
+
+<h3><strong>«Обычный» патчим (регулярные глаголы/прилагательные) &rarr; просто добавляем окончание:</strong></h3>
+<div class="two-column">
+  <div class="column">
+    살다 &rarr; 살(다) &rarr; 살 + 아 &rarr; 살아 (жить)<br>
+    놀다 &rarr; 놀(다) &rarr; 놀 + 아 &rarr; 놀아 (играть)
+  </div>
+  <div class="column">
+    먹다 &rarr; 먹(다) &rarr; 먹 + 어 &rarr; 먹어 (есть)<br>
+    읽다 &rarr; 읽(다) &rarr; 읽 + 어 &rarr; 읽어 (читать)
+  </div>
+</div>
+
+<h3><strong>Нет патчима и гласные ㅏ ㅗ ㅓ ㅜ ㅐ &rarr; происходит слияние с окончанием:</strong></h3>
+<div class="two-column">
+  <div class="column">
+    가다 &rarr; 가 + 아 &rarr; 가 (идти)<br>
+    오다 &rarr; 오 + 아 &rarr; 와 (приходить)<br>
+    보내다 &rarr; 보내 + 어 &rarr; 보내 (отправлять)
+  </div>
+  <div class="column">
+    서다 &rarr; 서 + 어 &rarr; 서 (стоять)<br>
+    주다 &rarr; 주 + 어 &rarr; 줘 (давать)
+  </div>
+</div>
+
+<h3><strong>Особый случай (иногда выделяют как окончание 여)</strong></h3>
+<div>하다 &rarr; 해 / 하여 (делать)</div>
+
+<h3><strong>Случаи, когда слияние опционально (оба варианта верны):</strong></h3>
+<div class="two-column">
+  <div class="column">
+    하다 &rarr; 해 / 하여<br>
+    되다 &rarr; 돼 / 되어<br>
+    주다 &rarr; 줘 / 주어
+  </div>
+  <div class="column">
+    두다 &rarr; 둬 / 두어<br>
+    보다 &rarr; 봐 / 보아
+  </div>
+</div>
+
+<hr class="divider">
+
+<h3><strong>Случаи с гласными ㅣ и ㅡ без патчима:</strong></h3>
+
+<div class="red-bold">ㅣ &rarr; ㅕ</div>
+<div>마시다 &rarr; 마셔 (пить)</div>
+
+<div class="red-bold">ㅡ &rarr; ㅓ (если это единственный слог в слове)</div>
+<div>쓰다 &rarr; 써 (писать/использовать)</div>
+
+<div class="red-bold">ㅡ &rarr; ㅏ/ㅓ (если в слове несколько слогов, выбор зависит от предыдущего слога)</div>
+<div>모으다 &rarr; 모아 (собирать)</div>
+
+<div class="red-bold">르 &rarr; 라/러 (зависит от слога перед 르, также добавляется лишняя ㄹ в патчим предыдущего слога)</div>
+<div>모르다 &rarr; 몰라 (не знать)</div>
+<div>부르다 &rarr; 불러 (звать/петь) &nbsp;<a href="#" class="rule-link" data-exception="re">+исключения</a></div>
+
+<hr class="divider">
+
+<h3><strong>Неправильные глаголы / прилагательные:</strong></h3>
+
+<div class="red-bold">-ㅂ &rarr; 우 + 어</div>
+<div>춥다 &rarr; 추우 + 어 &rarr; 추워 (холодно)</div>
+<div>덥다 &rarr; 더우 + 어 &rarr; 더워 (жарко)</div>
+
+<div class="red-bold">2 особых случая: -ㅂ &rarr; 오 + а</div>
+<div>돕다 &rarr; 도오 + 아 &rarr; 도와 (помогать)</div>
+<div>곱다 &rarr; 고오 + 아 &rarr; 고와 (быть прекрасным)</div>
+<div><a href="#" class="rule-link" data-exception="b">+ исключения с неизменной ㅂ</a></div>
+
+<div class="red-bold">-ㅅ &rarr; (исчезает) + 아/어 по общему правилу</div>
+<div>짓다 &rarr; 지어 (строить)</div>
+<div>낫다 &rarr; 나아 (выздоравливать)</div>
+<div><a href="#" class="rule-link" data-exception="s">+ исключения с неизменной ㅅ</a></div>
+
+<div class="red-bold">-ㄷ &rarr; -ㄹ + 아/어 по общему правилу</div>
+<div>듣다 &rarr; 들어 (слушать)</div>
+<div><a href="#" class="rule-link" data-exception="d">+ исключения с неизменной ㄷ</a></div>
+`;
+
+const irregularExceptionsRU = {
+  s: { title: "Исключения на -ㅅ", words: ["씻다 — мыть", "빗다 — расчесывать", "웃다 — смеяться", "솟다 — подниматься/бить ключом", "벗다 — снимать (одежду)", "빼앗다 — отнимать"] },
+  d: { title: "Исключения на -ㄷ", words: ["받다 — получать", "믿다 — верить", "닫다 — закрывать", "얻다 — получать/добывать", "묻다 — хоронить/закапывать", "쏟다 — лить/проливать", "벋다 / 뻗다 — тянуться/расширяться", "돋다 — всходить (солнце)", "뜯다 — отрывать", "걷다 — сворачивать/подворачивать", "곧다 — быть прямым", "굳다 — быть твердым"] },
+  b: { title: "Исключения на -ㅂ", words: ["입다 — надевать", "집다 — брать пальцами", "좁다 — быть узким", "잡다 — ловить", "뽑да — вытягивать/выбирать", "접да — складывать", "씹다 — жевать", "업다 — нести на спине", "뵙다 — видеться (уваж.)", "굽다 — быть изогнутым/жарить", "꼬집다 — щипать", "꼽다 — считать на пальцах", "수줍다 — стесняться", "헤집да — рыться/разбрасывать"] },
+  existTime: { title: "Исключения для времени (редко)", words: ["(으)ㄴ 후 &rarr; 있은 후 / 없은 후", "(으)ㄴ 지 &rarr; 있은 지 / 없은 지"] },
+  re: { title: "Исключения на -르", words: ["따르다 (따ра) — следовать", "치르да (치러) — совершать/оплачивать", "이르다 (이르러) — достигать", "푸르다 (푸르러) — быть синим/зеленым"] }
+};
+
+const grammarTabsContentRU = {
+  aoRules: rulesContentRU,
+  levelPlain: `
+    <h2 style="text-decoration: underline; margin-bottom: 15px;">КНИЖНЫЙ СТИЛЬ (PLAIN)</h2>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предположение</th></tr>
+      <tr><td>Гл. на патчим</td><td rowspan="3">았/었다</td><td>는다</td><td rowspan="3">(으)ㄹ 것이다 / 겠다</td></tr>
+      <tr><td>Гл. без патчима / -ㄹ*</td><td>ㄴ다</td></tr>
+      <tr><td>Прил.</td><td>다</td></tr>
+      <tr><td>이다</td><td>이었다 / 였다</td><td>(이)다</td><td>일 것이다 / (이)겠다</td></tr>
+      <tr><td>아니다</td><td>아니었다</td><td>아니다</td><td>아닐 것이다 / 아니겠다</td></tr>
+    </table>
+  <h4 style="margin-top: 15px; margin-bottom: 5px;">КНИЖНЫЙ СТИЛЬ (ОТРИЦАНИЕ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Глаголы</td><td rowspan="2">-지 않았다</td><td>-지 않는다</td><td>-지 않을 것이다 /</td></tr>
+      <tr><td>Прилаг.</td><td>-지 않다</td><td>-지 않겠다</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">КНИЖНЫЙ СТИЛЬ (ВОПРОСЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Глаголы</td><td rowspan="2">았/었는가?</td><td>는가?</td><td rowspan="2">(으)ㄹ 것인가? / 겠는가?</td></tr>
+      <tr><td>Прилаг.</td><td>(으)ㄴ가?</td></tr>
+      <tr><td>이다</td><td>이었는가? /<br>였는가?</td><td>인가?</td><td>일 것인가? / (이)겠는가?</td></tr>
+      <tr><td>아니다</td><td>아니었는가?</td><td>아닌가?</td><td>아닐 것인가? /<br>아니겠는가?</td></tr>
+    </table>
+        <hr class="divider">
+    <h3 style="margin-top: 20px;"><strong>Особые глаголы на -ㄹ</strong></h3>
+    <div class="red-bold">-ㄹ &rarr; (исчезает) перед окончаниями на ㄴ, ㅂ, ㅅ *(Правило "не беси")* </div>
+    <div>만들다 + 는 &rarr; 만드는 (것)</div>
+    <div>만들다 + (으)ㄴ &rarr; 만든 (것)</div>
+    <div>만들다 + ㅂ니다 &rarr; 만듭니다</div>
+    <div>만들да + (으)세요 &rarr; 만드세요</div>
+    
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + (으)ㄹ &rarr; сливаются в одну -ㄹ</div>
+    <div>만들다 + (으)ㄹ &rarr; 만들 (것)</div>
+
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + окончания на (으)ㅁ, (으)ㄹ &rarr; не принимают (으)</div>
+    <div>만들다 + (으)면 &rarr; 만들면</div>
+    <div>만들다 + (으)려고 &rarr; 만들려고</div>
+  `,
+
+  levelPanmal: `
+    <h2 style="text-decoration: underline; margin-bottom: 15px;">ПАНМАЛЬ (РАЗГОВОРНЫЙ СТИЛЬ)</h2>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Глаголы</td><td rowspan="2">았/었어</td><td rowspan="2">아/어</td><td rowspan="2">(으)ㄹ 거야 / 겠어</td></tr>
+      <tr><td>Прилаг.</td></tr>
+      <tr><td>이다</td><td>이었어 / 였어</td><td>(이)야</td><td>일 거야 / (이)겠어</td></tr>
+      <tr><td>아니다</td><td>아니었어</td><td>아니야</td><td>아닐 거야 / 아니겠어</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">ПАНМАЛЬ (ВОПРОСЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Глаголы</td><td>았/었어?<br>았/었나?<br>았/었는가?<br>았/었니?<br>았/었냐?</td><td>아/어?<br>나?<br>는가?<br>니?<br>냐?</td><td>(으)ㄹ 거야? / 겠어?<br>(으)ㄹ 건가? / 겠나? / 겠는가?<br>(으)ㄹ 거니? / 겠니?<br>(으)ㄹ 거냐? / 겠냐?</td></tr>
+      <tr><td>Прилаг.</td><td>았/었어?<br>았/었나?<br>았/었는가?<br>았/었니?<br>았/었냐?</td><td>아/어?<br>나?<br>(으)ㄴ가?<br>니?<br>냐?</td><td>(으)ㄹ 거야? / 겠어?<br>(으)ㄹ 건가? / 겠나? / 겠는가?<br>(으)ㄹ 거니? / 겠니?<br>(으)ㄹ 거냐? / 겠냐?</td></tr>
+      <tr><td>이다</td><td>이었어? / 였어?<br>이었나? / 였나?<br>이었니? / 였니?<br>이었냐? / 였냐?</td><td>(이)야?<br>인가?<br>이니?<br>이냐?</td><td>일 거야? / (이)겠어?<br>일 건가? / (이)겠나? / (이)겠는가?<br>일 거니? / (이)겠니?<br>일 거냐? / (이)겠냐?</td></tr>
+      <tr><td>아니다</td><td>아니었어?<br>아니었나?<br>아니었니?<br>아니었냐?</td><td>아니야?<br>아닌가?<br>아니니?<br>아니냐?</td><td>아닐 거야? / 아니겠어?<br>아닐 건가? / 아니겠나? / 아니겠는가?<br>아닐 거니? / 아니겠니?<br>아닐 거냐? / 아니겠냐?</td></tr>
+    </table>
+
+    <ul style="margin: 10px 0 15px 0; padding-left: 20px; line-height: 1.6; font-size: 0.95em;">
+      <li><strong>-아/어?</strong> : Стандартный разговорный вариант.</li>
+      <li><strong>-나? / -(으)ㄴ가?</strong> : Мягкий вопрос или размышление вслух («Интересно...»).</li>
+      <li><strong>-니?</strong> : Дружелюбный, ласковый вариант.</li>
+      <li><strong>-냐?</strong> : Прямой, резкий или грубоватый вопрос.</li>
+    </ul>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">ПАНМАЛЬ (ДРУГИЕ ФОРМЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Глаголы</th></tr>
+      <tr><td>Приказ, команда</td><td>아/어<br>아/어라<br>렴</td></tr>
+      <tr><td>Предложение сделать вместе</td><td>자</td></tr>
+    </table>
+        <hr class="divider">
+    <h3 style="margin-top: 20px;"><strong>Особые глаголы на -ㄹ</strong></h3>
+    <div class="red-bold">-ㄹ &rarr; (исчезает) перед окончаниями на ㄴ, ㅂ, ㅅ *(Правило "не беси")* </div>
+    <div>만들다 + 는 &rarr; 만드는 (것)</div>
+    <div>만들다 + (으)ㄴ &rarr; 만든 (것)</div>
+    <div>만들다 + ㅂ니다 &rarr; 만듭니다</div>
+    <div>만들다 + (으)세요 &rarr; 만드세요</div>
+    
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + (으)ㄹ &rarr; сливаются в одну -ㄹ</div>
+    <div>만들다 + (으)ㄹ &rarr; 만들 (것)</div>
+
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + окончания на (으)ㅁ, (으)ㄹ &rarr; не принимают (으)</div>
+    <div>만들다 + (으)면 &rarr; 만들면</div>
+    <div>만들다 + (으)려고 &rarr; 만들려고</div>
+  `,
+
+  levelUnofficial: `
+    <h2 style="text-decoration: underline; margin-bottom: 15px;">НЕОФИЦИАЛЬНО-ВЕЖЛИВЫЙ СТИЛЬ</h2>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Гл. / Прил.</td><td>았/었어요</td><td>아/어요</td><td>(으)ㄹ 거예요 /<br>겠어요</td></tr>
+      <tr><td>이다</td><td>이었어요 /<br>였어요</td><td>이에요 /<br>예요</td><td>일 거예요/<br>(이)겠어요</td></tr>
+      <tr><td>아니다</td><td>아니었어요</td><td>아니에요</td><td>아닐 거예요 /<br>아니겠어요</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">НЕОФИЦИАЛЬНО-ВЕЖЛИВЫЙ (ВОПРОСЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Глаголы</td><td>았/었어요?<br>았/었나요?<br>았/었는가요?</td><td>아/어요?<br>나요?<br>는가요?</td><td>(으)ㄹ 거예요? / 겠어요?<br>(으)ㄹ 건가요? / 겠나요? / 겠는가요?</td></tr>
+      <tr><td>Прилаг.</td><td>았/었어요?<br>았/었나요?<br>았/었는가요?</td><td>아/어요?<br>나요?<br>(으)ㄴ가요?</td><td>(으)ㄹ 거예요? / 겠어요?<br>(으)ㄹ 건가요? / 겠나요? / 겠는가요?</td></tr>
+      <tr><td>이다</td><td>이었어요? / 였어요?<br>이었나요? / 였나요?</td><td>이에요? /<br>예요?<br>인가요?</td><td>일 거예요? / (이)겠어요?<br>일 건가요? / (이)겠나요? / (이)겠는가요?</td></tr>
+      <tr><td>아니다</td><td>아니었어요?<br>아니었나요?</td><td>아니에요?<br>아닌가요?</td><td>아닐 거예요? / 아니겠어요?<br>아닐 건가요? / 아니겠나요? / 아니겠는가요?</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">НЕОФИЦИАЛЬНО-ВЕЖЛИВЫЙ (ДРУГИЕ ФОРМЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Глаголы</th></tr>
+      <tr><td>Приказ, просьба</td><td>아/어요<br>(으)세요</td></tr>
+      <tr><td>Предложение сделать вместе</td><td>아/어요</td></tr>
+    </table>
+        <hr class="divider">
+    <h3 style="margin-top: 20px;"><strong>Особые глаголы на -ㄹ</strong></h3>
+    <div class="red-bold">-ㄹ &rarr; (исчезает) перед окончаниями на ㄴ, ㅂ, ㅅ *(Правило "не беси")* </div>
+    <div>만들다 + 는 &rarr; 만드는 (것)</div>
+    <div>만들다 + (으)ㄴ &rarr; 만든 (것)</div>
+    <div>만들다 + ㅂ니다 &rarr; 만듭니다</div>
+    <div>만들да + (으)세요 &rarr; 만드세요</div>
+    
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + (으)ㄹ &rarr; сливаются в одну -ㄹ</div>
+    <div>만들다 + (으)ㄹ &rarr; 만들 (것)</div>
+
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + окончания на (으)ㅁ, (으)ㄹ &rarr; не принимают (으)</div>
+    <div>만들다 + (으)면 &rarr; 만들면</div>
+    <div>만들다 + (으)려고 &rarr; 만들려고</div>
+  `,
+
+  levelOfficial: `
+    <h2 style="text-decoration: underline; margin-bottom: 15px;">ОФИЦИАЛЬНО-ВЕЖЛИВЫЙ СТИЛЬ</h2>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Гл. / Прил.</td><td>았/었습니다</td><td>습니다/ㅂ니다</td><td>(으)ㄹ 것입니다 /<br>겠습니다</td></tr>
+      <tr><td>이다</td><td>였습니다 /<br>이었습니다</td><td>입니다</td><td>일 것입니다/<br>(이)겠습니다</td></tr>
+      <tr><td>아니다</td><td>아니었습니다</td><td>아닙니다</td><td>아닐 것입니다 /<br>아니겠습니다</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">ОФИЦИАЛЬНО-ВЕЖЛИВЫЙ (ВОПРОСЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Прошлое</th><th>Настоящее</th><th>Будущее / Предпол.</th></tr>
+      <tr><td>Гл. / Прил.</td><td>았/었습니까</td><td>습니까/ㅂ니까</td><td>(으)ㄹ 것입니까 /<br>겠습니까</td></tr>
+      <tr><td>이다</td><td>이었습니까 /<br>였습니까</td><td>입니까</td><td>일 것입니까/<br>(이)겠습니까</td></tr>
+      <tr><td>아니다</td><td>아니었습니까</td><td>아닙니다</td><td>아닐 것입니까 /<br>아니겠습니까</td></tr>
+    </table>
+
+    <h4 style="margin-top: 15px; margin-bottom: 5px;">ОФИЦИАЛЬНО-ВЕЖЛИВЫЙ (ДРУГИЕ ФОРМЫ)</h4>
+    <table class="grammar-table">
+      <tr><th></th><th>Глаголы</th></tr>
+      <tr><td>Приказ, команда</td><td>(으)십시오</td></tr>
+      <tr><td>Предложение сделать вместе</td><td>(으)ㅂ시다</td></tr>
+    </table>
+
+    <hr class="divider">
+    <h3 style="margin-top: 20px;"><strong>Особые глаголы на -ㄹ</strong></h3>
+    <div class="red-bold">-ㄹ &rarr; (исчезает) перед окончаниями на ㄴ, ㅂ, ㅅ *(Правило "не беси")* </div>
+    <div>만들다 + 는 &rarr; 만드는 (것)</div>
+    <div>만들다 + (으)ㄴ &rarr; 만든 (것)</div>
+    <div>만들다 + ㅂ니다 &rarr; 만듭니다</div>
+    <div>만들да + (으)세요 &rarr; 만드세요</div>
+    
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + (으)ㄹ &rarr; сливаются в одну -ㄹ</div>
+    <div>만들다 + (으)ㄹ &rarr; 만들 (것)</div>
+
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + окончания на (으)ㅁ, (으)ㄹ &rarr; не принимают (으)</div>
+    <div>만들다 + (으)면 &rarr; 만들면</div>
+    <div>만들다 + (으)려고 &rarr; 만들려고</div>
+  `,
+ nunGeot: `
+    <h2 style="text-decoration: underline;">Причастия / Определительные формы (는 것)</h2>
+    
+    <!-- ГЛАВНАЯ ТАБЛИЦА -->
+    <div class="table-responsive">
+      <table class="grammar-table" style="min-width: 500px;">
+        <tr>
+          <th></th>
+          <th>прошлое</th>
+          <th>прошлое</th>
+          <th>прошлое</th>
+          <th>настоящее</th>
+          <th>будущее</th>
+        </tr>
+        <tr>
+          <td>Глаголы (+<a href="#" class="rule-link" data-exception="existTime">있다/없다</a>)</td>
+          <td>았/었던</td>
+          <td class="pad-left-for-badge">
+            <span class="vs-badge vs-pink vs-on-border">vs</span> 던
+          </td>
+          <td class="pad-left-for-badge">
+            <span class="vs-badge vs-green vs-on-border">vs</span> (으)ㄴ
+          </td>
+          <td>는</td>
+          <td>(으)ㄹ</td>
+        </tr>
+        <tr>
+          <td>Прилаг. (+이다, 아니다)</td>
+          <td>았/었던</td>
+          <td class="pad-left-for-badge">
+            <span class="vs-badge vs-red vs-on-border">vs</span> 던
+          </td>
+          <td></td>
+          <td>(으)ㄴ</td>
+          <td>(으)ㄹ</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- ПРАВИЛО 1 (ЗЕЛЕНЫЙ VS) -->
+    <div class="vs-heading"><span class="vs-badge vs-green">vs</span> Глаголы</div>
+    <table class="grammar-table">
+      <tr>
+        <th>Форма</th>
+        <th>Значение и нюанс</th>
+        <th>Пример</th>
+      </tr>
+      <tr>
+        <td><strong>V-던</strong></td>
+        <td><strong>Незавершенное действие.</strong><br>Действие происходило в прошлом, но не было закончено.</td>
+        <td>읽던 책<br>(Книга, которую я читал [и не дочитал])</td>
+      </tr>
+      <tr>
+        <td><strong>V-(으)ㄴ</strong></td>
+        <td><strong>Завершенное действие.</strong><br>Действие было полностью закончено в прошлом.</td>
+        <td>읽은 책<br>(Книга, которую я прочитал)</td>
+      </tr>
+    </table>
+
+    <!-- ПРАВИЛО 2 (РОЗОВЫЙ VS) -->
+    <div class="vs-heading"><span class="vs-badge vs-pink">vs</span> Глаголы</div>
+    <table class="grammar-table">
+      <tr>
+        <th>Форма</th>
+        <th>Частота действия</th>
+        <th>Связь с настоящим</th>
+      </tr>
+      <tr>
+        <td><strong>V-던</strong></td>
+        <td><strong>Повторяющееся / Привычное.</strong><br>Действие, которое вы совершали регулярно или многократно.</td>
+        <td><strong>Текущее состояние неизвестно/неважно.</strong><br>Фокус только на воспоминании. Действие началось в прошлом и может продолжаться сейчас, а может и нет.</td>
+      </tr>
+      <tr>
+        <td><strong>V-았/었던</strong></td>
+        <td><strong>Единичный случай.</strong><br>Действие, совершенное один раз при определенных обстоятельствах.</td>
+        <td><strong>Полный контраст с настоящим.</strong><br>Действие началось и закончилось. Подчеркивает, что сейчас ситуация совершенно иная.</td>
+      </tr>
+    </table>
+
+    <!-- ПРАВИЛО 3 (КРАСНЫЙ VS) -->
+    <div class="vs-heading"><span class="vs-badge vs-red">vs</span> Прилагательные</div>
+    <table class="grammar-table">
+      <tr>
+        <th>Форма</th>
+        <th>Нюанс и связь с настоящим</th>
+      </tr>
+      <tr>
+        <td><strong>A-던</strong></td>
+        <td><strong>Простое воспоминание.</strong><br>Вспоминая состояние в прошлом. Говорящий просто описывает, как было тогда; текущее состояние неизвестно или неважно.</td>
+      </tr>
+      <tr>
+        <td><strong>A-았/었던</strong></td>
+        <td><strong>Полностью изменившееся состояние.</strong><br>Сильно подчеркивает, что состояние полностью изменилось. Говорящий считает, что сейчас всё совсем не так, как было тогда.</td>
+      </tr>
+    </table>
+
+    <hr class="divider">
+
+    <!-- СПЕЦИАЛЬНЫЕ ГЛАГОЛЫ -ㄹ -->
+    <h3 style="margin-top: 20px;"><strong>Особые глаголы на -ㄹ</strong></h3>
+    
+    <div class="red-bold">-ㄹ &rarr; (исчезает) перед окончаниями на ㄴ, ㅂ, ㅅ *(Правило "не беси")* </div>
+    <div>만들다 + 는 &rarr; 만드는 (것)</div>
+    <div>만들다 + (으)ㄴ &rarr; 만든 (것)</div>
+    <div>만들다 + ㅂ니다 &rarr; 만듭니다</div>
+    <div>만들да + (으)세요 &rarr; 만드세요</div>
+    
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + (으)ㄹ &rarr; сливаются в одну -ㄹ</div>
+    <div>만들다 + (으)ㄹ &rarr; 만들 (것)</div>
+
+    <div class="red-bold" style="margin-top: 15px;">-ㄹ + окончания на (으)ㅁ, (으)ㄹ &rarr; не принимают (으)</div>
+    <div>만들다 + (으)면 &rarr; 만들면</div>
+    <div>만들다 + (으)려고 &rarr; 만들려고</div>
+`
+};
+
 const board = document.getElementById("sticker-board");
 
 // ======== ГЛОБАЛЬНАЯ ФУНКЦИЯ ОТКРЫТИЯ ВКЛАДОК ========
 window.openGrammarTab = function(tabKey) {
   // 1. Закрыть все стикеры
+  const board = document.getElementById("sticker-board");
   board.querySelectorAll(".sticker").forEach(s => s.remove());
 
-  // НОВОЕ: Прячем картинку SKZOO, чтобы освободить место для текста
+  // 2. Прячем картинку SKZOO
   const skzoo = document.querySelector('.board-image');
   if (skzoo) skzoo.style.display = 'none';
 
-  // 2. Найти или создать окно (портянку)
+  // 3. Найти или создать окно (портянку)
   let port = document.getElementById("grammar-portion");
   if (!port) {
     port = document.createElement("div");
@@ -1182,16 +1628,17 @@ window.openGrammarTab = function(tabKey) {
     board.appendChild(port);
   }
 
-  // 3. Загружаем нужный текст + КРЕСТИК для закрытия окна (с возвратом картинки)
+  // === ВОТ ТУТ ВЫБОР ЯЗЫКА ===
+  const source = (currentLang === 'ru') ? grammarTabsContentRU : grammarTabsContentEN;
+
   port.innerHTML = `
-    <div style="text-align: right; cursor: pointer; color: #ff2a2a; font-size: 28px; font-weight: bold; margin-top: -10px; margin-bottom: 5px; user-select: none;" 
-         onclick="document.getElementById('grammar-portion').style.display='none'; const skzoo = document.querySelector('.board-image'); if(skzoo) skzoo.style.display='block';">
+    <div class="close-portion" onclick="document.getElementById('grammar-portion').style.display='none'; const skzoo = document.querySelector('.board-image'); if(skzoo) skzoo.style.display='block';">
       ×
     </div>
-    ${grammarTabsContent[tabKey]}
+    ${source[tabKey]}
   `;
 
-  // 4. Заново навешиваем слушатели для модалок исключений 아/어
+  // 4. Заново навешиваем слушатели для модалок исключений
   port.querySelectorAll("a[data-exception]").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault(); 
@@ -1200,7 +1647,6 @@ window.openGrammarTab = function(tabKey) {
     });
   });
 
-  // 5. Показываем портянку
   port.style.display = "block";
 };
 
@@ -1224,7 +1670,9 @@ document.querySelectorAll('.g-sub-tab').forEach(tab => {
 
 // ======== Функция открытия модалок ========
 function openExceptionModal(key, event) {
-  const data = irregularExceptions[key];
+  // === ВЫБИРАЕМ ИСТОЧНИК В ЗАВИСИМОСТИ ОТ ЯЗЫКА ===
+  const source = (currentLang === 'ru') ? irregularExceptionsRU : irregularExceptionsEN;
+  const data = source[key];
   if (!data) return;
 
   let modal = document.getElementById("modal-" + key);
@@ -1241,22 +1689,22 @@ function openExceptionModal(key, event) {
         ? '<ul>' + wordsList.map(w => '<li>' + w + '</li>').join('') + '</ul>'
         : '<p>No examples</p>');
 
+    const board = document.getElementById("sticker-board");
     board.appendChild(modal);
 
     modal.querySelector(".close-modal").addEventListener("click", () => {
       modal.style.display = "none";
     });
 
-    // Делаем модалку перетаскиваемой
     makeDraggable(modal);
   }
 
   modal.style.display = "block";
-  modal.style.visibility = "hidden"; // временно невидимо
+  modal.style.visibility = "hidden";
   modal.style.right = "10px";
 
   const linkRect = event.target.getBoundingClientRect();
-  const boardRect = board.getBoundingClientRect();
+  const boardRect = document.getElementById("sticker-board").getBoundingClientRect();
   const modalHeight = modal.offsetHeight;
 
   modal.style.top = (linkRect.top - boardRect.top + linkRect.height / 2 - modalHeight / 2) + "px";
