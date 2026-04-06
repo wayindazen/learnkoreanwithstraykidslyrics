@@ -46625,7 +46625,736 @@
     "content": "Lover lover lover dies ’cause there’s no way\nLover lover love is gone no matter what I say"
   }
 ]
-}
+},
+{
+    "id": "stay",
+    "title": "별, 빛 (STAY)",
+    "artist": "Stray Kids",
+    "album": "SKZ-RECORD / SKZ-PLAYER",
+    "cover": "images/replay.jpg",
+    "youtube": "https://youtu.be/swuhhziz3dM?si=eIm9QOqKbkPCR3iE",
+    "english_full": "",
+    "lines": [
+  {
+    "type": "korean",
+    "translation": "Even if we don’t know where we are headed",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "로", "type": "grammar", "id": "g_direction_to" },
+      { "text": " ", "type": "text" },
+      { "text": "향", "type": "lexicon", "id": "v_hyanghada" },
+      { "text": "할지", "type": "grammar", "id": "g_eulji" },
+      { "text": "는", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "몰라", "type": "lexicon", "id": "v_not_know" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If we are looking at the same place",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "곳", "type": "lexicon", "id": "n_got" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "본", "type": "lexicon", "id": "v_see" },
+      { "text": "다면", "type": "grammar", "id": "g_conditional" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Shining like starlight from somewhere",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "선", "type": "grammar", "id": "g_inside_from" },
+      { "text": "가", "type": "grammar", "id": "g_n_ga_indef" },
+      { "text": " ", "type": "text" },
+      { "text": "별빛", "type": "lexicon", "id": "byeolbit" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" },
+      { "text": " ", "type": "text" },
+      { "text": "빛나", "type": "lexicon", "id": "bitnada" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Won't we dream of tomorrow?",
+    "segments": [
+      { "text": "내일", "type": "lexicon", "id": "n_tomorrow" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "꿈", "type": "lexicon", "id": "v_dream" },
+      { "text": "꾸", "type": "lexicon", "id": "v_kkumkkuda" },
+      { "text": "지", "type": "grammar", "id": "g_negation" },
+      { "text": " ", "type": "text" },
+      { "text": "않", "type": "grammar", "id": "g_negation" },
+      { "text": "을까", "type": "grammar", "id": "g_eul_kka" },
+      { "text": "?", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Even if we become stars covered in darkness",
+    "segments": [
+      { "text": "어둠", "type": "lexicon", "id": "n_eodum" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "뒤덮", "type": "lexicon", "id": "v_be_covered" },
+      { "text": "인", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "된", "type": "lexicon", "id": "v_become" },
+      { "text": "다", "type": "grammar", "id": "g_indirect_quote" },
+      { "text": " ", "type": "text" },
+      { "text": "해", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Just like right now",
+    "segments": [
+      { "text": "그저", "type": "lexicon", "id": "adv_geujeo" },
+      { "text": " ", "type": "text" },
+      { "text": "지금", "type": "lexicon", "id": "adv_jigeum" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Will you stay by my side? Then",
+    "segments": [
+      { "text": "곁", "type": "lexicon", "id": "v_side_near" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "있어", "type": "grammar", "id": "g_ah_eo_itda" },
+      { "text": " ", "type": "text" },
+      { "text": "줄", "type": "lexicon", "id": "v_to_give" },
+      { "text": "래", "type": "grammar", "id": "g_eullae" },
+      { "text": " ", "type": "text" },
+      { "text": "그럼", "type": "lexicon", "id": "conj_geureom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I will become the universe that surrounds you",
+    "segments": [
+      { "text": "널", "type": "lexicon", "id": "v_you_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "감", "type": "lexicon", "id": "v_envelop" },
+      { "text": "싼", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "우주", "type": "lexicon", "id": "v_universe" },
+      { "text": "가", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "될", "type": "lexicon", "id": "v_become" },
+      { "text": " ", "type": "text" },
+      { "text": "테니", "type": "grammar", "id": "g_eul_tenikka" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "In that place far, far away",
+    "segments": [
+      { "text": "저기", "type": "lexicon", "id": "adv_jeogi" },
+      { "text": " ", "type": "text" },
+      { "text": "멀리", "type": "lexicon", "id": "adv_far" },
+      { "text": " ", "type": "text" },
+      { "text": "떨어", "type": "lexicon", "id": "v_tteoreojida" },
+      { "text": "진", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "v_that_near" },
+      { "text": "곳", "type": "lexicon", "id": "n_got" },
+      { "text": "엔", "type": "grammar", "id": "g_en_complex" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "It is filled with bright stars",
+    "segments": [
+      { "text": "한가득해", "type": "lexicon", "id": "n_hangadeuk" },
+      { "text": " ", "type": "text" },
+      { "text": "밝", "type": "lexicon", "id": "v_bright" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" },
+      { "text": "들", "type": "grammar", "id": "g_plural" },
+      { "text": "이", "type": "grammar", "id": "g_subject" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "In that twinkling tunnel, there is no more loneliness",
+    "segments": [
+      { "text": "반짝거리", "type": "lexicon", "id": "v_sparkle" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "터널", "type": "lexicon", "id": "v_tunnel" },
+      { "text": " ", "type": "text" },
+      { "text": "속", "type": "lexicon", "id": "v_inside" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "더는", "type": "lexicon", "id": "adv_deoneun" },
+      { "text": " ", "type": "text" },
+      { "text": "없", "type": "lexicon", "id": "v_not_exist" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "외로움", "type": "lexicon", "id": "v_loneliness" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "In that place, can I also shine together by your side?",
+    "segments": [
+      { "text": "그", "type": "lexicon", "id": "v_that_near" },
+      { "text": "곳", "type": "lexicon", "id": "n_got" },
+      { "text": "에", "type": "grammar", "id": "g_inside_from" },
+      { "text": "선", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "나", "type": "lexicon", "id": "v_i" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "같이", "type": "lexicon", "id": "adv_gachi" },
+      { "text": " ", "type": "text" },
+      { "text": "네", "type": "lexicon", "id": "v_ne_front" },
+      { "text": " ", "type": "text" },
+      { "text": "곁", "type": "lexicon", "id": "v_side_near" },
+      { "text": "에서", "type": "grammar", "id": "g_inside_from" },
+      { "text": " ", "type": "text" },
+      { "text": "함께", "type": "lexicon", "id": "v_together" },
+      { "text": " ", "type": "text" },
+      { "text": "빛나", "type": "lexicon", "id": "bitnada" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" },
+      { "text": " ", "type": "text" },
+      { "text": "될", "type": "lexicon", "id": "v_become" },
+      { "text": "까", "type": "grammar", "id": "g_eul_kka" },
+      { "text": "?", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "(Hey, hey, hey, hey)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "On days when you feel all alone for some reason",
+    "segments": [
+      { "text": "왠지", "type": "lexicon", "id": "adv_waenji" },
+      { "text": " ", "type": "text" },
+      { "text": "혼자", "type": "lexicon", "id": "adv_alone" },
+      { "text": "인", "type": "grammar", "id": "v_to_be" },
+      { "text": " ", "type": "text" },
+      { "text": "것 같", "type": "grammar", "id": "g_geot_gatda" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "날", "type": "lexicon", "id": "v_day" },
+      { "text": "엔", "type": "grammar", "id": "g_en_complex" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Please take my hand that I reached out to you",
+    "segments": [
+      { "text": "네게", "type": "lexicon", "id": "comb_nege" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "v_naemilda" },
+      { "text": "민", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "잡아", "type": "lexicon", "id": "v_japda" },
+      { "text": " ", "type": "text" },
+      { "text": "줘", "type": "grammar", "id": "g_ah_eoju" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "The countless stars hanging in the Milky Way",
+    "segments": [
+      { "text": "은하수", "type": "lexicon", "id": "n_eunhasu" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "걸려", "type": "lexicon", "id": "v_get_caught" },
+      { "text": " ", "type": "text" },
+      { "text": "있", "type": "grammar", "id": "g_ah_eo_itda" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "수많", "type": "lexicon", "id": "adj_many" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If we draw the same orbit someday",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "언젠가", "type": "lexicon", "id": "cont_eonjenga" },
+      { "text": " ", "type": "text" },
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "궤도", "type": "lexicon", "id": "n_gwedo" },
+      { "text": "를", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "그린", "type": "lexicon", "id": "v_draw" },
+      { "text": "다면", "type": "grammar", "id": "g_conditional" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Surely we can shine brighter than anyone else",
+    "segments": [
+      { "text": "분명", "type": "lexicon", "id": "adv_clear" },
+      { "text": " ", "type": "text" },
+      { "text": "누구", "type": "lexicon", "id": "v_who_nugu" },
+      { "text": "보다", "type": "grammar", "id": "g_boda_than" },
+      { "text": " ", "type": "text" },
+      { "text": "밝", "type": "lexicon", "id": "v_bright" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "빛날", "type": "lexicon", "id": "bitnada" },
+      { "text": " ", "type": "text" },
+      { "text": "수 있어", "type": "grammar", "id": "g_can" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "There is only one reason: simply because it’s you and me",
+    "segments": [
+      { "text": "이유", "type": "lexicon", "id": "v_reason" },
+      { "text": "는", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "하나", "type": "lexicon", "id": "num_hana" },
+      { "text": " ", "type": "text" },
+      { "text": "그저", "type": "lexicon", "id": "adv_geujeo" },
+      { "text": " ", "type": "text" },
+      { "text": "너", "type": "lexicon", "id": "v_you" },
+      { "text": "와", "type": "grammar", "id": "g_and_with" },
+      { "text": " ", "type": "text" },
+      { "text": "나", "type": "lexicon", "id": "v_i" },
+      { "text": "라서", "type": "grammar", "id": "g_so_reason_nouns" }
+    ]
+  },
+   {
+    "type": "korean",
+    "translation": "Even if we don’t know where we are headed",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "로", "type": "grammar", "id": "g_direction_to" },
+      { "text": " ", "type": "text" },
+      { "text": "향", "type": "lexicon", "id": "v_hyanghada" },
+      { "text": "할지", "type": "grammar", "id": "g_eulji" },
+      { "text": "는", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "몰라", "type": "lexicon", "id": "v_not_know" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If we are looking at the same place",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "곳", "type": "lexicon", "id": "n_got" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "본", "type": "lexicon", "id": "v_see" },
+      { "text": "다면", "type": "grammar", "id": "g_conditional" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Shining like starlight from somewhere",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "선", "type": "grammar", "id": "g_inside_from" },
+      { "text": "가", "type": "grammar", "id": "g_n_ga_indef" },
+      { "text": " ", "type": "text" },
+      { "text": "별빛", "type": "lexicon", "id": "byeolbit" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" },
+      { "text": " ", "type": "text" },
+      { "text": "빛나", "type": "lexicon", "id": "bitnada" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Won't we dream of tomorrow?",
+    "segments": [
+      { "text": "내일", "type": "lexicon", "id": "n_tomorrow" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "꿈", "type": "lexicon", "id": "v_dream" },
+      { "text": "꾸", "type": "lexicon", "id": "v_kkumkkuda" },
+      { "text": "지", "type": "grammar", "id": "g_negation" },
+      { "text": " ", "type": "text" },
+      { "text": "않", "type": "grammar", "id": "g_negation" },
+      { "text": "을까", "type": "grammar", "id": "g_eul_kka" },
+      { "text": "?", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Even if we become stars covered in darkness",
+    "segments": [
+      { "text": "어둠", "type": "lexicon", "id": "n_eodum" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "뒤덮", "type": "lexicon", "id": "v_be_covered" },
+      { "text": "인", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "된", "type": "lexicon", "id": "v_become" },
+      { "text": "다", "type": "grammar", "id": "g_indirect_quote" },
+      { "text": " ", "type": "text" },
+      { "text": "해", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Just like right now",
+    "segments": [
+      { "text": "그저", "type": "lexicon", "id": "adv_geujeo" },
+      { "text": " ", "type": "text" },
+      { "text": "지금", "type": "lexicon", "id": "adv_jigeum" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Will you stay by my side? Then",
+    "segments": [
+      { "text": "곁", "type": "lexicon", "id": "v_side_near" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "있어", "type": "grammar", "id": "g_ah_eo_itda" },
+      { "text": " ", "type": "text" },
+      { "text": "줄", "type": "lexicon", "id": "v_to_give" },
+      { "text": "래", "type": "grammar", "id": "g_eullae" },
+      { "text": " ", "type": "text" },
+      { "text": "그럼", "type": "lexicon", "id": "conj_geureom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I will become the universe that surrounds you",
+    "segments": [
+      { "text": "널", "type": "lexicon", "id": "v_you_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "감", "type": "lexicon", "id": "v_envelop" },
+      { "text": "싼", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "우주", "type": "lexicon", "id": "v_universe" },
+      { "text": "가", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "될", "type": "lexicon", "id": "v_become" },
+      { "text": " ", "type": "text" },
+      { "text": "테니", "type": "grammar", "id": "g_eul_tenikka" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "The words you said under the same sky, \"You're doing great\"",
+    "segments": [
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "하늘", "type": "lexicon", "id": "n_haneul" },
+      { "text": " ", "type": "text" },
+      { "text": "아래", "type": "lexicon", "id": "n_arae" },
+      { "text": " ", "type": "text" },
+      { "text": "네가", "type": "lexicon", "id": "cont_nega" },
+      { "text": " ", "type": "text" },
+      { "text": "해", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "준", "type": "grammar", "id": "cont_chun" },
+      { "text": " ", "type": "text" },
+      { "text": "말", "type": "lexicon", "id": "n_mal" },
+      { "text": " \"", "type": "text" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
+      { "text": " ", "type": "text" },
+      { "text": "하", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "고 있어", "type": "grammar", "id": "g_progress" },
+      { "text": "\"", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "As we move forward, I promise, while holding our hands tight",
+    "segments": [
+      { "text": "나아가", "type": "lexicon", "id": "v_naagada" },
+      { "text": "며", "type": "grammar", "id": "g_while" },
+      { "text": " ", "type": "text" },
+      { "text": "약속해", "type": "lexicon", "id": "v_promise" },
+      { "text": " ", "type": "text" },
+      { "text": "두", "type": "lexicon", "id": "num_du" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": " ", "type": "text" },
+      { "text": "꼭", "type": "lexicon", "id": "adv_kkok" },
+      { "text": " ", "type": "text" },
+      { "text": "맞잡", "type": "lexicon", "id": "v_matjapda" },
+      { "text": "은 채", "type": "grammar", "id": "g_eun_chae" },
+      { "text": "로", "type": "grammar", "id": "g_direction_to" }
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+      { "text": "(Hey, hey, hey, hey)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "On days when it feels like the night will be long",
+    "segments": [
+      { "text": "밤", "type": "lexicon", "id": "v_night" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "길", "type": "lexicon", "id": "adj_long" },
+      { "text": "어", "type": "grammar", "id": "g_become" },
+      { "text": "질", "type": "grammar", "id": "g_ul_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "것 같", "type": "grammar", "id": "g_geot_gatda" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "날", "type": "lexicon", "id": "v_day" },
+      { "text": "엔", "type": "grammar", "id": "g_en_complex" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Just hold my hand without saying a word",
+    "segments": [
+      { "text": "아무", "type": "lexicon", "id": "adv_amoo" },
+      { "text": " ", "type": "text" },
+      { "text": "말", "type": "lexicon", "id": "n_mal" },
+      { "text": " ", "type": "text" },
+      { "text": "없이", "type": "lexicon", "id": "v_without" },
+      { "text": " ", "type": "text" },
+      { "text": "손", "type": "lexicon", "id": "v_hand" },
+      { "text": "만", "type": "grammar", "id": "g_only" },
+      { "text": " ", "type": "text" },
+      { "text": "잡아", "type": "lexicon", "id": "v_japda" },
+      { "text": " ", "type": "text" },
+      { "text": "줘", "type": "grammar", "id": "g_ah_eoju" }
+    ]
+  },
+    {
+    "type": "korean",
+    "translation": "The countless stars hanging in the Milky Way",
+    "segments": [
+      { "text": "은하수", "type": "lexicon", "id": "n_eunhasu" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "걸려", "type": "lexicon", "id": "v_get_caught" },
+      { "text": " ", "type": "text" },
+      { "text": "있", "type": "grammar", "id": "g_ah_eo_itda" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "수많", "type": "lexicon", "id": "adj_many" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If we draw the same orbit someday",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "언젠가", "type": "lexicon", "id": "cont_eonjenga" },
+      { "text": " ", "type": "text" },
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "궤도", "type": "lexicon", "id": "n_gwedo" },
+      { "text": "를", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "그린", "type": "lexicon", "id": "v_draw" },
+      { "text": "다면", "type": "grammar", "id": "g_conditional" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Surely we can shine brighter than anyone else",
+    "segments": [
+      { "text": "분명", "type": "lexicon", "id": "adv_clear" },
+      { "text": " ", "type": "text" },
+      { "text": "누구", "type": "lexicon", "id": "v_who_nugu" },
+      { "text": "보다", "type": "grammar", "id": "g_boda_than" },
+      { "text": " ", "type": "text" },
+      { "text": "밝", "type": "lexicon", "id": "v_bright" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " ", "type": "text" },
+      { "text": "빛날", "type": "lexicon", "id": "bitnada" },
+      { "text": " ", "type": "text" },
+      { "text": "수 있어", "type": "grammar", "id": "g_can" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "There is only one reason: simply because it’s you and me, oh",
+    "segments": [
+      { "text": "이유", "type": "lexicon", "id": "v_reason" },
+      { "text": "는", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "하나", "type": "lexicon", "id": "num_hana" },
+      { "text": " ", "type": "text" },
+      { "text": "그저", "type": "lexicon", "id": "adv_geujeo" },
+      { "text": " ", "type": "text" },
+      { "text": "너", "type": "lexicon", "id": "v_you" },
+      { "text": "와", "type": "grammar", "id": "g_and_with" },
+      { "text": " ", "type": "text" },
+      { "text": "나", "type": "lexicon", "id": "v_i" },
+      { "text": "라서", "type": "grammar", "id": "g_so_reason_nouns" },
+      { "text": ", oh", "type": "english" }
+    ]
+  },
+    {
+    "type": "korean",
+    "translation": "Even if we don’t know where we are headed",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "로", "type": "grammar", "id": "g_direction_to" },
+      { "text": " ", "type": "text" },
+      { "text": "향", "type": "lexicon", "id": "v_hyanghada" },
+      { "text": "할지", "type": "grammar", "id": "g_eulji" },
+      { "text": "는", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "몰라", "type": "lexicon", "id": "v_not_know" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If we are looking at the same place",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "같", "type": "lexicon", "id": "adj_same" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "곳", "type": "lexicon", "id": "n_got" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "본", "type": "lexicon", "id": "v_see" },
+      { "text": "다면", "type": "grammar", "id": "g_conditional" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Shining like starlight from somewhere",
+    "segments": [
+      { "text": "어디", "type": "lexicon", "id": "n_eodi" },
+      { "text": "선", "type": "grammar", "id": "g_inside_from" },
+      { "text": "가", "type": "grammar", "id": "g_n_ga_indef" },
+      { "text": " ", "type": "text" },
+      { "text": "별빛", "type": "lexicon", "id": "byeolbit" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" },
+      { "text": " ", "type": "text" },
+      { "text": "빛나", "type": "lexicon", "id": "bitnada" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Won't we dream of tomorrow?",
+    "segments": [
+      { "text": "내일", "type": "lexicon", "id": "n_tomorrow" },
+      { "text": "을", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "꿈", "type": "lexicon", "id": "v_dream" },
+      { "text": "꾸", "type": "lexicon", "id": "v_kkumkkuda" },
+      { "text": "지", "type": "grammar", "id": "g_negation" },
+      { "text": " ", "type": "text" },
+      { "text": "않", "type": "grammar", "id": "g_negation" },
+      { "text": "을까", "type": "grammar", "id": "g_eul_kka" },
+      { "text": "?", "type": "text" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Even if we become stars covered in darkness",
+    "segments": [
+      { "text": "어둠", "type": "lexicon", "id": "n_eodum" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "뒤덮", "type": "lexicon", "id": "v_be_covered" },
+      { "text": "인", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "별", "type": "lexicon", "id": "n_byul" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "된", "type": "lexicon", "id": "v_become" },
+      { "text": "다", "type": "grammar", "id": "g_indirect_quote" },
+      { "text": " ", "type": "text" },
+      { "text": "해", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "도", "type": "grammar", "id": "g_ah_eodo" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Just like right now",
+    "segments": [
+      { "text": "그저", "type": "lexicon", "id": "adv_geujeo" },
+      { "text": " ", "type": "text" },
+      { "text": "지금", "type": "lexicon", "id": "adv_jigeum" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Will you stay by my side? Then",
+    "segments": [
+      { "text": "곁", "type": "lexicon", "id": "v_side_near" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "있어", "type": "grammar", "id": "g_ah_eo_itda" },
+      { "text": " ", "type": "text" },
+      { "text": "줄", "type": "lexicon", "id": "v_to_give" },
+      { "text": "래", "type": "grammar", "id": "g_eullae" },
+      { "text": " ", "type": "text" },
+      { "text": "그럼", "type": "lexicon", "id": "conj_geureom" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I will become the universe that surrounds you",
+    "segments": [
+      { "text": "널", "type": "lexicon", "id": "v_you_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "감", "type": "lexicon", "id": "v_envelop" },
+      { "text": "싼", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "우주", "type": "lexicon", "id": "v_universe" },
+      { "text": "가", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "될", "type": "lexicon", "id": "v_become" },
+      { "text": " ", "type": "text" },
+      { "text": "테니", "type": "grammar", "id": "g_eul_tenikka" }
+    ]
+}]}
   ]
-
 
