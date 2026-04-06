@@ -9511,6 +9511,36 @@
     "word": "그리도",
      "category": "lexicon",
     "meanings": ["so much", "to that extent"]
+  },
+  "n_hangadeuk": {
+    "word": "한가득 / 한가득하다",
+    "category": "lexicon",
+    "meanings": ["full to the brim", "plenty", "a mouthful"]
+  },
+"adv_waenji": {
+    "word": "왠지",
+    "category": "lexicon",
+    "meanings": ["somehow", "for some reason", "kind of"]
+  },
+  "n_eunhasu": {
+    "word": "은하수",
+    "category": "lexicon",
+    "meanings": ["Milky Way", "river of stars"]
+  },
+  "n_gwedo": {
+    "word": "궤도",
+    "category": "lexicon",
+    "meanings": ["orbit", "track"]
+  },
+  "v_matjapda": {
+    "word": "맞잡다",
+    "category": "lexicon",
+    "meanings": ["to hold (hands) together", "to grip each other"]
+  },
+  "conj_geureom": {
+    "word": "그럼",
+    "category": "lexicon",
+    "meanings": ["then", "in that case", "if so"]
   }
 
 }
