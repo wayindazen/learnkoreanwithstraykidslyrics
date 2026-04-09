@@ -998,7 +998,6 @@
     "word": "까지",
     "category": "grammar",
     "meanings": [
-      "до",
       "до"
     ],
     "types": [
@@ -1020,7 +1019,6 @@
     "word": "올리다",
     "category": "lexicon",
     "meanings": [
-      "поднять",
       "поднять"
     ],
     "types": [
@@ -1102,7 +1100,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"gram_aga\", \"grammar\", event); event.stopPropagation();'>아/어가다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_ul_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄹ</span>"
     ]
   },
@@ -1161,7 +1159,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_become\", \"grammar\", event); event.stopPropagation();'>아/어지다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄴ</span>"
     ]
   },
@@ -1178,7 +1176,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_i\", \"lexicon\", event); event.stopPropagation();'>나</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>를</span>"
     ]
   },
@@ -1195,7 +1193,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_you\", \"lexicon\", event); event.stopPropagation();'>너</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_possessive\", \"grammar\", event); event.stopPropagation();'>의</span>"
     ]
   },
@@ -1213,7 +1211,7 @@
       "пара",
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"num_hana\", \"lexicon\", event); event.stopPropagation();'>하나</span> (one)",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"num_du\", \"lexicon\", event); event.stopPropagation();'>둘</span> (two)"
     ]
   },
@@ -1230,7 +1228,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_you\", \"lexicon\", event); event.stopPropagation();'>너</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>를</span>"
     ]
   },
@@ -1421,7 +1419,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_you\", \"lexicon\", event); event.stopPropagation();'>너</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -1616,7 +1614,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_negation\", \"grammar\", event); event.stopPropagation();'>-지 않다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -1633,7 +1631,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_cannot\", \"grammar\", event); event.stopPropagation();'>-지 못하다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -1650,7 +1648,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_negation\", \"grammar\", event); event.stopPropagation();'>-지 않다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>을/를</span>"
     ]
   },
@@ -1690,7 +1688,6 @@
     "category": "lexicon",
     "meanings": [
       "обнимать",
-      "обнимать",
       "держать"
     ]
   },
@@ -1729,7 +1726,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_i\", \"lexicon\", event); event.stopPropagation();'>나</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -1810,9 +1807,9 @@
     "word": "감기다",
     "category": "lexicon",
     "meanings": [
-      "быть раненым",
+      "быть обернутым",
       "быть искривленным",
-      "закрыть (глаза)"
+      "закрыться (глаза)"
     ]
   },
   "v_close_act": {
@@ -2228,7 +2225,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_now\", \"lexicon\", event); event.stopPropagation();'>이제</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -2252,7 +2249,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_what\", \"lexicon\", event); event.stopPropagation();'>뭐</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>를</span>"
     ]
   },
@@ -2269,7 +2266,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_thing_geot\", \"lexicon\", event); event.stopPropagation();'>것</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>를</span>"
     ]
   },
@@ -2286,7 +2283,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_live\", \"lexicon\", event); event.stopPropagation();'>살다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄴ</span>"
     ]
   },
@@ -2304,7 +2301,7 @@
       "нестандартная форма",
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_iran_iraneun\", \"grammar\", event); event.stopPropagation();'>(이)라(는)</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_eum_nominal\", \"grammar\", event); event.stopPropagation();'>(으)ㅁ</span>"
     ]
   },
@@ -2363,7 +2360,7 @@
     "word": "(으)ㄹ까?",
     "category": "grammar",
     "meanings": [
-      "интересный",
+      "интересно, ...?",
       "вопросы о будущих действиях"
     ]
   },
@@ -2386,7 +2383,6 @@
     "word": "따로",
     "category": "lexicon",
     "meanings": [
-      "отдельно",
       "отдельно",
       "индивидуально"
     ]
@@ -2444,7 +2440,7 @@
       "используется в основном в выражениях желания/надежды",
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_gi\", \"grammar\", event); event.stopPropagation();'>-기</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_object\", \"grammar\", event); event.stopPropagation();'>를</span>"
     ]
   },
@@ -2500,7 +2496,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_loc\", \"grammar\", event); event.stopPropagation();'>에</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>는</span>"
     ]
   },
@@ -2517,7 +2513,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_direction_to\", \"grammar\", event); event.stopPropagation();'>(으)로</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>는</span>"
     ]
   },
@@ -2534,7 +2530,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_who_nugu\", \"lexicon\", event); event.stopPropagation();'>누구</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_subject\", \"grammar\", event); event.stopPropagation();'>가</span>"
     ]
   },
@@ -2551,7 +2547,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_thing_geot\", \"lexicon\", event); event.stopPropagation();'>거</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_subject\", \"grammar\", event); event.stopPropagation();'>가</span>"
     ]
   },
@@ -2872,7 +2868,7 @@
     "word": "보다",
     "category": "lexicon",
     "meanings": [
-      "чтобы увидеть"
+      "видеть"
     ]
   },
   "v_emptiness": {
@@ -2952,7 +2948,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_i\", \"lexicon\", event); event.stopPropagation();'>나</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_egae\", \"grammar\", event); event.stopPropagation();'>에게</span>"
     ]
   },
@@ -2969,7 +2965,7 @@
     "meanings": [
       "Сокращение:",
       "<span class='interactive-word' onclick='createSticker(\"v_you\", \"lexicon\", event); event.stopPropagation();'>너</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_egae\", \"grammar\", event); event.stopPropagation();'>에게</span>"
     ]
   },
@@ -3054,7 +3050,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"n_eodi\", \"lexicon\", event); event.stopPropagation();'>어디</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_deun\", \"grammar\", event); event.stopPropagation();'>든</span>"
     ]
   },
@@ -3071,7 +3067,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_what\", \"lexicon\", event); event.stopPropagation();'>뭐</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_deun\", \"grammar\", event); event.stopPropagation();'>든</span>"
     ]
   },
@@ -3088,7 +3084,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_who_nugu\", \"lexicon\", event); event.stopPropagation();'>누구</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_deun\", \"grammar\", event); event.stopPropagation();'>든</span>"
     ]
   },
@@ -3105,7 +3101,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_when\", \"lexicon\", event); event.stopPropagation();'>언제</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_deun\", \"grammar\", event); event.stopPropagation();'>든</span>"
     ]
   },
@@ -3190,8 +3186,8 @@
     "word": "닥치다",
     "category": "lexicon",
     "meanings": [
-      "подход",
-      "замолчи"
+      "приближаться",
+      "заткнуться"
     ]
   },
   "n_cho": {
@@ -3383,15 +3379,15 @@
     "word": "감동",
     "category": "lexicon",
     "meanings": [
-      "эмоция",
-      "перемещается"
+      "сильная эмоция",
+      "впечатление", "быть тронутым"
     ]
   },
   "n_nunmul": {
     "word": "눈물",
     "category": "lexicon",
     "meanings": [
-      "рвать"
+      "слеза"
     ]
   },
   "g_keun_topik": {
@@ -3407,7 +3403,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"adj_keuda\", \"lexicon\", event); event.stopPropagation();'>크다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>-(으)ㄴ</span>"
     ]
   },
@@ -3424,7 +3420,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_baeda\", \"lexicon\", event); event.stopPropagation();'>배다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>-(으)ㄴ</span>"
     ]
   },
@@ -3441,7 +3437,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_bbaeda\", \"lexicon\", event); event.stopPropagation();'>빼다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>-(으)ㄴ</span>"
     ]
   },
@@ -3458,7 +3454,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_break\", \"lexicon\", event); event.stopPropagation();'>깨다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>-(으)ㄴ</span>"
     ]
   },
@@ -3982,7 +3978,7 @@
     "meanings": [
       "Конструкция, объединяющая причину и тему:",
       "<span class='interactive-word' onclick='createSticker(\"g_so_reason\", \"grammar\", event); event.stopPropagation();'>-아/어서</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -3999,7 +3995,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"adv_yeogi\", \"lexicon\", event); event.stopPropagation();'>여기</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -4016,7 +4012,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_see\", \"lexicon\", event); event.stopPropagation();'>보다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_past_tense\", \"grammar\", event); event.stopPropagation();'>-았/었-</span>"
     ]
   },
@@ -4873,7 +4869,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"v_bida\", \"lexicon\", event); event.stopPropagation();'>비다</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>은/는</span>"
     ]
   },
@@ -4933,8 +4929,6 @@
     "word": "땅",
     "category": "lexicon",
     "meanings": [
-      "земля",
-      "земля",
       "земля"
     ]
   },
@@ -6463,7 +6457,7 @@
     "word": "늘어나다",
     "category": "lexicon",
     "meanings": [
-      "увеличить",
+      "увеличиться",
       "расти"
     ]
   },
@@ -7128,7 +7122,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_ah_eoju\", \"grammar\", event); event.stopPropagation();'>-아/어주다</span> (do something for someone)",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_past_tense\", \"grammar\", event); event.stopPropagation();'>-았/었-</span> (past tense)"
     ]
   },
@@ -7145,7 +7139,7 @@
     "meanings": [
       "Строительство:",
       "<span class='interactive-word' onclick='createSticker(\"g_and\", \"grammar\", event); event.stopPropagation();'>-고</span>",
-      null,
+      "+",
       "<span class='interactive-word' onclick='createSticker(\"g_topic\", \"grammar\", event); event.stopPropagation();'>-은/는</span>"
     ]
   },
@@ -10124,8 +10118,7 @@
     "category": "lexicon",
     "meanings": [
       "защищать",
-      "держать",
-      "чтобы"
+      "держать"
     ]
   },
   "v_chikyeoseuda": {
@@ -15870,7 +15863,7 @@
     "word": "홀리다",
     "category": "lexicon",
     "meanings": [
-      "быть очарованнымб одержимым"
+      "быть очарованным, одержимым"
     ]
   },
   "adj_sipeoreopda": {
@@ -22353,7 +22346,6 @@
     "word": "회피",
     "category": "lexicon",
     "meanings": [
-      "уклонение",
       "уклонение"
     ]
   },
