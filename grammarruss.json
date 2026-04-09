@@ -179,7 +179,6 @@
     "category": "grammar",
     "meanings": [
       "в",
-      "в",
       "to (с глаголами движения)"
     ]
   },
@@ -342,8 +341,7 @@
     "category": "lexicon",
     "meanings": [
       "точка",
-      "место",
-      "точка"
+      "место"
     ],
     "types": [
       "lexicon"
@@ -660,7 +658,6 @@
     "word": "전부",
     "category": "lexicon",
     "meanings": [
-      "все",
       "все"
     ],
     "types": [
@@ -907,7 +904,6 @@
     "word": "주인",
     "category": "lexicon",
     "meanings": [
-      "владелец",
       "владелец"
     ],
     "types": [
@@ -938,7 +934,6 @@
     "word": "복",
     "category": "lexicon",
     "meanings": [
-      "удача",
       "удача"
     ],
     "types": [
@@ -960,7 +955,6 @@
     "word": "정적",
     "category": "lexicon",
     "meanings": [
-      "тишина",
       "тишина"
     ],
     "types": [
@@ -1545,7 +1539,6 @@
     "word": "운명",
     "category": "lexicon",
     "meanings": [
-      "судьба",
       "судьба"
     ]
   },
@@ -3137,7 +3130,6 @@
     "word": "다",
     "category": "lexicon",
     "meanings": [
-      "все",
       "все"
     ]
   },
@@ -3334,7 +3326,6 @@
     "word": "크다",
     "category": "lexicon",
     "meanings": [
-      "большой",
       "большой"
     ]
   },
@@ -3619,7 +3610,7 @@
     "word": "모이다",
     "category": "lexicon",
     "meanings": [
-      "собрать",
+      "собирать",
       "собрать"
     ]
   },
@@ -3627,7 +3618,6 @@
     "word": "퍼뜨리다",
     "category": "lexicon",
     "meanings": [
-      "распространять",
       "распространять"
     ]
   },
@@ -3922,7 +3912,6 @@
     "word": "정도",
     "category": "lexicon",
     "meanings": [
-      "степень",
       "степень"
     ]
   },
@@ -4392,7 +4381,7 @@
     "word": "즐김",
     "category": "lexicon",
     "meanings": [
-      "удовольствие",
+      "веселье",
       "удовольствие"
     ]
   },
@@ -5253,7 +5242,6 @@
     "word": "엄청나다",
     "category": "lexicon",
     "meanings": [
-      "быть огромным",
       "быть огромным"
     ]
   },
@@ -10137,7 +10125,7 @@
     "meanings": [
       "защищать",
       "держать",
-      "чтобы守"
+      "чтобы"
     ]
   },
   "v_chikyeoseuda": {
@@ -14786,7 +14774,6 @@
     "category": "lexicon",
     "meanings": [
       "достичь",
-      "выполнить",
       "выполнить"
     ]
   },
@@ -15649,7 +15636,7 @@
     "word": "이득",
     "category": "lexicon",
     "meanings": [
-      "прибыль, прибыль"
+      "прибыль, доход"
     ]
   },
   "n_moheom": {
@@ -15883,7 +15870,7 @@
     "word": "홀리다",
     "category": "lexicon",
     "meanings": [
-      "быть очарованным, очарованным"
+      "быть очарованнымб одержимым"
     ]
   },
   "adj_sipeoreopda": {
@@ -22538,7 +22525,6 @@
     "word": "모양",
     "category": "lexicon",
     "meanings": [
-      "форма",
       "форма",
       "появление"
     ]
