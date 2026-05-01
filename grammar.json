@@ -188,6 +188,17 @@
       "<span class='interactive-word' onclick='createSticker(\"g_un_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄴ</span>"
     ]
   },
+  "g_wojil_complex": {
+    "word": "-아/어지다 + -(으)ㄹ",
+    "types": ["grammar", "grammar"],
+    "contains": ["g_become", "g_ul_modifier"],
+    "meanings": [
+      "Construction:",
+      "<span class='interactive-word' onclick='createSticker(\"g_become\", \"grammar\", event); event.stopPropagation();'>아/어지다</span>",
+      "+",
+      "<span class='interactive-word' onclick='createSticker(\"g_ul_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄹ</span>"
+    ]
+  },
   "v_me_obj": {
     "word": "날 (나를)",
     "types": ["lexicon", "grammar"],
@@ -2003,7 +2014,7 @@
 
 "n_heotbaljil": { "word": "헛발질", "category": "lexicon", "meanings": ["misstep", "failed attempt"] },
 
-"n_child": { "word": "애", "category": "lexicon", "meanings": ["kid", "child"] },
+"n_child": { "word": "아이 / 애", "category": "lexicon", "meanings": ["kid", "child"] },
 
 "n_heotdari": { "word": "헛다리", "category": "lexicon", "meanings": ["wrong guess", "misdirected attempt"] },
 
@@ -9541,7 +9552,21 @@
     "word": "그럼",
     "category": "lexicon",
     "meanings": ["then", "in that case", "if so"]
-  }
+  },
+  "n_eohang": { "word": "어항", "category": "lexicon", "meanings": ["fish bowl", "fish tank"] },
+  "n_yuri": { "word": "유리", "category": "lexicon", "meanings": ["glass"] },
+   "num_sucheon": { "word": "수천", "category": "lexicon", "meanings": ["thousands of"] },
+  "v_neomsildaeda": { "word": "넘실대다", "category": "lexicon", "meanings": ["to surge", "to overflow", "to roll (waves)"] },
+  "adj_deuneolbda": { "word": "드넓다", "category": "lexicon", "meanings": ["to be vast", "to be very wide"] },
+  "adj_oraedoeda": { "word": "오래되다", "category": "lexicon", "meanings": ["to be old (for objects/situations)", "to be long-standing"] },
+  "n_ikki": { "word": "이끼", "category": "lexicon", "meanings": ["moss"] },
+  "v_tteoreotteurida": { "word": "떨어뜨리다", "category": "lexicon", "meanings": ["to drop (something)", "to let fall"] },
+  "v_seumyeodeulda": { "word": "스며들다", "category": "lexicon", "meanings": ["to soak in", "to permeate", "to pervade"] },
+  "adv_geogi": { "word": "거기", "category": "lexicon", "meanings": ["there (near the listener)"] },
+  "v_ollyeodaboda": { "word": "올려다보다", "category": "lexicon", "meanings": ["to look up at"] },
+  "dem_geugot": { "word": "그곳", "category": "lexicon", "meanings": ["that place"] },
+  "g_ul_geol": { "word": "-(으)ㄹ걸", "category": "grammar", "meanings": ["I bet...", "I guess that... (supposition)", "regret (different context)"] },
+  "n_geum": { "word": "금", "category": "lexicon", "meanings": ["crack", "line"] }
 
 }
 
