@@ -430,7 +430,7 @@
 
 "v_effort": { "word": "노력", "category": "lexicon", "meanings": ["effort"] },
 
-"v_listen": { "word": "들다", "category": "lexicon", "meanings": ["to listen", "to hear"] },
+"v_listen": { "word": "듣다", "category": "lexicon", "meanings": ["to listen", "to hear"] },
 
 "g_plural": { "word": "들", "category": "grammar", "meanings": ["plural", "-s"] },
 
