@@ -580,7 +580,6 @@
     "word": "허리띠",
     "category": "lexicon",
     "meanings": [
-      "пояс",
       "пояс"
     ],
     "types": [
@@ -1488,14 +1487,6 @@
       "момент"
     ]
   },
-  "v_blackout": {
-    "word": "암전",
-    "category": "lexicon",
-    "meanings": [
-      "затемнение",
-      "темнота"
-    ]
-  },
   "g_and_with": {
     "word": "와/과",
     "category": "grammar",
@@ -1529,7 +1520,6 @@
     "word": "스치다",
     "category": "lexicon",
     "meanings": [
-      "пройти мимо",
       "пройти мимо"
     ]
   },
@@ -1689,13 +1679,6 @@
     "meanings": [
       "обнимать",
       "держать"
-    ]
-  },
-  "g_future_promise": {
-    "word": "-(으)ㄹ게",
-    "category": "grammar",
-    "meanings": [
-      "будет (обещание/намерение)"
     ]
   },
   "v_when": {
@@ -3178,7 +3161,6 @@
     "word": "놈",
     "category": "lexicon",
     "meanings": [
-      "парень",
       "парень"
     ]
   },
@@ -3201,7 +3183,6 @@
     "word": "마다",
     "category": "grammar",
     "meanings": [
-      "каждый",
       "каждый"
     ]
   },
@@ -3380,7 +3361,8 @@
     "category": "lexicon",
     "meanings": [
       "сильная эмоция",
-      "впечатление", "быть тронутым"
+      "впечатление",
+      "быть тронутым"
     ]
   },
   "n_nunmul": {
@@ -3544,7 +3526,6 @@
     "word": "결국",
     "category": "lexicon",
     "meanings": [
-      "в конце концов",
       "в конце концов"
     ]
   },
@@ -3552,7 +3533,6 @@
     "word": "영향력",
     "category": "lexicon",
     "meanings": [
-      "влияние",
       "влияние"
     ]
   },
@@ -3658,14 +3638,6 @@
       "лязг"
     ]
   },
-  "v_deutda": {
-    "word": "듣다",
-    "category": "lexicon",
-    "meanings": [
-      "слышать",
-      "слушать"
-    ]
-  },
   "adv_mot": {
     "word": "못",
     "category": "lexicon",
@@ -3726,7 +3698,6 @@
     "word": "다음",
     "category": "lexicon",
     "meanings": [
-      "следующий",
       "следующий"
     ]
   },
@@ -3734,7 +3705,6 @@
     "word": "올라가다",
     "category": "lexicon",
     "meanings": [
-      "подняться",
       "подняться"
     ]
   },
@@ -4247,7 +4217,6 @@
     "word": "젖다",
     "category": "lexicon",
     "meanings": [
-      "промокнуть",
       "промокнуть"
     ]
   },
@@ -4456,7 +4425,6 @@
     "word": "둘러싸다",
     "category": "lexicon",
     "meanings": [
-      "окружить",
       "окружить"
     ]
   },
@@ -4764,7 +4732,6 @@
     "word": "기대 / 기대감",
     "category": "lexicon",
     "meanings": [
-      "ожидание",
       "ожидание"
     ]
   },
@@ -4943,7 +4910,6 @@
     "word": "피어나다",
     "category": "lexicon",
     "meanings": [
-      "цвести",
       "цвести"
     ]
   },
@@ -4974,7 +4940,6 @@
     "word": "햇살",
     "category": "lexicon",
     "meanings": [
-      "солнечный свет",
       "солнечный свет"
     ]
   },
@@ -4991,7 +4956,6 @@
     "word": "위로하다",
     "category": "lexicon",
     "meanings": [
-      "утешать",
       "утешать"
     ]
   },
@@ -5011,27 +4975,12 @@
       "петь"
     ]
   },
-  "adv_well": {
-    "word": "잘",
-    "category": "lexicon",
-    "meanings": [
-      "хорошо",
-      "правильно"
-    ]
-  },
   "g_progress": {
     "word": "-고 있다",
     "category": "grammar",
     "meanings": [
       "прогрессивная форма",
       "делать"
-    ]
-  },
-  "n_hundreds": {
-    "word": "수백",
-    "category": "lexicon",
-    "meanings": [
-      "сотни (из)"
     ]
   },
   "n_times": {
@@ -5158,7 +5107,6 @@
     "word": "지르다",
     "category": "lexicon",
     "meanings": [
-      "кричать",
       "кричать"
     ]
   },
@@ -5228,7 +5176,6 @@
     "word": "상태",
     "category": "lexicon",
     "meanings": [
-      "состояние",
       "состояние"
     ]
   },
@@ -5424,7 +5371,6 @@
     "word": "흘리다",
     "category": "lexicon",
     "meanings": [
-      "пролить",
       "пролить"
     ]
   },
@@ -5456,7 +5402,6 @@
     "word": "멀리",
     "category": "lexicon",
     "meanings": [
-      "далеко",
       "далеко"
     ]
   },
@@ -5497,7 +5442,6 @@
     "word": "발걸음 / 걸음",
     "category": "lexicon",
     "meanings": [
-      "шаги",
       "шаги"
     ]
   },
@@ -5589,14 +5533,6 @@
       "основной"
     ]
   },
-  "v_get_hold": {
-    "word": "잡히다",
-    "category": "lexicon",
-    "meanings": [
-      "быть пойманным",
-      "взять под контроль"
-    ]
-  },
   "adj_unstable": {
     "word": "위태롭다",
     "category": "lexicon",
@@ -5632,7 +5568,6 @@
     "word": "지나가다",
     "category": "lexicon",
     "meanings": [
-      "пройти мимо",
       "пройти мимо"
     ]
   },
@@ -5794,7 +5729,6 @@
     "word": "내쉬다",
     "category": "lexicon",
     "meanings": [
-      "выдохнуть",
       "выдохнуть"
     ]
   },
@@ -5847,14 +5781,6 @@
     "meanings": [
       "быть растоптанным",
       "быть раздавленным"
-    ]
-  },
-  "n_storm": {
-    "word": "비바람",
-    "category": "lexicon",
-    "meanings": [
-      "ветер и дождь",
-      "шторм"
     ]
   },
   "v_entrust": {
@@ -6035,7 +5961,6 @@
     "word": "대신",
     "category": "lexicon",
     "meanings": [
-      "вместо",
       "вместо"
     ]
   },
@@ -6092,7 +6017,6 @@
     "word": "덩이",
     "category": "lexicon",
     "meanings": [
-      "кусок",
       "кусок"
     ]
   },
@@ -6163,19 +6087,10 @@
       "чувство"
     ]
   },
-  "g_iramyun": {
-    "word": "-(이)라면",
-    "category": "grammar",
-    "meanings": [
-      "если это так",
-      "предполагая, что"
-    ]
-  },
   "n_problem": {
     "word": "문제",
     "category": "lexicon",
     "meanings": [
-      "проблема",
       "проблема"
     ]
   },
@@ -6224,14 +6139,6 @@
       "чувство достижения"
     ]
   },
-  "v_occur_": {
-    "word": "일어나다",
-    "category": "lexicon",
-    "meanings": [
-      "случиться",
-      "произойти"
-    ]
-  },
   "n_miracle": {
     "word": "기적",
     "category": "lexicon",
@@ -6259,7 +6166,6 @@
     "word": "음",
     "category": "lexicon",
     "meanings": [
-      "хм",
       "хм"
     ]
   },
@@ -6314,7 +6220,6 @@
     "word": "자기",
     "category": "lexicon",
     "meanings": [
-      "себя",
       "себя"
     ]
   },
@@ -6465,7 +6370,6 @@
     "word": "숙명",
     "category": "lexicon",
     "meanings": [
-      "судьба",
       "судьба"
     ]
   },
@@ -6539,7 +6443,6 @@
     "word": "많이",
     "category": "lexicon",
     "meanings": [
-      "много",
       "много"
     ]
   },
@@ -6555,7 +6458,6 @@
     "word": "진저리",
     "category": "lexicon",
     "meanings": [
-      "отвращение",
       "отвращение"
     ]
   },
@@ -6587,7 +6489,6 @@
     "word": "탄탄하다",
     "category": "lexicon",
     "meanings": [
-      "твердый",
       "твердый"
     ]
   },
@@ -6849,7 +6750,6 @@
     "word": "거짓 / 거짓말",
     "category": "lexicon",
     "meanings": [
-      "ложь",
       "ложь"
     ]
   },
@@ -6995,7 +6895,6 @@
     "category": "lexicon",
     "meanings": [
       "бежать",
-      "прыгать",
       "прыгать"
     ]
   },
@@ -7236,7 +7135,6 @@
     "word": "자신",
     "category": "lexicon",
     "meanings": [
-      "себя",
       "себя"
     ]
   },
@@ -7445,7 +7343,6 @@
     "word": "애",
     "category": "lexicon",
     "meanings": [
-      "ребенок",
       "ребенок"
     ]
   },
@@ -7477,7 +7374,6 @@
     "word": "오르다",
     "category": "lexicon",
     "meanings": [
-      "подняться",
       "подняться"
     ]
   },
@@ -7507,7 +7403,6 @@
     "word": "연계",
     "category": "lexicon",
     "meanings": [
-      "связь",
       "связь"
     ]
   },
@@ -7598,7 +7493,6 @@
     "word": "훨씬",
     "category": "lexicon",
     "meanings": [
-      "гораздо больше",
       "гораздо больше"
     ]
   },
@@ -7667,7 +7561,6 @@
     "word": "전반적",
     "category": "lexicon",
     "meanings": [
-      "общий",
       "общий"
     ]
   },
@@ -7683,7 +7576,6 @@
     "word": "불안",
     "category": "lexicon",
     "meanings": [
-      "беспокойство",
       "беспокойство"
     ]
   },
@@ -7829,7 +7721,6 @@
     "word": "쌓이다",
     "category": "lexicon",
     "meanings": [
-      "накапливать",
       "накапливать"
     ]
   },
@@ -7845,7 +7736,6 @@
     "word": "분위기",
     "category": "lexicon",
     "meanings": [
-      "атмосфера",
       "атмосфера"
     ]
   },
@@ -7869,7 +7759,6 @@
     "word": "마주치다",
     "category": "lexicon",
     "meanings": [
-      "столкнуться",
       "столкнуться"
     ]
   },
@@ -8430,7 +8319,6 @@
     "word": "영리하다",
     "category": "lexicon",
     "meanings": [
-      "умный",
       "умный"
     ]
   },
@@ -8460,7 +8348,6 @@
     "word": "쏘다",
     "category": "lexicon",
     "meanings": [
-      "стрелять",
       "стрелять",
       "лечить (платить за других)"
     ]
@@ -8584,15 +8471,6 @@
       "ритм"
     ]
   },
-  "v_matchuda": {
-    "word": "맞추다",
-    "category": "lexicon",
-    "meanings": [
-      "соответствовать",
-      "корректировать",
-      "правильно угадать"
-    ]
-  },
   "v_nolda": {
     "word": "놀다",
     "category": "lexicon",
@@ -8672,13 +8550,6 @@
     "meanings": [
       "удивлять",
       "пугать"
-    ]
-  },
-  "v_jichida": {
-    "word": "지치다",
-    "category": "lexicon",
-    "meanings": [
-      "быть истощенным"
     ]
   },
   "n_segye": {
@@ -8771,7 +8642,6 @@
     "category": "lexicon",
     "meanings": [
       "жесткий",
-      "твердый",
       "твердый"
     ]
   },
@@ -8795,7 +8665,6 @@
     "word": "대답",
     "category": "lexicon",
     "meanings": [
-      "отвечать",
       "отвечать"
     ]
   },
@@ -8992,7 +8861,6 @@
     "word": "돌아오다",
     "category": "lexicon",
     "meanings": [
-      "вернуться",
       "вернуться"
     ]
   },
@@ -9131,7 +8999,6 @@
     "word": "조금",
     "category": "lexicon",
     "meanings": [
-      "немного",
       "немного"
     ]
   },
@@ -9202,7 +9069,6 @@
     "word": "뾰족하다",
     "category": "lexicon",
     "meanings": [
-      "быть острым",
       "быть острым"
     ]
   },
@@ -9606,7 +9472,6 @@
     "word": "역풍",
     "category": "lexicon",
     "meanings": [
-      "встречный ветер",
       "встречный ветер"
     ]
   },
@@ -9965,7 +9830,6 @@
     "word": "덜다",
     "category": "lexicon",
     "meanings": [
-      "уменьшить",
       "уменьшить"
     ]
   },
@@ -10060,7 +9924,6 @@
     "word": "가깝다",
     "category": "lexicon",
     "meanings": [
-      "быть рядом",
       "быть рядом"
     ]
   },
@@ -10156,7 +10019,6 @@
     "word": "굳건하다",
     "category": "lexicon",
     "meanings": [
-      "быть твердым",
       "быть твердым"
     ]
   },
@@ -10411,7 +10273,6 @@
     "word": "미끼",
     "category": "lexicon",
     "meanings": [
-      "приманка",
       "приманка"
     ]
   },
@@ -10449,7 +10310,6 @@
     "word": "우연히",
     "category": "lexicon",
     "meanings": [
-      "случайно",
       "случайно"
     ]
   },
@@ -10464,7 +10324,6 @@
     "word": "발자국",
     "category": "lexicon",
     "meanings": [
-      "след",
       "след"
     ]
   },
@@ -10737,7 +10596,6 @@
     "word": "떠나다",
     "category": "lexicon",
     "meanings": [
-      "уйти",
       "уйти"
     ]
   },
@@ -10752,7 +10610,6 @@
     "word": "공허하다",
     "category": "lexicon",
     "meanings": [
-      "пустой",
       "пустой"
     ]
   },
@@ -11353,7 +11210,6 @@
     "word": "억누르다",
     "category": "lexicon",
     "meanings": [
-      "подавлять",
       "подавлять"
     ]
   },
@@ -11522,7 +11378,6 @@
     "word": "소리치다",
     "category": "lexicon",
     "meanings": [
-      "кричать",
       "кричать"
     ]
   },
@@ -11754,7 +11609,6 @@
     "word": "이해",
     "category": "lexicon",
     "meanings": [
-      "понимание",
       "понимание"
     ]
   },
@@ -11789,7 +11643,6 @@
     "word": "베다",
     "category": "lexicon",
     "meanings": [
-      "резать",
       "резать"
     ]
   },
@@ -11836,7 +11689,6 @@
     "word": "내려오다",
     "category": "lexicon",
     "meanings": [
-      "спуститься",
       "спуститься"
     ]
   },
@@ -11846,14 +11698,6 @@
     "meanings": [
       "утро",
       "завтрак"
-    ]
-  },
-  "sildeuda": {
-    "word": "시들다",
-    "category": "lexicon",
-    "meanings": [
-      "чахнуть",
-      "увядать"
     ]
   },
   "silta": {
@@ -12037,7 +11881,6 @@
     "word": "시작하다",
     "category": "lexicon",
     "meanings": [
-      "начать",
       "начать"
     ]
   },
@@ -12069,7 +11912,6 @@
     "word": "무한대",
     "category": "lexicon",
     "meanings": [
-      "бесконечность",
       "бесконечность"
     ]
   },
@@ -12194,14 +12036,6 @@
       "шестиугольник"
     ]
   },
-  "apjeong": {
-    "word": "압정",
-    "category": "lexicon",
-    "meanings": [
-      "канцелярская кнопка",
-      "канцелярская кнопка"
-    ]
-  },
   "yakjeom": {
     "word": "약점",
     "category": "lexicon",
@@ -12288,7 +12122,6 @@
     "word": "아마 / 아마도",
     "category": "lexicon",
     "meanings": [
-      "вероятно",
       "вероятно"
     ]
   },
@@ -12376,7 +12209,6 @@
     "word": "선물",
     "category": "lexicon",
     "meanings": [
-      "подарок",
       "подарок"
     ]
   },
@@ -12399,7 +12231,6 @@
     "word": "사라지다",
     "category": "lexicon",
     "meanings": [
-      "исчезнуть",
       "исчезнуть"
     ]
   },
@@ -12429,7 +12260,6 @@
     "word": "안개",
     "category": "lexicon",
     "meanings": [
-      "туман",
       "туман"
     ]
   },
@@ -12446,7 +12276,6 @@
     "category": "lexicon",
     "meanings": [
       "ужасный",
-      "ужасный",
       "безнадежный"
     ]
   },
@@ -12454,7 +12283,6 @@
     "word": "뿐",
     "category": "grammar",
     "meanings": [
-      "только",
       "только"
     ]
   },
@@ -12742,7 +12570,6 @@
     "category": "lexicon",
     "meanings": [
       "каракули",
-      "каракули",
       "граффити"
     ]
   },
@@ -12790,7 +12617,6 @@
     "word": "맡다",
     "category": "lexicon",
     "meanings": [
-      "пахнуть",
       "пахнуть",
       "взять на себя ответственность"
     ]
@@ -13313,7 +13139,6 @@
     "word": "질식",
     "category": "lexicon",
     "meanings": [
-      "удушье",
       "удушье"
     ]
   },
@@ -13345,7 +13170,6 @@
     "word": "부정하다",
     "category": "lexicon",
     "meanings": [
-      "отрицать",
       "отрицать"
     ]
   },
@@ -13353,7 +13177,6 @@
     "word": "예정되다",
     "category": "lexicon",
     "meanings": [
-      "быть запланированным",
       "быть запланированным"
     ]
   },
@@ -13378,14 +13201,6 @@
     "meanings": [
       "ожидать",
       "предвидеть"
-    ]
-  },
-  "choego": {
-    "word": "최고",
-    "category": "lexicon",
-    "meanings": [
-      "лучшее",
-      "самый высокий"
     ]
   },
   "danghwangseureopda": {
@@ -13448,7 +13263,6 @@
     "word": "나타나다",
     "category": "lexicon",
     "meanings": [
-      "появиться",
       "появиться"
     ]
   },
@@ -13567,7 +13381,6 @@
     "word": "이어폰",
     "category": "lexicon",
     "meanings": [
-      "наушники",
       "наушники"
     ]
   },
@@ -13612,7 +13425,6 @@
     "word": "참견",
     "category": "lexicon",
     "meanings": [
-      "вмешательство",
       "вмешательство"
     ]
   },
@@ -13819,7 +13631,6 @@
     "word": "불행",
     "category": "lexicon",
     "meanings": [
-      "несчастье",
       "несчастье"
     ]
   },
@@ -14112,7 +13923,6 @@
     "category": "lexicon",
     "meanings": [
       "только",
-      "только",
       "как будто все остальное не имеет значения"
     ]
   },
@@ -14167,7 +13977,6 @@
     "word": "수두룩하다",
     "category": "lexicon",
     "meanings": [
-      "обильный",
       "обильный"
     ]
   },
@@ -14286,7 +14095,6 @@
     "word": "달성",
     "category": "lexicon",
     "meanings": [
-      "достижение",
       "достижение"
     ]
   },
@@ -14301,7 +14109,6 @@
     "word": "회동",
     "category": "lexicon",
     "meanings": [
-      "встреча",
       "встреча"
     ]
   },
@@ -14449,7 +14256,6 @@
     "category": "lexicon",
     "meanings": [
       "отрицание",
-      "отрицание",
       "коррупция"
     ]
   },
@@ -14550,7 +14356,6 @@
     "word": "분리",
     "category": "lexicon",
     "meanings": [
-      "разделение",
       "разделение"
     ]
   },
@@ -14597,7 +14402,6 @@
     "word": "상관하다",
     "category": "lexicon",
     "meanings": [
-      "вмешиваться в",
       "вмешиваться в"
     ]
   },
@@ -14648,7 +14452,6 @@
     "category": "lexicon",
     "meanings": [
       "неуклюжий",
-      "неуклюжий",
       "полусырой"
     ]
   },
@@ -14664,7 +14467,6 @@
     "word": "뒤처지다",
     "category": "lexicon",
     "meanings": [
-      "отставать",
       "отставать"
     ]
   },
@@ -14704,7 +14506,6 @@
     "word": "온몸",
     "category": "lexicon",
     "meanings": [
-      "все тело",
       "все тело"
     ]
   },
@@ -14782,7 +14583,6 @@
     "word": "온",
     "category": "lexicon",
     "meanings": [
-      "весь",
       "весь"
     ]
   },
@@ -14873,7 +14673,6 @@
     "word": "전",
     "category": "lexicon",
     "meanings": [
-      "весь",
       "весь"
     ]
   },
@@ -14897,7 +14696,6 @@
     "word": "무시하다",
     "category": "lexicon",
     "meanings": [
-      "игнорировать",
       "игнорировать"
     ]
   },
@@ -15180,7 +14978,6 @@
     "word": "번지다",
     "category": "lexicon",
     "meanings": [
-      "распространять",
       "распространять"
     ]
   },
@@ -15226,7 +15023,6 @@
     "word": "집",
     "category": "lexicon",
     "meanings": [
-      "дом",
       "дом"
     ]
   },
@@ -15330,7 +15126,6 @@
     "word": "쫓다",
     "category": "lexicon",
     "meanings": [
-      "преследовать",
       "преследовать"
     ]
   },
@@ -15362,7 +15157,6 @@
     "word": "거뜬하다",
     "category": "lexicon",
     "meanings": [
-      "легкий",
       "легкий"
     ]
   },
@@ -15516,7 +15310,6 @@
     "category": "lexicon",
     "meanings": [
       "остановить",
-      "сдерживать",
       "сдерживать"
     ]
   },
@@ -16226,7 +16019,6 @@
     "word": "회상",
     "category": "lexicon",
     "meanings": [
-      "воспоминание",
       "воспоминание"
     ]
   },
@@ -16352,7 +16144,6 @@
     "word": "폭발",
     "category": "lexicon",
     "meanings": [
-      "взрыв",
       "взрыв"
     ]
   },
@@ -16708,7 +16499,6 @@
     "word": "적막",
     "category": "lexicon",
     "meanings": [
-      "тишина",
       "тишина"
     ]
   },
@@ -16748,7 +16538,6 @@
     "word": "용기",
     "category": "lexicon",
     "meanings": [
-      "храбрость",
       "храбрость"
     ]
   },
@@ -16821,7 +16610,6 @@
     "category": "lexicon",
     "meanings": [
       "обнимать",
-      "обнимать",
       "обниматься"
     ]
   },
@@ -16845,7 +16633,6 @@
     "word": "조명",
     "category": "lexicon",
     "meanings": [
-      "освещение",
       "освещение"
     ]
   },
@@ -16861,7 +16648,6 @@
     "word": "운",
     "category": "lexicon",
     "meanings": [
-      "удача",
       "удача"
     ]
   },
@@ -16925,7 +16711,6 @@
     "word": "맞서다",
     "category": "lexicon",
     "meanings": [
-      "противостоять",
       "противостоять"
     ]
   },
@@ -16933,7 +16718,6 @@
     "word": "압정",
     "category": "lexicon",
     "meanings": [
-      "канцелярская кнопка",
       "канцелярская кнопка"
     ]
   },
@@ -16975,7 +16759,6 @@
     "word": "족적",
     "category": "lexicon",
     "meanings": [
-      "след",
       "след"
     ]
   },
@@ -17053,8 +16836,6 @@
     "word": "목적",
     "category": "lexicon",
     "meanings": [
-      "цель",
-      "цель",
       "цель"
     ]
   },
@@ -17087,7 +16868,6 @@
     "category": "lexicon",
     "meanings": [
       "сверкать",
-      "мерцать",
       "мерцать"
     ]
   },
@@ -17103,8 +16883,7 @@
     "category": "lexicon",
     "meanings": [
       "проверить",
-      "подтвердить",
-      "проверить"
+      "подтвердить"
     ]
   },
   "v_age": {
@@ -17142,7 +16921,6 @@
     "word": "미로",
     "category": "lexicon",
     "meanings": [
-      "лабиринт",
       "лабиринт"
     ]
   },
@@ -17158,7 +16936,6 @@
     "word": "피로",
     "category": "lexicon",
     "meanings": [
-      "усталость",
       "усталость"
     ]
   },
@@ -17234,7 +17011,6 @@
     "category": "lexicon",
     "meanings": [
       "приветствовать",
-      "приветствовать",
       "встретиться"
     ]
   },
@@ -17275,7 +17051,6 @@
     "word": "무인도",
     "category": "lexicon",
     "meanings": [
-      "необитаемый остров",
       "необитаемый остров"
     ]
   },
@@ -17358,15 +17133,6 @@
       "морской туман"
     ]
   },
-  "adj_dense": {
-    "word": "짙다",
-    "category": "lexicon",
-    "meanings": [
-      "глубокий",
-      "толстый",
-      "плотный"
-    ]
-  },
   "v_be_considerate": {
     "word": "배려하다",
     "category": "lexicon",
@@ -17430,7 +17196,6 @@
     "word": "시공간",
     "category": "lexicon",
     "meanings": [
-      "пространство-время",
       "пространство-время"
     ]
   },
@@ -17477,7 +17242,6 @@
     "word": "소용돌이치다",
     "category": "lexicon",
     "meanings": [
-      "кружить",
       "кружить"
     ]
   },
@@ -17535,7 +17299,6 @@
     "word": "달래다",
     "category": "lexicon",
     "meanings": [
-      "успокоить",
       "успокоить",
       "утешать"
     ]
@@ -17619,7 +17382,6 @@
     "word": "문득",
     "category": "adverb",
     "meanings": [
-      "внезапно",
       "внезапно"
     ]
   },
@@ -17676,7 +17438,6 @@
     "word": "들어오다",
     "category": "verb",
     "meanings": [
-      "войти",
       "войти"
     ]
   },
@@ -17716,7 +17477,6 @@
     "word": "기대를 걸다",
     "category": "expression",
     "meanings": [
-      "возлагать надежды на",
       "возлагать надежды на"
     ]
   },
@@ -17860,7 +17620,6 @@
     "category": "noun",
     "meanings": [
       "воздушный поток",
-      "атмосфера",
       "атмосфера"
     ]
   },
@@ -17884,7 +17643,6 @@
     "word": "무의미하다",
     "category": "adjective",
     "meanings": [
-      "бессмысленный",
       "бессмысленный"
     ]
   },
@@ -19459,13 +19217,6 @@
       "верхние слои атмосферы"
     ]
   },
-  "adj_daldalhada": {
-    "word": "달달하다",
-    "category": "lexicon",
-    "meanings": [
-      "сладкий"
-    ]
-  },
   "v_naseoda": {
     "word": "나서다",
     "category": "lexicon",
@@ -19771,7 +19522,6 @@
     "word": "양",
     "category": "lexicon",
     "meanings": [
-      "количество",
       "количество"
     ]
   },
@@ -19874,7 +19624,6 @@
     "word": "마찰",
     "category": "lexicon",
     "meanings": [
-      "трение",
       "трение"
     ]
   },
@@ -19966,7 +19715,6 @@
     "word": "제대로",
     "category": "lexicon",
     "meanings": [
-      "правильно",
       "правильно"
     ]
   },
@@ -20209,7 +19957,6 @@
     "word": "묶이다",
     "category": "lexicon",
     "meanings": [
-      "быть связанным",
       "быть связанным"
     ]
   },
@@ -20354,7 +20101,6 @@
     "word": "심각하다",
     "category": "lexicon",
     "meanings": [
-      "серьезный",
       "серьезный"
     ]
   },
@@ -20362,7 +20108,6 @@
     "word": "온통",
     "category": "lexicon",
     "meanings": [
-      "полностью",
       "полностью",
       "повсюду"
     ]
@@ -20396,7 +20141,6 @@
     "word": "위협",
     "category": "lexicon",
     "meanings": [
-      "угроза",
       "угроза"
     ]
   },
@@ -20405,7 +20149,6 @@
     "category": "lexicon",
     "meanings": [
       "[миметический]",
-      "дрожь",
       "дрожь"
     ]
   },
@@ -20519,7 +20262,6 @@
     "word": "함정",
     "category": "lexicon",
     "meanings": [
-      "ловушка",
       "ловушка"
     ]
   },
@@ -20589,7 +20331,6 @@
     "word": "속이다",
     "category": "lexicon",
     "meanings": [
-      "обмануть",
       "обмануть"
     ]
   },
@@ -20803,8 +20544,7 @@
     "category": "lexicon",
     "meanings": [
       "скромный",
-      "послушный",
-      "скромный"
+      "послушный"
     ]
   },
   "n_ppallaedae": {
@@ -20865,7 +20605,6 @@
     "category": "lexicon",
     "meanings": [
       "заклинание",
-      "заклинание",
       "заказ"
     ]
   },
@@ -20896,7 +20635,6 @@
     "word": "바지",
     "category": "lexicon",
     "meanings": [
-      "брюки",
       "брюки"
     ]
   },
@@ -20943,7 +20681,6 @@
     "word": "셀럽",
     "category": "lexicon",
     "meanings": [
-      "знаменитость",
       "знаменитость"
     ]
   },
@@ -21035,7 +20772,6 @@
     "word": "복잡하다",
     "category": "lexicon",
     "meanings": [
-      "сложный",
       "сложный"
     ]
   },
@@ -21190,7 +20926,6 @@
     "word": "닮은꼴",
     "category": "lexicon",
     "meanings": [
-      "двойник",
       "двойник"
     ]
   },
@@ -21285,7 +21020,6 @@
     "word": "원인",
     "category": "lexicon",
     "meanings": [
-      "причина",
       "причина"
     ]
   },
@@ -21348,7 +21082,6 @@
     "category": "lexicon",
     "meanings": [
       "вещь",
-      "вещи",
       "вещи"
     ]
   },
@@ -21357,7 +21090,6 @@
     "category": "lexicon",
     "meanings": [
       "универсал",
-      "всемогущий",
       "всемогущий"
     ]
   },
@@ -21512,7 +21244,6 @@
     "category": "lexicon",
     "meanings": [
       "разделить",
-      "разделить",
       "прорезать"
     ]
   },
@@ -21536,7 +21267,6 @@
     "word": "이상하다",
     "category": "lexicon",
     "meanings": [
-      "быть странным",
       "быть странным"
     ]
   },
@@ -21707,7 +21437,6 @@
     "word": "망아지",
     "category": "lexicon",
     "meanings": [
-      "жеребенок",
       "жеребенок"
     ]
   },
@@ -21771,7 +21500,6 @@
     "word": "미끄러지다",
     "category": "lexicon",
     "meanings": [
-      "скользить",
       "скользить"
     ]
   },
@@ -21836,7 +21564,6 @@
     "word": "해방시키다",
     "category": "lexicon",
     "meanings": [
-      "освободить",
       "освободить"
     ]
   },
@@ -21945,13 +21672,6 @@
     "category": "lexicon",
     "meanings": [
       "уличный фонарь"
-    ]
-  },
-  "n_oraejeon": {
-    "word": "오래전",
-    "category": "lexicon",
-    "meanings": [
-      "давно"
     ]
   },
   "n_gojang": {
@@ -22222,8 +21942,7 @@
     "category": "lexicon",
     "meanings": [
       "конечно",
-      "обязательно",
-      "конечно"
+      "обязательно"
     ]
   },
   "n_ja_ruler": {
@@ -22353,7 +22072,6 @@
     "word": "능력",
     "category": "lexicon",
     "meanings": [
-      "способность",
       "способность"
     ]
   },
@@ -22423,7 +22141,6 @@
     "word": "뚜껑",
     "category": "lexicon",
     "meanings": [
-      "крышка",
       "крышка"
     ]
   },
@@ -22695,6 +22412,131 @@
       "затем",
       "в таком случае",
       "если так"
+    ]
+  },
+  "g_wojil_complex": {
+    "word": "-아/어지다 + -(으)ㄹ",
+    "types": [
+      "grammar",
+      "grammar"
+    ],
+    "contains": [
+      "g_become",
+      "g_ul_modifier"
+    ],
+    "meanings": [
+      "Строительство:",
+      "<span class='interactive-word' onclick='createSticker(\"g_become\", \"grammar\", event); event.stopPropagation();'>아/어지다</span>",
+      null,
+      "<span class='interactive-word' onclick='createSticker(\"g_ul_modifier\", \"grammar\", event); event.stopPropagation();'>(으)ㄹ</span>"
+    ]
+  },
+  "n_eohang": {
+    "word": "어항",
+    "category": "lexicon",
+    "meanings": [
+      "рыбная миска",
+      "аквариум"
+    ]
+  },
+  "n_yuri": {
+    "word": "유리",
+    "category": "lexicon",
+    "meanings": [
+      "стекло"
+    ]
+  },
+  "num_sucheon": {
+    "word": "수천",
+    "category": "lexicon",
+    "meanings": [
+      "тысячи"
+    ]
+  },
+  "v_neomsildaeda": {
+    "word": "넘실대다",
+    "category": "lexicon",
+    "meanings": [
+      "всплеск",
+      "переполнять",
+      "катиться (волны)"
+    ]
+  },
+  "adj_deuneolbda": {
+    "word": "드넓다",
+    "category": "lexicon",
+    "meanings": [
+      "быть огромным",
+      "быть очень широким"
+    ]
+  },
+  "adj_oraedoeda": {
+    "word": "오래되다",
+    "category": "lexicon",
+    "meanings": [
+      "быть старым (для предметов/ситуаций)",
+      "быть давним"
+    ]
+  },
+  "n_ikki": {
+    "word": "이끼",
+    "category": "lexicon",
+    "meanings": [
+      "мох"
+    ]
+  },
+  "v_tteoreotteurida": {
+    "word": "떨어뜨리다",
+    "category": "lexicon",
+    "meanings": [
+      "уронить (что-то)",
+      "позволить упасть"
+    ]
+  },
+  "v_seumyeodeulda": {
+    "word": "스며들다",
+    "category": "lexicon",
+    "meanings": [
+      "впитаться",
+      "проникать"
+    ]
+  },
+  "adv_geogi": {
+    "word": "거기",
+    "category": "lexicon",
+    "meanings": [
+      "там (рядом со слушателем)"
+    ]
+  },
+  "v_ollyeodaboda": {
+    "word": "올려다보다",
+    "category": "lexicon",
+    "meanings": [
+      "посмотреть на"
+    ]
+  },
+  "dem_geugot": {
+    "word": "그곳",
+    "category": "lexicon",
+    "meanings": [
+      "это место"
+    ]
+  },
+  "g_ul_geol": {
+    "word": "-(으)ㄹ걸",
+    "category": "grammar",
+    "meanings": [
+      "Бьюсь об заклад...",
+      "Я думаю, что... (предположение)",
+      "сожаление (другой контекст)"
+    ]
+  },
+  "n_geum": {
+    "word": "금",
+    "category": "lexicon",
+    "meanings": [
+      "трескаться",
+      "линия"
     ]
   }
 }

@@ -324,8 +324,6 @@
 "g_and": { "word": "-고", "category": "grammar", "meanings": ["and then", "and"] },
 "v_that": { "word": "그", "category": "lexicon", "meanings": ["that (thing/person)"] },
 "v_moment": { "word": "순간", "category": "lexicon", "meanings": ["moment"] },
-
-"v_blackout": { "word": "암전", "category": "lexicon", "meanings": ["blackout", "darkness"] },
 "g_and_with": { "word": "와/과", "category": "grammar", "meanings": ["and", "with"] },
 "v_together": { "word": "함께", "category": "lexicon", "meanings": ["together"] },
 "v_door": { "word": "문", "category": "lexicon", "meanings": ["door"] },
@@ -387,9 +385,6 @@
 
 "v_keep": { "word": "간직하다", "category": "lexicon", "meanings": ["to keep", "to treasure"] },
 "v_hug": { "word": "안다", "category": "lexicon", "meanings": ["to hug", "to embrace", "to hold"] },
-
-"g_future_promise": { "word": "-(으)ㄹ게", "category": "grammar", "meanings": ["will (promise/intent)"] },
-
 "v_when": { "word": "언제", "category": "lexicon", "meanings": ["when"] },
 
 "g_even_if": { "word": "-(이)라도", "category": "grammar", "meanings": ["even if", "no matter"] },
@@ -1023,7 +1018,6 @@
   "n_heotsori": { "word": "헛소리", "category": "lexicon", "meanings": ["nonsense", "rubbish"] },
   "n_jojun": { "word": "조준", "category": "lexicon", "meanings": ["aiming", "targeting"] },
   "n_cheolkkeok": { "word": "철컥", "category": "lexicon", "meanings": ["[sound]", "click", "clank"] },
-  "v_deutda": { "word": "듣다", "category": "lexicon", "meanings": ["to hear", "to listen"] },
   "adv_mot": { "word": "못", "category": "lexicon", "meanings": ["cannot", "unable to"] },
   "v_baegida": { "word": "배기다", "category": "lexicon", "meanings": ["to endure", "to bear"] },
   "v_saegida": { "word": "새기다", "category": "lexicon", "meanings": ["to engrave", "to imprint"] },
@@ -1349,12 +1343,7 @@
 
 "v_call": { "word": "부르다", "category": "lexicon", "meanings": ["to call", "to sing"] },
 
-"adv_well": { "word": "잘", "category": "lexicon", "meanings": ["well", "properly"] },
-
 "g_progress": { "word": "-고 있다", "category": "grammar", "meanings": ["progressive form", "to be doing"] },
-
-"n_hundreds": { "word": "수백", "category": "lexicon", "meanings": ["hundreds (of)"] },
-
 "n_times": { "word": "번", "category": "lexicon", "meanings": ["counter of times something is done"] },
 
 "n_heart_short": { "word": "맘 / 마음", "category": "lexicon", "meanings": ["heart", "mind"] },
@@ -1495,9 +1484,6 @@
 "n_in_head": { "word": "머릿속", "category": "lexicon", "meanings": ["inside one's head", "mind"] },
 
 "n_center": { "word": "중심", "category": "lexicon", "meanings": ["center", "core"] },
-
-"v_get_hold": { "word": "잡히다", "category": "lexicon", "meanings": ["to be caught", "to get under control"] },
-
 "adj_unstable": { "word": "위태롭다", "category": "lexicon", "meanings": ["to be unstable", "to be precarious"] },
 
 "v_shake": { "word": "흔들리다", "category": "lexicon", "meanings": ["to shake", "to waver"] },
@@ -1562,8 +1548,6 @@
 "n_weed": { "word": "잡초", "category": "lexicon", "meanings": ["weed"] },
 
 "v_be_trampled": { "word": "짓밟히다", "category": "lexicon", "meanings": ["to be trampled", "to be crushed"] },
-
-"n_storm": { "word": "비바람", "category": "lexicon", "meanings": ["wind and rain", "storm"] },
 
 "v_entrust": { "word": "맡기다", "category": "lexicon", "meanings": ["to entrust", "to leave up to"] },
 
@@ -1682,9 +1666,6 @@
 "det_this_thing": { "word": "이", "category": "lexicon", "meanings": ["this (thing/person)"] },
 
 "n_emotion": { "word": "감정", "category": "lexicon", "meanings": ["emotion", "feeling"] },
-
-"g_iramyun": { "word": "-(이)라면", "category": "grammar", "meanings": ["if it is", "assuming that"] },
-
 "n_problem": { "word": "문제", "category": "lexicon", "meanings": ["problem", "issue"] },
 
 "n_beep_edit": { "word": "삐처리", "category": "lexicon", "meanings": ["beep censorship", "audio masking"] },
@@ -1698,8 +1679,6 @@
 "n_success": { "word": "성공", "category": "lexicon", "meanings": ["success"] },
 
 "n_achievement_feel": { "word": "성취감", "category": "lexicon", "meanings": ["sense of achievement"] },
-
-"v_occur_": { "word": "일어나다", "category": "lexicon", "meanings": ["to happen", "to occur"] },
 
 "n_miracle": { "word": "기적", "category": "lexicon", "meanings": ["miracle"] },
 
@@ -2296,9 +2275,6 @@
 "adj_ppiddakada": { "word": "삐딱하다", "category": "lexicon", "meanings": ["crooked", "warped", "cynical"] },
 
 "n_ridum": { "word": "리듬", "category": "lexicon", "meanings": ["rhythm"] },
-
-"v_matchuda": { "word": "맞추다", "category": "lexicon", "meanings": ["to match", "to adjust", "to guess correctly"] },
-
 "v_nolda": { "word": "놀다", "category": "lexicon", "meanings": ["to play", "to hang out", "to be idle"] },
 
 "n_do": { "word": "도를 닦다", "category": "lexicon", "meanings": ["cultivate the way"] },
@@ -2318,8 +2294,6 @@
 "v_burida": { "word": "부리다", "category": "lexicon", "meanings": ["to wield", "to exercise", "to order around"] },
 
 "v_nollaekida": { "word": "놀래키다", "category": "lexicon", "meanings": ["to surprise", "to startle"] },
-
-"v_jichida": { "word": "지치다", "category": "lexicon", "meanings": ["to be exhausted"] },
 
 "n_segye": { "word": "세계", "category": "lexicon", "meanings": ["world"] },
 
@@ -4425,12 +4399,6 @@
     "meanings": ["morning", "breakfast"]
   },
 
-  "sildeuda": {
-    "word": "시들다",
-    "category": "lexicon",
-    "meanings": ["to wither", "to wilt"]
-  },
-
   "silta": {
     "word": "싫다",
     "category": "lexicon",
@@ -4680,12 +4648,6 @@
     "word": "육각형",
     "category": "lexicon",
     "meanings": ["hexagon"]
-  },
-
-  "apjeong": {
-    "word": "압정",
-    "category": "lexicon",
-    "meanings": ["thumbtack", "pushpin"]
   },
 
   "yakjeom": {
@@ -5566,12 +5528,6 @@
     "word": "예상하다",
     "category": "lexicon",
     "meanings": ["to expect", "to anticipate"]
-  },
-
-  "choego": {
-    "word": "최고",
-    "category": "lexicon",
-    "meanings": ["the best", "the highest"]
   },
 
   "danghwangseureopda": {
@@ -7114,11 +7070,7 @@
     "category": "lexicon",
     "meanings": ["water mist", "sea fog"]
   },
-  "adj_dense": {
-    "word": "짙다",
-    "category": "lexicon",
-    "meanings": ["deep", "thick", "dense"]
-  },
+
   "v_be_considerate": {
     "word": "배려하다",
     "category": "lexicon",
@@ -8600,11 +8552,7 @@
     "category": "lexicon",
     "meanings": ["upper air"]
   },
-  "adj_daldalhada": {
-    "word": "달달하다",
-    "category": "lexicon",
-    "meanings": ["sweet"]
-  },
+
   "v_naseoda": {
     "word": "나서다",
     "category": "lexicon",
@@ -9068,11 +9016,6 @@
     "word": "가로등",
     "category": "lexicon",
     "meanings": ["streetlight"]
-  },
-  "n_oraejeon": {
-    "word": "오래전",
-    "category": "lexicon",
-    "meanings": ["long ago"]
   },
   "n_gojang": {
     "word": "고장",

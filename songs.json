@@ -520,7 +520,7 @@
       "type": "korean",
       "translation": "A door opened in the blackout",
       "segments": [
-        { "text": "암전", "type": "lexicon", "id": "v_blackout" },
+        { "text": "암전", "type": "lexicon", "id": "n_blackout" },
         { "text": "과", "type": "grammar", "id": "g_and_with" },
         { "text": " ", "type": "text" },
         { "text": "함께", "type": "lexicon", "id": "v_together" },
@@ -621,7 +621,7 @@
     { "text": "도록", "type": "grammar", "id": "g_for_duration" },
     { "text": " ", "type": "text" },
     { "text": "간직할", "type": "lexicon", "id": "v_keep" },
-    { "text": "게", "type": "grammar", "id": "g_future_promise" }
+    { "text": "게", "type": "grammar", "id": "g_promise" }
   ]
 },
 
@@ -1839,14 +1839,14 @@
     "segments": [
       { "text": "안", "type": "grammar", "id": "g_negation_an" },
       { "text": " ", "type": "text" },
-      { "text": "듣", "type": "lexicon", "id": "v_deutda" },
+      { "text": "듣", "type": "lexicon", "id": "v_listen" },
       { "text": "고", "type": "grammar", "id": "g_and" },
       { "text": " ", "type": "text" },
       { "text": "못", "type": "lexicon", "id": "adv_mot" },
       { "text": " ", "type": "text" },
       { "text": "배겨", "type": "lexicon", "id": "v_baegida" },
       { "text": ", ", "type": "text" },
-      { "text": "들어", "type": "lexicon", "id": "v_deutda" },
+      { "text": "들어", "type": "lexicon", "id": "v_listen" },
       { "text": "보", "type": "grammar", "id": "g_ah_eoboda" },
       { "text": "고", "type": "grammar", "id": "g_and" },
       { "text": " ", "type": "text" },
@@ -2006,7 +2006,7 @@
     "type": "korean",
     "translation": "Listen and follow us to the reality that we create",
     "segments": [
-      { "text": "듣", "type": "lexicon", "id": "v_deutda" },
+      { "text": "듣", "type": "lexicon", "id": "v_listen" },
       { "text": "고", "type": "grammar", "id": "g_and" },
       { "text": " ", "type": "text" },
       { "text": "따라", "type": "lexicon", "id": "v_ttareuda" },
@@ -2875,7 +2875,7 @@
     "type": "korean",
     "translation": "You’ve heard the words “you’re doing okay” so many times",
     "segments": [
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "하", "type": "lexicon", "id": "v_do_hada" },
            { "text": "고 있어", "type": "grammar", "id": "g_progress" },
@@ -2885,7 +2885,7 @@
       { "text": "말", "type": "lexicon", "id": "n_mal" },
       { "text": "을", "type": "grammar", "id": "g_object" },
       { "text": " ", "type": "text" },
-      { "text": "수백", "type": "lexicon", "id": "n_hundreds" },
+      { "text": "수백", "type": "lexicon", "id": "num_hundreds" },
       { "text": " ", "type": "text" },
       { "text": "번", "type": "lexicon", "id": "n_times" },
       { "text": " ", "type": "text" },
@@ -2926,7 +2926,7 @@
       { "text": " ", "type": "text" },
       { "text": "너무", "type": "lexicon", "id": "v_too_much" },
       { "text": "나 ", "type": "grammar", "id": "g_until_limit" },
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "알", "type": "lexicon", "id": "v_know" },
       { "text": "고 있", "type": "grammar", "id": "g_progress" },
@@ -3536,7 +3536,7 @@
       { "text": " ", "type": "text" },
       { "text": "안", "type": "grammar", "id": "g_negation_an" },
       { "text": " ", "type": "text" },
-      { "text": "잡히", "type": "lexicon", "id": "v_get_hold" },
+      { "text": "잡히", "type": "lexicon", "id": "v_japgida" },
       { "text": "고", "type": "grammar", "id": "g_and" }
     ]
   },
@@ -4009,7 +4009,7 @@
     "type": "korean",
     "translation": "Swaying in dance, surrendering to wind and rain, right now",
     "segments": [
-      { "text": "비바람", "type": "lexicon", "id": "n_storm" },
+      { "text": "비바람", "type": "lexicon", "id": "n_bibaram" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
       { "text": "몸", "type": "lexicon", "id": "n_mom" },
@@ -4200,7 +4200,7 @@
        { "text": "런", "type": "grammar", "id": "g_un_modifier" },
       { "text": " ", "type": "text" },
       { "text": "감정", "type": "lexicon", "id": "n_emotion" },
-      { "text": "이라면", "type": "grammar", "id": "g_iramyun" },
+      { "text": "이라면", "type": "grammar", "id": "g_conditional_noun" },
       { "text": " ", "type": "text" },
       { "text": "문제", "type": "lexicon", "id": "n_problem" }
     ]
@@ -4317,7 +4317,7 @@
       { "text": "커", "type": "lexicon", "id": "adj_keuda" },
       { "text": "져", "type": "grammar", "id": "g_become" },
       { "text": " crescendo ", "type": "english" },
-      { "text": "일어나", "type": "lexicon", "id": "v_occur_" },
+      { "text": "일어나", "type": "lexicon", "id": "v_ireonada" },
       { "text": " ", "type": "text" },
       { "text": "기적", "type": "lexicon", "id": "n_miracle" },
       { "text": "이", "type": "grammar", "id": "g_subject" }
@@ -4404,7 +4404,7 @@
       { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
       { "text": " ", "type": "text" },
       { "text": "기회", "type": "lexicon", "id": "n_chance" },
-      { "text": "라면", "type": "grammar", "id": "g_iramyun" },
+      { "text": "라면", "type": "grammar", "id": "g_conditional_noun" },
       { "text": " ", "type": "text" },
       { "text": "모조리", "type": "lexicon", "id": "adv_all" },
       { "text": " ", "type": "text" },
@@ -7247,7 +7247,7 @@
       { "text": "리듬", "type": "lexicon", "id": "n_ridum" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
-      { "text": "맞춰", "type": "lexicon", "id": "v_matchuda" }
+      { "text": "맞춰", "type": "lexicon", "id": "v_match_hit" }
     ]
   },
   {
@@ -7348,7 +7348,7 @@
     "type": "korean",
     "translation": "You’re getting tired, huh? The rules of this world — our lead is different",
     "segments": [
-      { "text": "지치", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지치", "type": "lexicon", "id": "v_exhausted" },
       { "text": "는구나", "type": "grammar", "id": "g_guna_gun" },
       { "text": ", ", "type": "text" },
       { "text": "이", "type": "lexicon", "id": "v_this" },
@@ -9771,7 +9771,7 @@
       { "text": " bass line", "type": "english" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
-      { "text": "맞춰", "type": "lexicon", "id": "v_matchuda" },
+      { "text": "맞춰", "type": "lexicon", "id": "v_match_hit" },
       { "text": " body shake", "type": "english" }
     ]
   },
@@ -10406,7 +10406,7 @@
     "type": "korean",
     "translation": "And when I fall asleep spent and then wake up",
     "segments": [
-      { "text": "지쳐", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지쳐", "type": "lexicon", "id": "v_exhausted" },
       { "text": " ", "type": "text" },
       { "text": "잠이 들", "type": "lexicon", "id": "expr_jami_deulda" },
       { "text": "고 나서", "type": "grammar", "id": "g_goseo" },
@@ -10734,7 +10734,7 @@
     "type": "korean",
     "translation": "And when I fall asleep spent and then wake up",
     "segments": [
-      { "text": "지쳐", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지쳐", "type": "lexicon", "id": "v_exhausted" },
       { "text": " ", "type": "text" },
       { "text": "잠이 들", "type": "lexicon", "id": "expr_jami_deulda" },
       { "text": "고 나서", "type": "grammar", "id": "g_goseo" },
@@ -10958,7 +10958,7 @@
     "type": "korean",
     "translation": "And when I fall asleep spent and then wake up",
     "segments": [
-      { "text": "지쳐", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지쳐", "type": "lexicon", "id": "v_exhausted" },
       { "text": " ", "type": "text" },
       { "text": "잠이 들", "type": "lexicon", "id": "expr_jami_deulda" },
       { "text": "고 나서", "type": "grammar", "id": "g_goseo" },
@@ -11660,7 +11660,7 @@
       { "text": "노력", "type": "lexicon", "id": "v_effort" },
       { "text": "으로", "type": "grammar", "id": "g_direction_to" },
       { "text": " ", "type": "text" },
-      { "text": "맞", "type": "lexicon", "id": "v_matchuda" },
+      { "text": "맞", "type": "lexicon", "id": "v_match_hit" },
    { "text": "춰", "type": "grammar", "id": "g_fin_progress" },
       { "text": "온", "type": "grammar", "id": "g_un_modifier" },
       { "text": " puzzle", "type": "english" }
@@ -11954,7 +11954,7 @@
     "segments": [
       { "text": "밤새", "type": "lexicon", "id": "adv_bamsae" },
       { "text": " ", "type": "text" },
-      { "text": "시들어", "type": "lexicon", "id": "sildeuda" },
+      { "text": "시들어", "type": "lexicon", "id": "v_wither" },
       { "text": "가", "type": "grammar", "id": "gram_aga" },
       { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
       { "text": " ", "type": "text" },
@@ -12529,7 +12529,7 @@
       { "text": "육각형", "type": "lexicon", "id": "yukgakhyeong" },
       { "text": "의", "type": "grammar", "id": "g_possessive" },
       { "text": " ", "type": "text" },
-      { "text": "압정", "type": "lexicon", "id": "apjeong" }
+      { "text": "압정", "type": "lexicon", "id": "n_thumbtack" }
     ]
   },
   {
@@ -15955,7 +15955,7 @@
     "type": "korean",
     "translation": "The perfect illusion, my personal fantasia, oh, na-na",
     "segments": [
-      { "text": "최고", "type": "lexicon", "id": "choego" },
+      { "text": "최고", "type": "lexicon", "id": "n_choego" },
       { "text": "의", "type": "grammar", "id": "g_possessive" },
       { "text": " illusion, ", "type": "english" },
       { "text": "나", "type": "lexicon", "id": "v_i" },
@@ -23879,7 +23879,7 @@
       { "text": "너", "type": "lexicon", "id": "v_you" },
       { "text": "도", "type": "grammar", "id": "g_also_even" },
       { "text": " ", "type": "text" },
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "알", "type": "lexicon", "id": "v_know" },
       { "text": "지", "type": "grammar", "id": "g_ji_confirm" }
@@ -25340,7 +25340,7 @@
       { "text": "줄", "type": "grammar", "id": "g_ah_eoju" },
       { "text": "게", "type": "grammar", "id": "g_promise" },
       { "text": " ", "type": "text" },
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "봐", "type": "lexicon", "id": "v_see" },
       { "text": " ", "type": "text" },
@@ -26639,7 +26639,7 @@
       { "text": "물안개", "type": "lexicon", "id": "n_sea_fog" },
       { "text": "가", "type": "grammar", "id": "g_subject" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "었", "type": "grammar", "id": "g_past_tense" },
       { "text": "던", "type": "grammar", "id": "g_past_experience" },
       { "text": " ", "type": "text" },
@@ -26802,7 +26802,7 @@
       { "text": "물안개", "type": "lexicon", "id": "n_sea_fog" },
       { "text": "가", "type": "grammar", "id": "g_subject" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "었", "type": "grammar", "id": "g_past_tense" },
       { "text": "던", "type": "grammar", "id": "g_past_experience" },
       { "text": " ", "type": "text" },
@@ -27857,7 +27857,7 @@
       { "text": " ", "type": "text" },
       { "text": "더", "type": "lexicon", "id": "v_more" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "어져", "type": "grammar", "id": "g_become" },
       { "text": " ", "type": "text" },
       { "text": "아려", "type": "lexicon", "id": "arida" },
@@ -30021,7 +30021,7 @@
       { "text": "앞", "type": "lexicon", "id": "v_front" },
       { "text": "도", "type": "grammar", "id": "g_also_even" },
       { "text": " ", "type": "text" },
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "보이", "type": "lexicon", "id": "v_boidda" },
       { "text": "지 않", "type": "grammar", "id": "g_negation" },
@@ -30281,7 +30281,7 @@
       { "text": "감정", "type": "lexicon", "id": "n_emotion" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "게", "type": "grammar", "id": "g_adverb" },
       { "text": " ", "type": "text" },
       { "text": "붙", "type": "lexicon", "id": "v_butda" },
@@ -30554,7 +30554,7 @@
       { "text": "감정", "type": "lexicon", "id": "n_emotion" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "게", "type": "grammar", "id": "g_adverb" },
       { "text": " ", "type": "text" },
       { "text": "붙", "type": "lexicon", "id": "v_butda" },
@@ -30781,7 +30781,7 @@
       { "text": "감정", "type": "lexicon", "id": "n_emotion" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
-      { "text": "짙", "type": "lexicon", "id": "adj_dense" },
+      { "text": "짙", "type": "lexicon", "id": "adj_jitda" },
       { "text": "게", "type": "grammar", "id": "g_adverb" },
       { "text": " ", "type": "text" },
       { "text": "붙", "type": "lexicon", "id": "v_butda" },
@@ -30897,7 +30897,7 @@
       { "text": " ", "type": "text" },
       { "text": "걸", "type": "lexicon", "id": "comb_thing_obj" },
       { "text": " ", "type": "text" },
-      { "text": "잘", "type": "lexicon", "id": "adv_well" },
+      { "text": "잘", "type": "lexicon", "id": "v_well" },
       { "text": " ", "type": "text" },
       { "text": "알", "type": "lexicon", "id": "v_know" },
       { "text": "면서", "type": "grammar", "id": "g_while" },
@@ -33581,7 +33581,7 @@
       { "text": "힘들", "type": "lexicon", "id": "adj_himdeulda" },
       { "text": "고", "type": "grammar", "id": "g_and" },
       { "text": " ", "type": "text" },
-      { "text": "지", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지", "type": "lexicon", "id": "v_exhausted" },
       { "text": "쳐", "type": "grammar", "id": "g_so_reason" },
       { "text": " ", "type": "text" },
       { "text": "울", "type": "lexicon", "id": "v_ulda" },
@@ -36251,7 +36251,7 @@
       { "text": " ", "type": "text" },
       { "text": "눈", "type": "lexicon", "id": "v_eye" },
       { "text": " ", "type": "text" },
-      { "text": "맞", "type": "lexicon", "id": "v_matchuda" },
+      { "text": "맞", "type": "lexicon", "id": "v_match_hit" },
       { "text": "출 때", "type": "grammar", "id": "g_when_time" },
       { "text": "마다", "type": "grammar", "id": "g_mada" },
       { "text": " ", "type": "text" },
@@ -36880,7 +36880,7 @@
       { "text": "윗 공기", "type": "lexicon", "id": "n_witgonggi" },
       { "text": "는", "type": "grammar", "id": "g_topic" },
       { "text": " ", "type": "text" },
-      { "text": "달달해", "type": "lexicon", "id": "adj_daldalhada" },
+      { "text": "달달해", "type": "lexicon", "id": "daldalhada" },
       { "text": ", choco", "type": "english" }
     ]
   },
@@ -39894,7 +39894,7 @@
     "type": "korean",
     "translation": "Thanks to hearing that, life got brighter (what?)",
     "segments": [
-      { "text": "듣", "type": "lexicon", "id": "v_deutda" },
+      { "text": "듣", "type": "lexicon", "id": "v_listen" },
       { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
       { "text": " ", "type": "text" },
       { "text": "덕분", "type": "lexicon", "id": "deokbun" },
@@ -44028,7 +44028,7 @@
       { "text": "가로등", "type": "lexicon", "id": "n_garodeung" },
       { "text": "은", "type": "grammar", "id": "g_topic" },
       { "text": " ", "type": "text" },
-      { "text": "오래전", "type": "lexicon", "id": "n_oraejeon" },
+      { "text": "오래전", "type": "lexicon", "id": "adv_oraejeon" },
       { "text": "에", "type": "grammar", "id": "g_loc" },
       { "text": " ", "type": "text" },
       { "text": "고장", "type": "lexicon", "id": "n_gojang" },
@@ -44077,7 +44077,7 @@
     "type": "korean",
     "translation": "I’m so exhausted I think I’m gonna faint",
     "segments": [
-      { "text": "지", "type": "lexicon", "id": "v_jichida" },
+      { "text": "지", "type": "lexicon", "id": "v_exhausted" },
       { "text": "쳐", "type": "grammar", "id": "g_so_reason" },
       { "text": " ", "type": "text" },
       { "text": "쓰러질", "type": "lexicon", "id": "v_sseureojida" },
