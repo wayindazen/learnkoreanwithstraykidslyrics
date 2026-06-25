@@ -48048,7 +48048,7 @@
   },
   {
     "type": "korean",
-    "translation": "Even through the hardships, continuously",
+    "translation": "Non-stop through all the hardships",
     "segments": [
       { "text": "시련", "type": "lexicon", "id": "n_siryeon" },
       { "text": " ", "type": "text" },
@@ -48061,7 +48061,7 @@
   },
   {
     "type": "accordion",
-    "content": "Non-stop through all the hardships\nOh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world, we'll run it day and night\n\n(Ooh-ooh)\nRun it day and night\n(Ooh-ooh)\nRun it day and night"
+    "content": "Oh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world, we'll run it day and night\n\n(Ooh-ooh)\nRun it day and night\n(Ooh-ooh)\nRun it day and night"
   },
   {
     "type": "korean",
@@ -48126,7 +48126,7 @@
   },
   {
     "type": "korean",
-    "translation": "They lean comfortably, while all I do is win",
+    "translation": "They lean comfortably, while all I do is win, win, you're gonna see (Woo)",
     "segments": [
       { "text": "하나", "type": "lexicon", "id": "num_hana" },
       { "text": "씩", "type": "grammar", "id": "g_ssik" },
@@ -48220,8 +48220,26 @@
     ]
   },
   {
+    "type": "korean",
+    "segments": [
+      { "text": "All my life, I've been fighting this and fighting that", "type": "english"}]
+  },
+  {
+    "type": "korean",
+    "translation": "Non-stop through all the hardships",
+    "segments": [
+      { "text": "시련", "type": "lexicon", "id": "n_siryeon" },
+      { "text": " ", "type": "text" },
+      { "text": "속", "type": "lexicon", "id": "v_inside" },
+      { "text": "에서", "type": "grammar", "id": "g_inside_from" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "계속", "type": "lexicon", "id": "adv_gyesok" }
+    ]
+  },
+  {
     "type": "accordion",
-    "content": "Non-stop through all the hardships\nOh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world\n\nOh, I'll never give up, I'm just gonna stand up"
+    "content": "Oh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world\n\nOh, I'll never give up, I'm just gonna stand up"
   },
   {
     "type": "korean",
@@ -48411,10 +48429,6 @@
       { "text": "뛰어들", "type": "lexicon", "id": "v_ttwieodeulda" },
       { "text": "지", "type": "grammar", "id": "g_ji_confirm" }
     ]
-  },
-  {
-    "type": "accordion",
-    "content": "Woah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world"
   }
 ]}
   ]
