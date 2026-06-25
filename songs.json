@@ -48032,6 +48032,390 @@
       { "text": "야", "type": "grammar", "id": "v_to_be" }
     ]
   }
+]},
+{
+"id": "runit",
+    "title": "Run it",
+    "artist": "Stray Kids",
+    "album": "This & That (2026)",
+    "cover": "",
+    "youtube": "https://www.youtube.com/watch?v=Q7IFjVUUb_E",
+    "english_full": "",
+    "lines": [
+  {
+    "type": "accordion",
+    "content": "Ain't no limit, never running out\nEverywhere we go, another win, another day\nYeah, we shining with the lights out\nEven in the dark, we find a way to make a way\n\nAll my life, I've been fighting this and fighting that"
+  },
+  {
+    "type": "korean",
+    "translation": "Even through the hardships, continuously",
+    "segments": [
+      { "text": "시련", "type": "lexicon", "id": "n_siryeon" },
+      { "text": " ", "type": "text" },
+      { "text": "속", "type": "lexicon", "id": "v_inside" },
+      { "text": "에서", "type": "grammar", "id": "g_inside_from" },
+      { "text": "도", "type": "grammar", "id": "g_also_even" },
+      { "text": " ", "type": "text" },
+      { "text": "계속", "type": "lexicon", "id": "adv_gyesok" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Non-stop through all the hardships\nOh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world, we'll run it day and night\n\n(Ooh-ooh)\nRun it day and night\n(Ooh-ooh)\nRun it day and night"
+  },
+  {
+    "type": "korean",
+    "translation": "Gotta be me, yeah, without stopping, I raise my speed",
+    "segments": [
+      { "text": "Gotta be me, yeah, ", "type": "english" },
+      { "text": "멈", "type": "lexicon", "id": "v_stop" },
+      { "text": "춤", "type": "grammar", "id": "g_eum_nominal" },
+      { "text": " ", "type": "text" },
+      { "text": "없이", "type": "lexicon", "id": "v_without" },
+      { "text": " ", "type": "text" },
+      { "text": "올려", "type": "lexicon", "id": "v_raise" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "lexicon", "id": "cont_my" },
+      { "text": " speed", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "All those countless arrows fly but miss (Miss), unstoppable beast",
+    "segments": [
+      { "text": "수많", "type": "lexicon", "id": "adj_many" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "화살", "type": "lexicon", "id": "n_hwasal" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "떠", "type": "lexicon", "id": "v_tteuda" },
+      { "text": " miss (Miss), unstoppable beast", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I’m not drunk on the glory, I want more, I’ll achieve an even higher dream",
+    "segments": [
+      { "text": "이", "type": "lexicon", "id": "v_this" },
+      { "text": " ", "type": "text" },
+      { "text": "영광", "type": "lexicon", "id": "n_yeonggwang" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "취하", "type": "lexicon", "id": "v_chwihada" },
+      { "text": "지 않아", "type": "grammar", "id": "g_negation" },
+      { "text": " ", "type": "text" },
+      { "text": "더", "type": "lexicon", "id": "v_more" },
+      { "text": " ", "type": "text" },
+      { "text": "많", "type": "lexicon", "id": "v_many" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "걸", "type": "lexicon", "id": "comb_thing_obj" },
+      { "text": " ", "type": "text" },
+      { "text": "원해", "type": "lexicon", "id": "v_want" },
+      { "text": ", ", "type": "text" },
+      { "text": "성취해", "type": "lexicon", "id": "v_seongchuihada" },
+      { "text": "내", "type": "grammar", "id": "g_aux_out" },
+      { "text": " ", "type": "text" },
+      { "text": "더", "type": "lexicon", "id": "v_more" },
+      { "text": " ", "type": "text" },
+      { "text": "높", "type": "lexicon", "id": "adj_nopda" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " dream", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "They lean comfortably, while all I do is win",
+    "segments": [
+      { "text": "하나", "type": "lexicon", "id": "num_hana" },
+      { "text": "씩", "type": "grammar", "id": "g_ssik" },
+      { "text": " ", "type": "text" },
+      { "text": "올리", "type": "lexicon", "id": "v_raise" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": " ", "type": "text" },
+      { "text": "편하", "type": "lexicon", "id": "adj_pyeonhada" },
+      { "text": "게", "type": "grammar", "id": "g_adverb" },
+      { "text": " lean, ", "type": "english" },
+      { "text": "내가", "type": "lexicon", "id": "cont_naega" },
+      { "text": " ", "type": "text" },
+      { "text": "하", "type": "lexicon", "id": "v_do_hada" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "건", "type": "lexicon", "id": "cont_thing_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "오직", "type": "lexicon", "id": "adv_ojik" },
+      { "text": " ", "type": "text" },
+      { "text": "하나", "type": "lexicon", "id": "num_hana" },
+      { "text": " win, win, you're gonna see (Woo)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "I win over rather than fall in despair, it’s easy",
+    "segments": [
+      { "text": "좌절", "type": "lexicon", "id": "n_jwajeol" },
+      { "text": "보다", "type": "grammar", "id": "g_boda_than" },
+      { "text": " ", "type": "text" },
+      { "text": "이겨", "type": "lexicon", "id": "v_igida" },
+      { "text": " ", "type": "text" },
+      { "text": "내", "type": "grammar", "id": "g_aux_out" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "게", "type": "lexicon", "id": "g_ge_complex" },
+      { "text": " easy", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Ooh, poverty and ordeal trained me, feel me?",
+    "segments": [
+      { "text": "Ooh, ", "type": "english" },
+      { "text": "고난", "type": "lexicon", "id": "n_gonan" },
+      { "text": "과", "type": "grammar", "id": "g_and_with" },
+      { "text": " ", "type": "text" },
+      { "text": "역경", "type": "lexicon", "id": "n_yeokkyeong" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " trained me, feel me?", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "We’ll make everything mine, all those ambitions – we’ll make them reality",
+    "segments": [
+      { "text": "전부", "type": "lexicon", "id": "v_all_everything" },
+      { "text": " ", "type": "text" },
+      { "text": "다", "type": "lexicon", "id": "n_da" },
+      { "text": " ", "type": "text" },
+      { "text": "챙겨", "type": "lexicon", "id": "v_chaenggida" },
+      { "text": " ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "v_that_near" },
+      { "text": " ", "type": "text" },
+      { "text": "많", "type": "lexicon", "id": "v_many" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "포부", "type": "lexicon", "id": "n_pobu" },
+      { "text": " ", "type": "text" },
+      { "text": "전부", "type": "lexicon", "id": "v_all_everything" },
+      { "text": " ", "type": "text" },
+      { "text": "쟁취", "type": "lexicon", "id": "n_jaengchui" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Again and again, just as we’ve been doing until now, we're gonna make it",
+    "segments": [
+      { "text": "Again and again, ", "type": "english" },
+      { "text": "여태", "type": "lexicon", "id": "adv_yeotaekkot" },
+      { "text": "까지", "type": "grammar", "id": "g_until" },
+      { "text": " ", "type": "text" },
+      { "text": "그", "type": "lexicon", "id": "adj_like_that_near" },
+      { "text": "래", "type": "grammar", "id": "g_fin_progress" },
+      { "text": "왔", "type": "grammar", "id": "g_past_tense" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "것", "type": "lexicon", "id": "v_thing_geot" },
+      { "text": "처럼", "type": "grammar", "id": "g_cheoreom" },
+      { "text": " we're gonna make it", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Non-stop through all the hardships\nOh, this time I ain't looking back, I won't collapse\nHead high right now we go, oh, oh, oh\n\nWoah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world\nIt's another day, coming on the way\nBuild another city, run it day and night\nLive another day, yeah, we on the way\nAll around the world\n\nOh, I'll never give up, I'm just gonna stand up"
+  },
+  {
+    "type": "korean",
+    "translation": "I'm putting my hands up, towards that sky far away",
+    "segments": [
+      { "text": "I'm putting my hands up, ", "type": "english" },
+      { "text": "저", "type": "lexicon", "id": "v_that_far" },
+      { "text": " ", "type": "text" },
+      { "text": "하늘", "type": "lexicon", "id": "n_haneul" },
+      { "text": " ", "type": "text" },
+      { "text": "향해", "type": "lexicon", "id": "v_hyanghada" },
+        { "text": "서", "type": "grammar", "id": "g_so_reason" }    
+    ]
+  },
+  {
+    "type": "korean",
+    "segments": [
+{ "text": "We're rising, no fade-out, across the world, spread out", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "If you feel it, hands up, towards that sky far away (Come on)",
+    "segments": [
+      { "text": "If you feel it, hands up, ", "type": "english" },
+      { "text": "저", "type": "lexicon", "id": "v_that_far" },
+      { "text": " ", "type": "text" },
+      { "text": "하늘", "type": "lexicon", "id": "n_haneul" },
+      { "text": " ", "type": "text" },
+      { "text": "향해", "type": "lexicon", "id": "v_hyanghada" },
+              { "text": "서", "type": "grammar", "id": "g_so_reason" },    
+      { "text": " (Come on)", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Woah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world"
+  },
+  {
+    "type": "korean",
+    "translation": "It started with a small room, sound leaking through my phones (Woah)",
+    "segments": [
+      { "text": "작", "type": "lexicon", "id": "adj_jakta" },
+      { "text": "은", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "방", "type": "lexicon", "id": "n_bang" },
+      { "text": " ", "type": "text" },
+      { "text": "시작", "type": "lexicon", "id": "n_start" },
+      { "text": " sound leaking through my phones (Woah)", "type": "english" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Dreams on repeat, building up my throne (Run it everywhere)\nFrom Seoul to the world, now they know (All around the world)\nMy zone, we're never alone"
+  },
+  {
+    "type": "korean",
+    "translation": "This moment is the proof we made it (Woah)",
+    "segments": [
+      { "text": "이", "type": "lexicon", "id": "v_this" },
+      { "text": " ", "type": "text" },
+      { "text": "순간", "type": "lexicon", "id": "v_moment" },
+      { "text": "이", "type": "grammar", "id": "g_subject" },
+      { "text": " proof we made it (Woah)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "All the bloody tears I’ve shed – I saved it",
+    "segments": [
+      { "text": "흘", "type": "lexicon", "id": "v_spill" },
+      { "text": "렸", "type": "grammar", "id": "g_past_tense" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "피눈물", "type": "lexicon", "id": "n_pinunmul" },
+      { "text": " I saved it", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Matching our footsteps, becoming even faster and stronger",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "발걸음", "type": "lexicon", "id": "n_steps" },
+      { "text": " ", "type": "text" },
+      { "text": "맞춰", "type": "lexicon", "id": "v_match_hit" },
+      { "text": " ", "type": "text" },
+      { "text": "더", "type": "lexicon", "id": "v_more" },
+      { "text": " ", "type": "text" },
+      { "text": "빨라", "type": "lexicon", "id": "adj_ppareuda" },
+      { "text": "지", "type": "grammar", "id": "g_become" },
+      { "text": "고", "type": "grammar", "id": "g_and" },
+      { "text": " ", "type": "text" },
+      { "text": "강해", "type": "lexicon", "id": "adj_ganghada" },
+      { "text": "지", "type": "grammar", "id": "g_become" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " (Woah)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "The sound of their heartbeats",
+    "segments": [
+      { "text": "그", "type": "lexicon", "id": "pro_he" },
+      { "text": "들", "type": "grammar", "id": "g_plural" },
+      { "text": "의", "type": "grammar", "id": "g_possessive" },
+      { "text": " ", "type": "text" },
+      { "text": "심장", "type": "lexicon", "id": "n_simjang" },
+      { "text": " ", "type": "text" },
+      { "text": "박동", "type": "lexicon", "id": "n_bakdong" },
+      { "text": " ", "type": "text" },
+      { "text": "소리", "type": "lexicon", "id": "n_sori" },
+      { "text": " (Run it everywhere)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "That's our motivation, we can’t stop",
+    "segments": [
+      { "text": "That's our motivation, ", "type": "english" },
+      { "text": "멈출", "type": "lexicon", "id": "v_stop" },
+      { "text": " ", "type": "text" },
+      { "text": "수 없", "type": "grammar", "id": "g_can_not" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" },
+      { "text": " (All around the world)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Our story will be carved in history (Woah)",
+    "segments": [
+      { "text": "우리", "type": "lexicon", "id": "v_we" },
+      { "text": " ", "type": "text" },
+      { "text": "이야", "type": "lexicon", "id": "n_yaegi" },
+      { "text": "긴", "type": "grammar", "id": "g_topic" },
+      { "text": " ", "type": "text" },
+      { "text": "남", "type": "lexicon", "id": "be_left" },
+      { "text": "겨", "type": "grammar", "id": "g_become" },
+      { "text": "질", "type": "grammar", "id": "g_ul_modifier" },
+      { "text": " history (Woah)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Quiet melody turns into symphony (Run it everywhere)",
+    "segments": [
+      { "text": "흥얼거리", "type": "lexicon", "id": "v_heungeolgeorida" },
+      { "text": "던", "type": "grammar", "id": "g_past_experience" },
+      { "text": " ", "type": "text" },
+      { "text": "멜로", "type": "lexicon", "id": "melodi" },
+      { "text": "딘", "type": "grammar", "id": "g_topic" },
+      { "text": " symphony (Run it everywhere)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "Listen to the sound we play (All around the world)",
+    "segments": [
+      { "text": "우", "type": "lexicon", "id": "v_we" },
+      { "text": "릴", "type": "grammar", "id": "g_object" },
+      { "text": " ", "type": "text" },
+      { "text": "부르", "type": "lexicon", "id": "v_call" },
+      { "text": "는", "type": "grammar", "id": "g_neun_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "소리", "type": "lexicon", "id": "n_sori" },
+      { "text": "가", "type": "grammar", "id": "g_subject" },
+      { "text": " ", "type": "text" },
+      { "text": "들려", "type": "lexicon", "id": "v_be_heard" },
+      { "text": "와", "type": "grammar", "id": "g_fin_progress" },
+      { "text": " (All around the world)", "type": "english" }
+    ]
+  },
+  {
+    "type": "korean",
+    "translation": "We’ll run it through the world that’s become even wider",
+    "segments": [
+      { "text": "더", "type": "lexicon", "id": "v_more" },
+      { "text": " ", "type": "text" },
+      { "text": "넓", "type": "lexicon", "id": "adj_neolda" },
+      { "text": "어", "type": "grammar", "id": "g_become" },
+      { "text": "진", "type": "grammar", "id": "g_un_modifier" },
+      { "text": " ", "type": "text" },
+      { "text": "세상", "type": "lexicon", "id": "v_world" },
+      { "text": "에", "type": "grammar", "id": "g_loc" },
+      { "text": " ", "type": "text" },
+      { "text": "뛰어들", "type": "lexicon", "id": "v_ttwieodeulda" },
+      { "text": "지", "type": "grammar", "id": "g_ji_confirm" }
+    ]
+  },
+  {
+    "type": "accordion",
+    "content": "Woah\nRun it everywhere all around the world\nWoah\nRun it everywhere all around the world"
+  }
 ]}
   ]
 

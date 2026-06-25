@@ -1954,13 +1954,6 @@
       "оставаться"
     ]
   },
-  "be left": {
-    "word": "남기다",
-    "category": "lexicon",
-    "meanings": [
-      "уйти"
-    ]
-  },
   "v_change_exchange": {
     "word": "바꾸다",
     "category": "lexicon",
@@ -7078,7 +7071,7 @@
     ]
   },
   "adv_yeotaekkot": {
-    "word": "여태껏",
+    "word": "여태껏 / 여태",
     "category": "lexicon",
     "meanings": [
       "до настоящего времени",
@@ -18762,7 +18755,7 @@
     ]
   },
   "n_yaegi": {
-    "word": "얘기",
+    "word": "이야기 / 얘기",
     "category": "lexicon",
     "meanings": [
       "история"
@@ -22537,6 +22530,102 @@
     "meanings": [
       "трескаться",
       "линия"
+    ]
+  },
+  "be_left": {
+    "word": "남기다",
+    "category": "lexicon",
+    "meanings": [
+      "оставаться, быть оставленным"
+    ]
+  },
+  "n_hwasal": {
+    "word": "화살",
+    "category": "lexicon",
+    "meanings": [
+      "стрела"
+    ]
+  },
+  "n_yeonggwang": {
+    "word": "영광",
+    "category": "lexicon",
+    "meanings": [
+      "слава",
+      "честь"
+    ]
+  },
+  "v_seongchuihada": {
+    "word": "성취하다",
+    "category": "lexicon",
+    "meanings": [
+      "достичь",
+      "выполнить"
+    ]
+  },
+  "n_jwajeol": {
+    "word": "좌절",
+    "category": "lexicon",
+    "meanings": [
+      "разочарование",
+      "отчаяние"
+    ]
+  },
+  "v_igida": {
+    "word": "이기다",
+    "category": "lexicon",
+    "meanings": [
+      "выиграть",
+      "преодолеть",
+      "победить"
+    ]
+  },
+  "n_jaengchui": {
+    "word": "쟁취",
+    "category": "lexicon",
+    "meanings": [
+      "достижение",
+      "победа",
+      "достижение через борьбу"
+    ]
+  },
+  "n_pinunmul": {
+    "word": "피눈물",
+    "category": "lexicon",
+    "meanings": [
+      "кровавые слезы",
+      "горькие слезы"
+    ]
+  },
+  "adj_ganghada": {
+    "word": "강하다",
+    "category": "lexicon",
+    "meanings": [
+      "быть сильным",
+      "быть могущественным"
+    ]
+  },
+  "n_bakdong": {
+    "word": "박동",
+    "category": "lexicon",
+    "meanings": [
+      "пульс",
+      "пульсация"
+    ]
+  },
+  "v_heungeolgeorida": {
+    "word": "흥얼거리다",
+    "category": "lexicon",
+    "meanings": [
+      "напевать",
+      "петь про себя"
+    ]
+  },
+  "adj_neolda": {
+    "word": "넓다",
+    "category": "lexicon",
+    "meanings": [
+      "быть широким",
+      "быть просторным"
     ]
   }
 }

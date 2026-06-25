@@ -458,7 +458,7 @@
 "v_honestly": { "word": "솔직히", "category": "lexicon", "meanings": ["honestly"] },
 
 "v_remain": { "word": "남다", "category": "lexicon", "meanings": ["to remain"] },
-"be left": { "word": "남기다", "category": "lexicon", "meanings": ["to leave"] },
+"be_left": { "word": "남기다", "category": "lexicon", "meanings": ["to leave"] },
 
 "v_change_exchange": { "word": "바꾸다", "category": "lexicon", "meanings": ["to change", "to exchange"] },
 
@@ -1900,7 +1900,7 @@
   "meanings": ["background information", "contrast", "soft continuation"]
 },
 
-"adv_yeotaekkot": { "word": "여태껏", "category": "lexicon", "meanings": ["until now", "so far"] },
+"adv_yeotaekkot": { "word": "여태껏 / 여태", "category": "lexicon", "meanings": ["until now", "so far"] },
 
 "v_gyeopda": { "word": "겪다", "category": "lexicon", "meanings": ["to experience", "to go through"] },
 
@@ -8243,7 +8243,7 @@
     "meanings": ["to vomit"]
   },
   "n_yaegi": {
-    "word": "얘기",
+    "word": "이야기 / 얘기",
     "category": "lexicon",
     "meanings": ["story"]
   },
@@ -9509,7 +9509,18 @@
   "v_ollyeodaboda": { "word": "올려다보다", "category": "lexicon", "meanings": ["to look up at"] },
   "dem_geugot": { "word": "그곳", "category": "lexicon", "meanings": ["that place"] },
   "g_ul_geol": { "word": "-(으)ㄹ걸", "category": "grammar", "meanings": ["I bet...", "I guess that... (supposition)", "regret (different context)"] },
-  "n_geum": { "word": "금", "category": "lexicon", "meanings": ["crack", "line"] }
+  "n_geum": { "word": "금", "category": "lexicon", "meanings": ["crack", "line"] },
+  "n_hwasal": { "word": "화살", "category": "lexicon", "meanings": ["arrow"] },
+  "n_yeonggwang": { "word": "영광", "category": "lexicon", "meanings": ["glory", "honor"] },
+  "v_seongchuihada": { "word": "성취하다", "category": "lexicon", "meanings": ["to achieve", "to accomplish"] },
+  "n_jwajeol": { "word": "좌절", "category": "lexicon", "meanings": ["frustration", "despair", "breakdown"] },
+  "v_igida": { "word": "이기다", "category": "lexicon", "meanings": ["to win", "to overcome", "to defeat"] },
+  "n_jaengchui": { "word": "쟁취", "category": "lexicon", "meanings": ["attainment", "winning", "achievement through struggle"] },
+  "n_pinunmul": { "word": "피눈물", "category": "lexicon", "meanings": ["tears of blood", "bitter tears"] },
+  "adj_ganghada": { "word": "강하다", "category": "lexicon", "meanings": ["to be strong", "to be powerful"] },
+  "n_bakdong": { "word": "박동", "category": "lexicon", "meanings": ["beat", "pulsation", "throbbing"] },
+  "v_heungeolgeorida": { "word": "흥얼거리다", "category": "lexicon", "meanings": ["to hum", "to chant to oneself"] },
+  "adj_neolda": { "word": "넓다", "category": "lexicon", "meanings": ["to be wide", "to be broad", "to be spacious"] }
 
 }
 
